@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+vista_env/
+
+# Unsloth / HF cache
+unsloth_compiled_cache/
+outputs/
+*.bin
+*.safetensors
+
+# Temp files
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+benchmark/assertion_data_for_LLM/
