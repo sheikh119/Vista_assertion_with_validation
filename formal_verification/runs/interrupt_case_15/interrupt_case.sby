@@ -1,0 +1,15 @@
+# Combinational VERT snippet — prove mode (no clock).
+# Run from this directory after: source ../../source_formal_tools.sh
+
+[options]
+mode prove
+
+[engines]
+smtbmc
+
+[script]
+read_verilog -sv vert_formal_wrap.sv
+prep -top vert_formal_wrap
+
+[files]
+vert_formal_wrap.sv

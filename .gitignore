@@ -19,3 +19,7 @@ outputs/
 # OS files
 .DS_Store
 benchmark/assertion_data_for_LLM/
+
+# Formal tools (large binary suite; see formal_verification/install_oss_cad_suite.sh)
+formal_verification/oss-cad-suite/
+formal_verification/downloads/

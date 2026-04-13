@@ -1,0 +1,8 @@
+oss-cad-suite/
+downloads/
+*.tgz
+*.tar.gz
+sby_output/
+*.sby.dir/
+# sby -f <job>.sby creates ./<job>/ next to the .sby file
+**/interrupt_case/

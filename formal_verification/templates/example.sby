@@ -1,0 +1,26 @@
+# SymbiYosys job template — copy and edit paths.
+# Docs: https://yosyshq.readthedocs.io/projects/sby/en/latest/reference.html
+# After: source /path/to/oss-cad-suite/environment
+#
+# vert_formal_wrap.sv: paste RTL in-file, OR use include flow:
+#   [script]  read_verilog -sv -DVERT_INCLUDE_SNIPPET vert_formal_wrap.sv
+#   [files]   vert_formal_wrap.sv + vert_rtl_snippet.sv
+# Clocked snippet: add -DVERT_USE_CLOCKED_SNIPPET to read_verilog line.
+
+[options]
+mode bmc
+depth 10
+
+[engines]
+smtbmc
+
+[script]
+read_verilog -sv vert_formal_wrap.sv
+# read_verilog -sv -DVERT_INCLUDE_SNIPPET vert_formal_wrap.sv
+# read_verilog -sv -DVERT_INCLUDE_SNIPPET -DVERT_USE_CLOCKED_SNIPPET vert_formal_wrap.sv
+# read_verilog -sv generated_sva_bind.sv
+prep -top vert_formal_wrap
+
+[files]
+vert_formal_wrap.sv
+# vert_rtl_snippet.sv

@@ -2,10 +2,17 @@
 import argparse
 import os
 import random
+
+os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
+
 import torch
+from pathlib import Path
 from datasets import load_dataset
 from unsloth import FastLanguageModel, UnslothTrainer
 from unsloth.trainer import UnslothTrainingArguments
+
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+os.chdir(_REPO_ROOT)
 
 # -----------------------------
 # Parse arguments
@@ -14,17 +21,43 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--model", type=str, required=True)
 parser.add_argument("--data", type=str, required=True)
 parser.add_argument("--output_dir", type=str, default="outputs/finetuned-assertions")
-parser.add_argument("--epochs", type=int, default=3)
-parser.add_argument("--batch_size", type=int, default=1)
-parser.add_argument("--grad_accum", type=int, default=4)
+parser.add_argument("--epochs", type=int, default=3, help="VERT: 3 epochs to limit overfitting")
+parser.add_argument(
+    "--batch_size",
+    type=int,
+    default=2,
+    help="Per-GPU micro-batch. VERT targets global batch 64; default 2×32 accum (see --grad_accum).",
+)
+parser.add_argument(
+    "--grad_accum",
+    type=int,
+    default=32,
+    help="Gradient accumulation. Default 32 × batch_size 2 ⇒ effective batch 64 (VERT paper).",
+)
 parser.add_argument("--save_steps", type=int, default=500)
-parser.add_argument("--max_seq", type=int, default=2048)
+parser.add_argument(
+    "--max_seq",
+    type=int,
+    default=4096,
+    help="VERT: max sequence length 4096 for long RTL / conditions.",
+)
 parser.add_argument("--val_split", type=float, default=0.05)
 parser.add_argument("--seed", type=int, default=42)
 parser.add_argument("--resume_from", type=str, default=None)
-parser.add_argument("--lora_r", type=int, default=8)
-parser.add_argument("--lora_alpha", type=int, default=16)
-parser.add_argument("--lora_dropout", type=float, default=0.05)
+parser.add_argument("--lora_r", type=int, default=256, help="VERT LoRA rank")
+parser.add_argument("--lora_alpha", type=int, default=256, help="VERT LoRA alpha")
+parser.add_argument(
+    "--lora_dropout",
+    type=float,
+    default=0.0,
+    help="0 recommended for Unsloth fast path; increase only if you need regularization.",
+)
+parser.add_argument(
+    "--learning_rate",
+    type=float,
+    default=1e-4,
+    help="VERT: learning rate 1e-4",
+)
 args = parser.parse_args()
 
 # reproducibility and dirs
@@ -32,9 +65,11 @@ random.seed(args.seed)
 torch.manual_seed(args.seed)
 os.makedirs(args.output_dir, exist_ok=True)
 
+_eff_batch = int(args.batch_size) * int(args.grad_accum)
 print("🚀 Starting fine-tuning with config:")
 for k, v in vars(args).items():
     print(f"  {k}: {v}")
+print(f"  effective_batch (batch_size × grad_accum): {_eff_batch}")
 print()
 
 # -----------------------------
@@ -101,6 +136,7 @@ model = FastLanguageModel.get_peft_model(
     lora_alpha=int(args.lora_alpha),
     lora_dropout=float(args.lora_dropout),
     bias="none",
+    # VERT: Query, Key, Value, Output, and gated FFN paths (gate / up / down)
     target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
 )
 print("✅ LoRA adapters attached.")
@@ -118,24 +154,26 @@ train_ds = train_ds.map(tokenize_batch, batched=True, remove_columns=["text"])
 eval_ds = eval_ds.map(tokenize_batch, batched=True, remove_columns=["text"])
 
 # -----------------------------
-# Auto-detect precision flags
+# Training precision: VERT uses BF16 when the GPU supports it
 # -----------------------------
 fp16_flag = False
 bf16_flag = False
-try:
-    first_param = next(model.parameters())
-    if first_param.dtype == torch.bfloat16:
-        bf16_flag = True
-    elif first_param.dtype == torch.float16:
-        fp16_flag = True
-    else:
-        if torch.cuda.is_available():
+if torch.cuda.is_available() and torch.cuda.is_bf16_supported():
+    bf16_flag = True
+    fp16_flag = False
+else:
+    try:
+        first_param = next(model.parameters())
+        if first_param.dtype == torch.bfloat16:
+            bf16_flag = True
+        elif first_param.dtype == torch.float16:
             fp16_flag = True
-except Exception:
-    if torch.cuda.is_available():
-        fp16_flag = True
+        else:
+            fp16_flag = bool(torch.cuda.is_available())
+    except Exception:
+        fp16_flag = bool(torch.cuda.is_available())
 
-print(f"Precision flags -> fp16: {fp16_flag}, bf16: {bf16_flag}")
+print(f"Training precision (VERT: BF16 when available) -> fp16: {fp16_flag}, bf16: {bf16_flag}")
 
 # -----------------------------
 # Unsloth training args
@@ -147,7 +185,7 @@ training_args = UnslothTrainingArguments(
     num_train_epochs=args.epochs,
     save_steps=args.save_steps,
     logging_steps=50,
-    learning_rate=2e-4,
+    learning_rate=args.learning_rate,
     lr_scheduler_type="cosine",
     fp16=fp16_flag,
     bf16=bf16_flag,

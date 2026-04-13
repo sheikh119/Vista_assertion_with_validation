@@ -1,0 +1,6 @@
+{
+  "Code": "if (a && b) begin x = y; end",
+  "Synchronous": "False",
+  "Clock": "None",
+  "Assertion": "// optional: gold or generated SVA for reference"
+}
