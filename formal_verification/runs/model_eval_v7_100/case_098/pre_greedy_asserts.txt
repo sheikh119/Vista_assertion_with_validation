@@ -1,0 +1,4 @@
+assert ((!(( output_register_status_18 ) == ( 6'bx10x1x ) && ( cfg_9 || tx_2 && err_16 != rst_12 ))) || (data_20 == auth_15 && rx_6 == data_8 && rx_17 == reg_20));
+assert ((!(( output_register_status_18 ) == ( 6'bx10x1x ) && ( cfg_9 || tx_2 && err_16 != rst_12 ) && ( rst_10 != chip_19 && rx_7 && rx_1 ))) || (chip_10 == hw_17 && auth_8 == data_7 && rst_5 == rx_19));
+assert ((!(( output_register_status_18 )!= 6'bx10x1x && ( tx_13 || cfg_17 && core_13 && tx_16 ))) || (err_4 == err_17 && chip_2 == core_4 && chip_11 == tx_18));
+assert ((!(( output_register_status_18 )!= 6'bx10x1x && ( tx_13 || cfg_17 && core_13 && tx_16 ) && ( cfg_7 || cfg_11 ))) || (core_10 == reg_13 && rx_7 == sig_2 && rst_19 == hw_3));

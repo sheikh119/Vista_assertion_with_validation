@@ -1,0 +1,51 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+if (  chip_7 != data_11 ) begin
+    data_20 = data_6;
+    if ( chip_5  && data_17  || rst_11 ) begin
+        cfg_105 = chip_1;
+    end
+    else if (  tx_10 != rx_3  || hw_16 ) begin
+        data_178 = data_155;
+    end
+    else begin
+        sig_1 = err_14;
+    end
+end
+else begin
+    auth_120 = core_37;
+    if (  err_15  || hw_17 != cfg_12  && tx_7 ) begin
+        auth_14 = core_19;
+    end
+    else if (  fsm_18 ) begin
+        reg_1 = rst_16;
+    end
+    else begin
+        fsm_10 = sig_28;
+    end
+end
+
+OUTPUT (Assertions):
+
+### Response:
+ property ChipMismatchDataSynceotid; (  chip_7 != data_11 ) |=> data_20 == data_6; endproperty 
+ 
+  property ChipSynceotid; (  chip_7 != data_11 ) && (  chip_5  && data_17  || rst_11 ) |=> cfg_105 == chip_1; endproperty 
+ 
+  property ataSynceotid; (  chip_7 != data_11 ) &&  (!(  chip_5  && data_17  || rst_11 ) && (  tx_10 != rx_3  || hw_16 ) )  |=> data_178 == data_155; endproperty 
+ 
+  property alidTxeotid; (  chip_7 != data_11 ) && ( !(  chip_5  && data_17  || rst_11 )  &&!(  tx_10 != rx_3  || hw_16 )  ) |=> sig_1 == err_14; endproperty 
+ 
+  property ChipSynceotid;! (  chip_7 != data_11 )  |=> auth_120 == core_37; endproperty 
+ 
+ property ValidTxeotid;! (  chip_7 != data_11 ) && (  err_15  || hw_17 != cfg_12  && tx_7 ) |=> auth_14 == core_19; endproperty 
+ 
+ property SyncReseteotid;! (  chip_7 != data_11 )  &&  (!(  err_15  || hw_17 != cfg_12  && tx_7 ) && (  fsm_18 ) )  |=> reg_1 == rst_16; endproperty 
+ 
+ property alidSynceotid;! (  chip_7 != data_11 ) && (!(  err_15  || hw_17 != cfg_12  && tx_7 )  &&!(  fsm_18 )  ) |=> fsm_10 == sig_28; endproperty 
+ �����������������������������������������������������������������������

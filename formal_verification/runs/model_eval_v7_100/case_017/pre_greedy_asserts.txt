@@ -1,0 +1,4 @@
+assert ((!(( status_register_status_10 ) == ( 6'bxx0x0x ))) || (auth_15 == auth_4 && rx_20 == tx_9));
+assert ((!(( status_register_status_10 ) == ( 7'b00x0001 ))) || (auth_17 == core_20 && hw_10 == tx_18));
+assert ((!(( status_register_status_10 ) == ( 7'b1x1xxxx ))) || (core_4 == data_1 && tx_3 == rst_9));
+assert ((!(( status_register_status_10 )!= 6'bxx0x0x && ( status_register_status_10 )!= 7'b00x0001 && ( status_register_status_10 )!= 7'b1x1xxxx)) || (hw_4 == rx_5 && cfg_11 == sig_17));

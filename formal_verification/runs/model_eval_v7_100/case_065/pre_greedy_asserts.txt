@@ -1,0 +1,3 @@
+assert ((!(( err_10 && core_150 ))) || (sig_63 == rx_3 && core_4 == rx_14));
+assert ((!(( err_10 && core_150 ) && ( chip_1 ))) || (reg_11 == clk_7 && rst_52 == tx_8));
+assert ((!(( err_10 && core_150 ) && ( chip_1 ) && ( fsm_4 && data_10 || err_1 && rx_11 ))) || (rst_15 == clk_9 && reg_15 == cfg_1));

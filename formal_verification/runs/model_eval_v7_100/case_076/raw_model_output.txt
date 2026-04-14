@@ -1,0 +1,37 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: negedge pll_clk_7
+
+Code:
+case ( enable_16 )
+   5'bxx00x : begin
+     chip_3 <= rst_9;
+     fsm_17 <= rst_15;
+   end
+   7'h4a : begin
+     tx_4 = core_5;
+     rx_19 = auth_2;
+   end
+   5'b11xx1 : begin
+     fsm_18 = err_8;
+     hw_7 = chip_5;
+   end
+   default : begin
+     reg_7 = chip_14;
+     hw_8 <= sig_9;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property ResetSynceotid; @(negedge pll_clk_7) ( enable_16 ) == ( 5'bxx00x ) |-> chip_3 == rst_9 && fsm_17 == rst_15 ; endproperty 
+ 
+ property SyncAutheotid; @(negedge pll_clk_7) ( enable_16 ) == ( 7'h4a ) |-> tx_4 == core_5 && rx_19 == auth_2 ; endproperty 
+ 
+ property ClockSynceotid; @(negedge pll_clk_7) ( enable_16 ) == ( 5'b11xx1 ) |-> fsm_18 == err_8 && hw_7 == chip_5 ; endproperty 
+ 
+ property SyncCheckeotid; ( enable_16 )!= 5'bxx00x && ( enable_16 )!= 7'h4a && @(negedge pll_clk_7) ( enable_16 )!= 5'b11xx1  |-> reg_7 == chip_14 && hw_8 == sig_9; endproperty 
+ ������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

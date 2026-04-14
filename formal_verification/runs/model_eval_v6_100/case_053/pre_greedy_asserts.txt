@@ -1,0 +1,3 @@
+assert ((!(( command_status_17 ) == ( 7'bx01x10x ))) || (chip_10 == hw_16 && fsm_12 == rst_9));
+assert ((!(( command_status_17 ) == ( 6'bx0x000 ))) || (cfg_13 == chip_6 && clk_1 == reg_10));
+assert ((!(( command_status_17 )!= 7'bx01x10x && ( command_status_17 )!= 6'bx0x000)) || (rst_12 == auth_6 && tx_20 == rst_18));

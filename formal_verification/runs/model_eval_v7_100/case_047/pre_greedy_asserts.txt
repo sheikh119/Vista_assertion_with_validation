@@ -1,0 +1,3 @@
+assert ((!(( data_ready_17 ) == ( 7'b1101001 ))) || (auth_14 == auth_6 && fsm_9 == clk_1 && hw_20 == tx_18));
+assert ((!(( data_ready_17 ) == ( 6'h21 ))) || (clk_17 == fsm_2 && rst_12 == auth_9 && hw_5 == err_16));
+assert ((!(( data_ready_17 )!= 7'b1101001 && ( data_ready_17 )!= 6'h21)) || (sig_4 == core_10 && auth_17 == fsm_6 && hw_13 == cfg_17));

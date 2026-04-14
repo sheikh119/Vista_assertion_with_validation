@@ -1,0 +1,59 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+if (  data_7  && fsm_7 ) begin 
+     fsm_9 = reg_4;
+     core_112 = rst_19;
+     reg_7 = reg_5;
+    if ( core_17  && hw_5  && tx_18 != sig_3 ) begin
+        err_16 = tx_8;
+        data_178 = data_3;
+        cfg_2 = rst_133;
+    end
+        if ( sig_20 != auth_16 ) begin
+            auth_120 = core_15;
+            chip_96 = data_16;
+            sig_14 = sig_2;
+        end
+end
+
+Synchronous: False
+
+Clock: None
+
+Assertion:
+Assertion:
+Assertion:
+Assertion:
+
+OUTPUT (Assertions):
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

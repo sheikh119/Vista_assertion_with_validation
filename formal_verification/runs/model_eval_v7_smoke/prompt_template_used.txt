@@ -1,0 +1,12 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: {synchronous}
+Clock: {clock}
+
+Code:
+{code}
+
+OUTPUT (Assertions):
+
+### Response:

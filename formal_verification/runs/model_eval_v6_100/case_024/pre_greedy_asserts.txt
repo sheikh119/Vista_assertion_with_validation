@@ -1,0 +1,7 @@
+assert ((!(( err_11 && core_12 || rx_17 != data_20 ))) || (core_118 == core_19));
+assert ((!(( err_11 && core_12 || rx_17 != data_20 ) && ( err_8 && fsm_14 && core_18 ))) || (core_19 == tx_4));
+assert ((!(( err_11 && core_12 || rx_17 != data_20 ) && (!( err_8 && fsm_14 && core_18 ) && ( err_20 && err_20 ) ))) || (auth_9 == auth_5));
+assert ((!(( err_11 && core_12 || rx_17 != data_20 ) && ( !( err_8 && fsm_14 && core_18 ) &&!( err_20 && err_20 ) ))) || (core_118 == tx_13));
+assert ((!(! ( err_11 && core_12 || rx_17 != data_20 ))) || (rx_16 == sig_12));
+assert ((!(! ( err_11 && core_12 || rx_17 != data_20 ) && ( sig_3 != data_2 && rx_20 && rx_4 ))) || (clk_120 == reg_8));
+assert ((!(! ( err_11 && core_12 || rx_17 != data_20 ) && (!( sig_3 != data_2 && rx_20 && rx_4 ) && ( auth_13 || clk_6 && data_15 && sig_12 ) ))) || (auth_5 == fsm_8));

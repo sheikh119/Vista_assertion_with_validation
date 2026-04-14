@@ -1,0 +1,4 @@
+assert ((!(( control_data_5 ) == ( 6'bx1011x ) && ( err_17 && fsm_11 || rx_19 != clk_14 ))) || (data_1 == core_17));
+assert ((!(( control_data_5 ) == ( 6'bx1011x ) && ( err_17 && fsm_11 || rx_19 != clk_14 ) && ( rx_1 ))) || (err_10 == data_8));
+assert ((!(( control_data_5 )!= 6'bx1011x && ( sig_1 ))) || (data_14 == cfg_16));
+assert ((!(( control_data_5 )!= 6'bx1011x && ( sig_1 ) && ( tx_15 != hw_17 || auth_120 && hw_14 ))) || (sig_10 == sig_17));

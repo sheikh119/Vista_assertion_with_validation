@@ -1,0 +1,3 @@
+assert (1'b1);
+assert (: if ( auth_7 && rx_3 != data_14 && sig_14 ) begin auth_12 = auth_18 rx_13 = auth_16; end);
+assert (: if ( rx_1 || clk_10 && data_9 ) begin cfg_9 = clk_17 err_1 = clk_7; end);

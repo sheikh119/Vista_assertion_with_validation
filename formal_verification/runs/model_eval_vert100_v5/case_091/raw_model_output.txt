@@ -1,0 +1,47 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+case ( start_address_12 )
+   5'b10x11 : begin
+     core_4 = clk_2;
+   end
+   6'b0xxx00 : begin
+     err_17 = chip_8;
+   end
+   2'b1x : begin
+     clk_17 = hw_12;
+   end
+   clk_10 : begin
+     data_15 = cfg_12;
+   end
+   default : begin
+     tx_12 = rst_1;
+   end
+endcase
+
+Synchronous: False
+
+Clock: None
+
+Assertion:
+assert CoreSynceotid: ( start_address_12 ) == ( 5'b10x11 ) && ( core_4 ) == ( clk_2 ) ; 
+assert ChipSynceotid: ( start_address_12 ) == ( 6'b0xxx00 ) && ( err_17 ) == ( chip_8 ) ; 
+assert ClockSynceotid: ( start_address_12 ) == ( 2'b1x ) && ( clk_17 ) == ( hw_12 ) ; 
+assert ValidStarteotid: ( start_address_12 ) == ( clk_10 ) && ( data_15 ) == ( cfg_12 ) ; 
+assert alidStarteotid; ( ( start_address_12 )!= 5'b10x11 ) && ( ( start_address_12 )!= 6'b0xxx00 ) && ( ( start_address_12 )!= 2'b1x ) && ( start_address_12 )!= clk_10 ) ) | ( tx_12 ) = rst_1 ) ; 

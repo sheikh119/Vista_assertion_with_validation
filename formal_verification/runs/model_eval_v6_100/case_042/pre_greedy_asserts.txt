@@ -1,0 +1,3 @@
+assert ((!(: ( control_input_status_15 ) == ( 7'h7e ))) || (sig_5 == fsm_19));
+assert ((!(: ( control_input_status_15 ) == ( 6'b01000x ))) || (cfg_11 == clk_17));
+assert ((!(( ( control_input_status_15 )!= 7'h7e ) && ( control_input_status_15 )!= 6'b01000x ) ))) || (cfg_7 == rst_16));

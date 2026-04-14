@@ -1,0 +1,4 @@
+assert (1'b1);
+assert (!(( data_12 || auth_8 != hw_12 || chip_10 ))) || (reg_1 == hw_4 && tx_6 == data_1 && data_1 == reg_20);
+assert (!(( data_12 || auth_8 != hw_12 || chip_10 ) && ( data_1 || rst_12 != chip_12 || cfg_15 ))) || (fsm_13 == rst_16 && err_11 == chip_3 && rx_10 == chip_5);
+assert (!(( rst_20 != auth_4 && data_2 || err_18 ))) || (auth_20 == hw_19 && tx_10 == chip_14 && chip_13 == hw_9);

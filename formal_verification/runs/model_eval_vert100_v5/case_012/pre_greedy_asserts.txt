@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (: if ( reg_8 != rst_4 || auth_11 ) begin chip_17 = clk_19; reg_10 = tx_18; tx_7 = core_19; if ( reg_10 || auth_7 != clk_100 && chip_20 ) begin chip_1 = err_1; hw_15 = hw_10; data_120 = data_18; end if ( rx_7 && cfg_17 ) begin clk_15 = data_12; tx_1 = data_85; err_1 = core_17; end end end OUTPUT (Assertions): Assertion: assert SyncReseteotid);

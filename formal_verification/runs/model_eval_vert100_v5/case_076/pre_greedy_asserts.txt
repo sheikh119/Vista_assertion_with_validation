@@ -1,0 +1,3 @@
+assert (1'b1);
+assert (!(: ( core_5 ) && ( auth_2 ) && ( rx_19 ) ))) || (tx_4 == core_5 ; property AuthSynceotid; ( core_5 ) && ( auth_2 ) && ( rx_19 ) ) |=> tx_4 == core_5);
+assert (!(( fsm_18 ) && ( hw_7 ) && ( chip_5 ) ))) || (err_8 == fsm_18);

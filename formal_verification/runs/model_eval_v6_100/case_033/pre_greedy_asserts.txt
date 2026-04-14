@@ -1,0 +1,2 @@
+assert ((!(( read_data_12 ) == ( 7'b1x01000 ))) || (rst_18 == rx_17 && clk_1 == tx_4));
+assert ((!(( read_data_12 )!= 7'b1x01000)) || (chip_6 == sig_16 && core_14 == cfg_17));

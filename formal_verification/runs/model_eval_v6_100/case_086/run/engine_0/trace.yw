@@ -1,0 +1,38 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [],
+  "signals": [
+    {"path": ["\\auth_14"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\auth_7"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\cfg_14"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\cfg_20"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\cfg_3"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_12"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_14"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_18"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_8"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_reset_7"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\core_9"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\err_195"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\err_60"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\fsm_17"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\fsm_19"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\hw_20"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\hw_7"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\hw_8"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rx_19"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rx_8"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_10"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\cfg_12"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\cfg_4"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\clk_15"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\clk_17"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\clk_6"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\core_14"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\tx_7"], "width": 32, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "1000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000"}
+  ]
+}

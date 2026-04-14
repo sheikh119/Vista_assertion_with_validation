@@ -1,0 +1,50 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+if (  reg_1 != tx_7 ) begin
+    auth_114 = chip_15;
+    fsm_11 <= rst_10;
+    data_16 = sig_20;
+    if ( rst_14 != chip_1 ) begin
+        reg_15 <= cfg_20;
+        auth_1 <= tx_12;
+        clk_10 <= err_10;
+    end
+        if ( data_3  || fsm_33 != err_3  || rx_37 ) begin
+            reg_13 = cfg_19;
+            err_19 <= data_3;
+            auth_19 = clk_12;
+        end
+end
+
+Synchronous: True
+
+Clock: posedge clk_osc_4
+
+Assertion:
+Assertion:
+Assertion:
+Assertion:
+
+OUTPUT (Assertions):
+
+...
+
+DONE
+

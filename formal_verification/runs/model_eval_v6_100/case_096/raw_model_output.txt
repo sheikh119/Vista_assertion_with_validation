@@ -1,0 +1,50 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: negedge clk_enable_18
+
+Code:
+if (  hw_8  || reg_8  && chip_3 ) begin
+   cfg_10 <= chip_14;
+    if ( hw_15  || reg_1  && tx_19  || tx_9 ) begin
+      tx_13 <= sig_12;
+   end
+   else if (  err_11  && clk_9 != rst_111 ) begin
+      auth_5 = cfg_1;
+   end
+   else begin
+      rst_15 <= rst_20;
+   end
+end
+else begin
+   chip_4 = sig_28;
+   if (  data_17 ) begin
+      fsm_10 <= chip_3;
+   end
+   else if (  sig_9  || rx_13 ) begin
+      rx_114 = reg_13;
+   end
+   else begin
+      fsm_115 = tx_3;
+   end
+end
+
+OUTPUT (Assertions):
+
+### Response:
+property EnableSynceotid; @(negedge clk_enable_18) (  hw_8  || reg_8  && chip_3 ) |-> cfg_10 == chip_14 ; endproperty 
+ 
+ property ValidTxeotid; @(negedge clk_enable_18) (  hw_8  || reg_8  && chip_3 ) && (  hw_15  || reg_1  && tx_19  || tx_9 ) |-> tx_13 == sig_12 ; endproperty 
+ 
+ property AuthCheckeotid; @(negedge clk_enable_18) (  hw_8  || reg_8  && chip_3 ) &&  (!(  hw_15  || reg_1  && tx_19  || tx_9 ) && (  err_11  && clk_9 != rst_111 ) )  |-> auth_5 == cfg_1 ; endproperty 
+ 
+ property SafeReseteotid; @(negedge clk_enable_18) (  hw_8  || reg_8  && chip_3 ) && ( !(  hw_15  || reg_1  && tx_19  || tx_9 )  &&!(  err_11  && clk_9 != rst_111 )  ) |-> rst_15 == rst_20 ; endproperty 
+ 
+ property EnableSynceotid; @(negedge clk_enable_18)! (  hw_8  || reg_8  && chip_3 )  |-> chip_4 == sig_28 ; endproperty 
+ 
+ property EnableSynceotid; @(negedge clk_enable_18)! (  hw_8  || reg_8  && chip_3 ) && (  data_17 ) |-> fsm_10 == chip_3; endproperty 
+ 
+ property ValidRxeotid; @(negedge clk_enable_18)! (  hw_8  || reg_8  && chip_3 )  &&  (!(  data_17 ) && (  sig_9  || rx_13 ) )  |-> rx_114 == reg_13 ; endproperty 
+ 
+ property SafeTxeotid; @(negedge clk_enable_18)! (  hw_8  || reg_8  && chip_3 ) && ( !(  data_17 )  &&!(  sig_9  || rx_13 )  ) |-> fsm_

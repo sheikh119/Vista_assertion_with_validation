@@ -1,0 +1,4 @@
+assert ((!(( instruction_register_11 ) == ( 6'bx000x0 ) && ( core_8 && clk_20 ))) || (sig_1 == hw_12));
+assert ((!(( instruction_register_11 ) == ( 6'bx000x0 ) && ( core_8 && clk_20 ) && ( rst_7 || sig_10 && reg_20 ))) || (rst_10 == sig_17));
+assert ((!(( instruction_register_11 )!= 6'bx000x0 && ( !rst_12 ))) || (sig_5 == tx_17));
+assert ((!(( instruction_register_11 )!= 6'bx000x0 && ( !rst_12 ) && ( rst_1 && hw_10 && rx_7 ))) || (rst_7 == rx_11));

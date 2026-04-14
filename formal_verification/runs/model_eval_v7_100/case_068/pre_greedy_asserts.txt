@@ -1,0 +1,3 @@
+assert ((!(( rst_13 && core_4 && sig_13 != hw_5 ))) || (core_10 == sig_6));
+assert ((!(( rst_13 && core_4 && sig_13 != hw_5 ) && ( rst_16 || core_11 || err_2 ))) || (err_6 == core_2));
+assert ((!(( rst_13 && core_4 && sig_13 != hw_5 ) && ( rst_16 || core_11 || err_2 ) && ( data_98 ))) || (fsm_6 == clk_16));

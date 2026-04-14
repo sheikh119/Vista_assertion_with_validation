@@ -1,0 +1,889 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/main/misc/jny.schema.json",
+  "generator": "Yosys 0.64+40 (git sha1 90b906c4f, clang++ 18.1.8 -fPIC -O3)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "vert_formal_wrap",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$54",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:36.10-36.51|vert_formal_wrap.sv:36.5-40.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$60",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:36.10-36.51|vert_formal_wrap.sv:36.5-40.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$65",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:32.7-32.34|vert_formal_wrap.sv:32.1-46.4"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$68",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:32.7-32.34|vert_formal_wrap.sv:32.1-46.4"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$71",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:32.7-32.34|vert_formal_wrap.sv:32.1-46.4"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$74",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:41.14-41.29|vert_formal_wrap.sv:41.9-45.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$76",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:32.7-32.34|vert_formal_wrap.sv:32.1-46.4"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$79",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:41.14-41.29|vert_formal_wrap.sv:41.9-45.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$81",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:32.7-32.34|vert_formal_wrap.sv:32.1-46.4"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$84",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:41.14-41.29|vert_formal_wrap.sv:41.9-45.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$86",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:32.7-32.34|vert_formal_wrap.sv:32.1-46.4"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$90",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:36.10-36.51|vert_formal_wrap.sv:36.5-40.8"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$92",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:32.7-32.34|vert_formal_wrap.sv:32.1-46.4"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$95",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:32.7-32.34|vert_formal_wrap.sv:32.1-46.4"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$98",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:32.7-32.34|vert_formal_wrap.sv:32.1-46.4"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$100",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:31.3-47.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "0",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$101",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:31.3-47.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "0",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$102",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:31.3-47.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "0",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$103",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:31.3-47.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "0",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$104",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:31.3-47.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "0",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$105",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:31.3-47.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "0",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$106",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:31.3-47.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "0",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$107",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:31.3-47.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "0",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$108",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:31.3-47.6"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "0",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$ne",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ne$vert_formal_wrap.sv:53$36",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.18-53.32"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ne$vert_formal_wrap.sv:53$38",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.61-53.78"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_or$vert_formal_wrap.sv:36$6",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:36.10-36.51"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_or$vert_formal_wrap.sv:51$20",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:51.13-51.108"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_or$vert_formal_wrap.sv:52$34",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:52.13-52.155"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_or$vert_formal_wrap.sv:53$37",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.18-53.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_or$vert_formal_wrap.sv:53$40",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.51-53.89"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_or$vert_formal_wrap.sv:53$50",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.13-53.177"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_not$vert_formal_wrap.sv:51$14",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:51.14-51.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$vert_formal_wrap.sv:52$28",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:52.14-52.92"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$vert_formal_wrap.sv:53$44",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.14-53.114"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$check",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "ARGS",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "TRG",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_witness_.check_assert_vert_formal_wrap_sv_51_11",
+                  "attributes": {
+                    "hdlname": "_witness_ check_assert_vert_formal_wrap_sv_51_11",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:51.5-51.109"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111110",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_assert_vert_formal_wrap_sv_52_21",
+                  "attributes": {
+                    "hdlname": "_witness_ check_assert_vert_formal_wrap_sv_52_21",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:52.5-52.156"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111101",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_assert_vert_formal_wrap_sv_53_35",
+                  "attributes": {
+                    "hdlname": "_witness_ check_assert_vert_formal_wrap_sv_53_35",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:53.5-53.178"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111100",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                },
+                {
+                  "name": "_witness_.check_assume_vert_formal_wrap_sv_50_9",
+                  "attributes": {
+                    "hdlname": "_witness_ check_assume_vert_formal_wrap_sv_50_9",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "vert_formal_wrap.sv:50.5-50.18"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111111",
+                    "TRG_ENABLE": "00000000000000000000000000000000",
+                    "TRG_POLARITY": true,
+                    "TRG_WIDTH": "00000000000000000000000000000000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_and$vert_formal_wrap.sv:51$17",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:51.52-51.88"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$vert_formal_wrap.sv:51$19",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:51.52-51.107"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$vert_formal_wrap.sv:52$31",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:52.98-52.131"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$vert_formal_wrap.sv:52$33",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:52.98-52.154"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$vert_formal_wrap.sv:53$39",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.61-53.89"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$vert_formal_wrap.sv:53$41",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.16-53.91"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$vert_formal_wrap.sv:53$42",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.97-53.111"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$vert_formal_wrap.sv:53$43",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.16-53.113"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$vert_formal_wrap.sv:53$47",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.120-53.156"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$vert_formal_wrap.sv:53$49",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.120-53.176"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$vert_formal_wrap.sv:51$15",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:51.52-51.69"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$vert_formal_wrap.sv:51$16",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:51.73-51.88"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$vert_formal_wrap.sv:51$18",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:51.92-51.107"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$vert_formal_wrap.sv:52$29",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:52.98-52.113"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$vert_formal_wrap.sv:52$30",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:52.117-52.131"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$vert_formal_wrap.sv:52$32",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:52.135-52.154"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$vert_formal_wrap.sv:53$45",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.120-53.137"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$vert_formal_wrap.sv:53$46",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.141-53.156"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$vert_formal_wrap.sv:53$48",
+                  "attributes": {
+                    "src": "vert_formal_wrap.sv:53.160-53.176"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "top": "00000000000000000000000000000001",
+            "src": "vert_formal_wrap.sv:2.1-55.10"
+        }
+      }
+  ]
+}

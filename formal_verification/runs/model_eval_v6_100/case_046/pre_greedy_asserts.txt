@@ -1,0 +1,7 @@
+assert ((!(( cfg_10 != cfg_14 && fsm_5 && reg_19 ))) || (fsm_116 == rx_5));
+assert ((!(( cfg_10 != cfg_14 && fsm_5 && reg_19 ) && ( tx_163 != fsm_163 || core_4 ))) || (core_20 == chip_20));
+assert ((!(( cfg_10 != cfg_14 && fsm_5 && reg_19 ) && (!( tx_163 != fsm_163 || core_4 ) && ( hw_14 && rst_5 && clk_115 ) ))) || (sig_6 == fsm_15));
+assert ((!(( cfg_10 != cfg_14 && fsm_5 && reg_19 ) && ( !( tx_163 != fsm_163 || core_4 ) &&!( hw_14 && rst_5 && clk_115 ) ))) || (rx_11 == reg_18));
+assert ((!(! ( cfg_10 != cfg_14 && fsm_5 && reg_19 ))) || (reg_116 == reg_12));
+assert ((!(! ( cfg_10 != cfg_14 && fsm_5 && reg_19 ) && ( clk_16 && hw_20 ))) || (chip_18 == tx_8));
+assert ((!(! ( cfg_10 != cfg_14 && fsm_5 && reg_19 ) && (!( clk_16 && hw_20 ) && ( err_14 && err_3 ) ))) || (fsm_19 == cfg_18));

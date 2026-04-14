@@ -1,0 +1,71 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+case ( address_6 )
+   6'b0011x1 : begin
+
+      if (  fsm_20  || auth_7  && chip_12 != fsm_17 ) begin
+          sig_2 = chip_11;
+          if ( fsm_14  || rx_1 != core_9 ) begin
+               rx_12 = fsm_6;
+          end
+      end
+
+   end
+   default : begin
+      if (  data_1  || reg_11 ) begin
+          err_11 = chip_19;
+          if ( tx_17  && hw_2 != core_18 ) begin
+               auth_13 = clk_6;
+          end
+      end
+
+   end
+endcase
+
+Synchronous: False
+
+Clock: None
+
+Assertion:
+Assertion:
+Assertion:
+Assertion:
+
+OUTPUT (Assertions):
+
+...
+...
+
+...
+...
+
+...
+...
+
+OUTPUT (Assertions):
+
+ property AuthCheckeotid; (  fsm_20  || auth_7  && chip_12 != fsm_17 ) |=> sig_2 == chip_11; endproperty 
+ 
+ property AuthSynceotid; (  fsm_20  || auth_7  && chip_12 != fsm_17 ) &&  (  fsm_14  || rx_1 != core_9 ) |=> rx_12 == fsm_6; endproperty 
+ 
+  property ValidAccesseotid; (  data_1  || reg_11 ) |=> err_11 == chip_19; endproperty 
+ 
+ property AuthCheckeotid; (  data_1  || reg_11 ) &&  (  tx_17  && hw_2 != core_18 ) |=> auth_13 == clk_6; endproperty 
+ ������������������

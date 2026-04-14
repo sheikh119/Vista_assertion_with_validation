@@ -1,0 +1,25 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: posedge ref_clk_11
+
+Code:
+case ( read_data_12 )
+   7'b1x01000 : begin
+     rst_18 = rx_17;
+     clk_1 <= tx_4;
+   end
+   default : begin
+     chip_6 = sig_16;
+     core_14 <= cfg_17;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property DataSynceotid; @(posedge ref_clk_11) ( read_data_12 ) == ( 7'b1x01000 ) |-> rst_18 == rx_17 && clk_1 == tx_4 ; endproperty 
+ 
+ property DataSynceotid; @(posedge ref_clk_11) ( read_data_12 )!= 7'b1x01000  |-> chip_6 == sig_16 && core_14 == cfg_17; endproperty 
+ ������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

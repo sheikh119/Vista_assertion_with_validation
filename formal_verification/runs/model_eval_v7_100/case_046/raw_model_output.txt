@@ -1,0 +1,50 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: negedge clk_in_1
+
+Code:
+if (  cfg_10 != cfg_14  && fsm_5  && reg_19 ) begin
+   fsm_116 = rx_5;
+    if ( tx_163 != fsm_163  || core_4 ) begin
+      core_20 = chip_20;
+   end
+   else if (  hw_14  && rst_5  && clk_115 ) begin
+      sig_6 = fsm_15;
+   end
+   else begin
+      rx_11 <= reg_18;
+   end
+end
+else begin
+   reg_116 = reg_12;
+   if (  clk_16  && hw_20 ) begin
+      chip_18 = tx_8;
+   end
+   else if (  err_14  && err_3 ) begin
+      fsm_19 <= cfg_18;
+   end
+   else begin
+      core_1 = data_18;
+   end
+end
+
+OUTPUT (Assertions):
+
+### Response:
+property SyncCheckeotid; @(negedge clk_in_1) (  cfg_10 != cfg_14  && fsm_5  && reg_19 ) |-> fsm_116 == rx_5 ; endproperty 
+ 
+ property SyncCheckeotid; @(negedge clk_in_1) (  cfg_10 != cfg_14  && fsm_5  && reg_19 ) && (  tx_163 != fsm_163  || core_4 ) |-> core_20 == chip_20 ; endproperty 
+ 
+ property SyncCheckeotid; @(negedge clk_in_1) (  cfg_10 != cfg_14  && fsm_5  && reg_19 ) &&  (!(  tx_163 != fsm_163  || core_4 ) && (  hw_14  && rst_5  && clk_115 ) )  |-> sig_6 == fsm_15 ; endproperty 
+ 
+ property yncCheckeotid; @(negedge clk_in_1) (  cfg_10 != cfg_14  && fsm_5  && reg_19 ) && ( !(  tx_163 != fsm_163  || core_4 )  &&!(  hw_14  && rst_5  && clk_115 )  ) |-> rx_11 == reg_18 ; endproperty 
+ 
+ property SyncCheckeotid; @(negedge clk_in_1)! (  cfg_10 != cfg_14  && fsm_5  && reg_19 )  |-> reg_116 == reg_12 ; endproperty 
+ 
+ property SyncCheckeotid; @(negedge clk_in_1)! (  cfg_10 != cfg_14  && fsm_5  && reg_19 ) && (  clk_16  && hw_20 ) |-> chip_18 == tx_8; endproperty 
+ 
+ property SyncSafeeotid; @(negedge clk_in_1)! (  cfg_10 != cfg_14  && fsm_5  && reg_19 )  &&  (!(  clk_16  && hw_20 ) && (  err_14  && err_3 ) )  |-> fsm_19 == cfg_18 ; endproperty 
+ 
+ property yncSafeeotid; @(negedge clk_in_1)! (  cfg_10 != cfg_14  &&

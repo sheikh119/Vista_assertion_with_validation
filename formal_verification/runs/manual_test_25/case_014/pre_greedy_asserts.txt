@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (!(: assert ValidTxeotid; ( err_17 != cfg_6 ) && ( fsm_1 && data_10 || err_1 && rx_11 ))) || (tx_18 == reg_4 && err_15 == auth_18 && clk_14 == data_14);

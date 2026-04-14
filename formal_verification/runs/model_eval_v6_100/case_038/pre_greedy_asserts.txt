@@ -1,0 +1,3 @@
+assert ((!(( hw_8 || reg_8 && chip_3 ))) || (hw_14 == clk_3));
+assert ((!(( hw_8 || reg_8 && chip_3 ) && ( data_118 ))) || (data_5 == rx_11));
+assert ((!(( hw_8 || reg_8 && chip_3 ) && ( data_118 ) && ( err_6 || clk_17 ))) || (core_12 == reg_20));

@@ -1,0 +1,4 @@
+assert ((!(( transfer_complete_13 ) == ( 7'b1x11111 ) && ( chip_117 || rx_4 || chip_4 ))) || (core_15 == hw_13 && auth_19 == auth_16 && core_11 == clk_15));
+assert ((!(( transfer_complete_13 ) == ( 7'b1x11111 ) && ( chip_117 || rx_4 || chip_4 ) && ( chip_12 && auth_16 || tx_2 || rst_16 ))) || (clk_18 == err_13 && auth_10 == hw_3 && auth_4 == cfg_11));
+assert ((!(( transfer_complete_13 )!= 7'b1x11111 && ( hw_8 ))) || (clk_1 == chip_8 && sig_7 == fsm_4 && fsm_18 == data_13));
+assert ((!(( transfer_complete_13 )!= 7'b1x11111 && ( hw_8 ) && ( err_9 || hw_2 ))) || (rx_20 == tx_17 && sig_2 == tx_1 && rst_8 == core_14));

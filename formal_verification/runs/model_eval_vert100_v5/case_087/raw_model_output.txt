@@ -1,0 +1,74 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+if (  data_7  && rx_5 ) begin
+   sig_149 = hw_17;
+    if ( err_8  && tx_4  || cfg_20 ) begin
+      tx_115 = data_14;
+   end
+   else if (  auth_7 ) begin
+      rx_8 = tx_14;
+   end
+   else begin
+      fsm_116 = tx_12;
+   end
+end
+else begin
+   data_4 = cfg_183;
+   if (  rst_17  || tx_17  && chip_2 ) begin
+      rst_3 = tx_33;
+   end
+   else if (  cfg_20 != fsm_8 ) begin
+      rx_5 = rx_15;
+   end
+   else begin
+      cfg_14 = rx_6;
+   end
+end
+
+Synchronous: True
+
+Clock: posedge clock_source_19
+
+Assertion:
+if (  data_7  && rx_5 ) begin 
+   sig_149 = hw_17;
+   if (  err_8  && tx_4  || cfg_20 ) begin
+      tx_115 = data_14;
+   end
+   else if (  auth_7 ) begin
+      rx_8 = tx_14;
+   end
+   else begin
+      fsm_116 = tx_12;
+   end
+end
+else begin 
+   data_4 = cfg_183;
+   if (  rst_17  || tx_17  && chip_2 ) begin
+      rst_3 = tx_33;
+   end
+   else if (  cfg_20 != fsm_8 ) begin
+      rx_5 = rx_15;
+   end
+   else begin
+      cfg_14 = rx_6;
+   end
+end
+

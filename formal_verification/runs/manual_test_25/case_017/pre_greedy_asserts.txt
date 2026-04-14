@@ -1,0 +1,3 @@
+assert (1'b1);
+assert (!(: if ( tx_10 && rx_10 != core_14 || sig_5 ) begin rx_130 = core_2; hw_196 = auth_12; end property ValidTxeotid; ( tx_10 && rx_10 != core_14 || sig_5 ))) || (rx_130 == core_2 && hw_196 == auth_12);
+assert (!(( tx_10 && rx_10 != core_14 || sig_5 ) && ( tx_9 ))) || (data_5 == chip_14 && hw_11 == reg_17);

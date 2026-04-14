@@ -1,0 +1,11 @@
+initial
+assume (= [_witness_.anyinit_auto_proc_dlatch_cc_432_proc_dlatch_175] #b00000000000000000000000000000000)
+assume (= [_witness_.anyinit_auto_proc_dlatch_cc_432_proc_dlatch_204] #b00000000000000000000000000000000)
+assume (= [_witness_.anyinit_auto_proc_dlatch_cc_432_proc_dlatch_225] #b10000000000000000000000000000000)
+assume (= [_witness_.anyinit_auto_proc_dlatch_cc_432_proc_dlatch_272] #b10000000000000000000000000000000)
+assume (= [_witness_.anyinit_auto_proc_dlatch_cc_432_proc_dlatch_305] #b10000000000000000000000000000000)
+assume (= [_witness_.anyinit_auto_proc_dlatch_cc_432_proc_dlatch_336] #b10000000000000000000000000000000)
+assume (= [_witness_.anyinit_auto_proc_dlatch_cc_432_proc_dlatch_359] #b10000000000000000000000000000000)
+assume (= [_witness_.anyinit_auto_proc_dlatch_cc_432_proc_dlatch_410] #b10000000000000000000000000000000)
+
+state 0

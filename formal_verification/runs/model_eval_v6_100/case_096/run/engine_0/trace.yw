@@ -1,0 +1,37 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [],
+  "signals": [
+    {"path": ["\\cfg_1"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_14"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_3"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_9"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_enable_18"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\data_17"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\err_11"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\hw_15"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\hw_8"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\reg_1"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\reg_13"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\reg_8"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rst_111"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rst_20"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rx_13"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\sig_12"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\sig_28"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\sig_9"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_19"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_9"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\auth_5"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\cfg_10"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\chip_4"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\fsm_10"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\rst_15"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\rx_114"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\tx_13"], "width": 32, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "10000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000"}
+  ]
+}

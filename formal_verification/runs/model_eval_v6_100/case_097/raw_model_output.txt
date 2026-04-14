@@ -1,0 +1,41 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+case ( control_input_status_5 )
+   7'b01x00xx : begin
+
+      if (  auth_8  && rst_186 != err_18  || data_189 ) begin
+          data_11 = rx_20;
+          err_8 = core_3;
+          if ( clk_15 ) begin
+               rx_19 = sig_10;
+               cfg_11 = reg_5;
+          end
+      end
+
+   end
+   default : begin
+      if (  tx_1 != sig_2  || reg_6  && clk_14 ) begin
+          rst_9 = err_4;
+          chip_9 = hw_19;
+          if ( data_16  || err_9  || chip_5 ) begin
+               fsm_19 = chip_18;
+               chip_6 = cfg_18;
+          end
+      end
+
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property ValidRxeotid; ( control_input_status_5 ) == ( 7'b01x00xx ) &&  (  auth_8  && rst_186 != err_18  || data_189 ) |=> data_11 == rx_20 && err_8 == core_3 ;endproperty 
+ property ValidRxeotid; ( control_input_status_5 ) == ( 7'b01x00xx ) &&  (  auth_8  && rst_186 != err_18  || data_189 ) &&  (  clk_15 ) |=> rx_19 == sig_10 && cfg_11 == reg_5 ;endproperty 
+  property SafeTxeotid;  ( control_input_status_5 )!= 7'b01x00xx &&  (  tx_1 != sig_2  || reg_6  && clk_14 ) |=> rst_9 == err_4 && chip_9 == hw_19 ;endproperty 
+  property ValidTxeotid;  ( control_input_status_5 )!= 7'b01x00xx &&  (  tx_1 != sig_2  || reg_6  && clk_14 ) &&  (  data_16  || err_9  || chip_5 ) |=> fsm_19 == chip_18 && chip_6 == cfg_18 ;endproperty 
+ ���������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

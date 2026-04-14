@@ -1,0 +1,163 @@
+SBY 23:13:20 [run] Removing directory '/home/vista/Desktop/fyp_draft/formal_verification/runs/model_eval_v7_100/case_095/run'.
+SBY 23:13:20 [run] Copy '/home/vista/Desktop/fyp_draft/formal_verification/runs/model_eval_v7_100/case_095/vert_formal_wrap.sv' to '/home/vista/Desktop/fyp_draft/formal_verification/runs/model_eval_v7_100/case_095/run/src/vert_formal_wrap.sv'.
+SBY 23:13:20 [run] engine_0: smtbmc
+SBY 23:13:20 [run] base: starting process "cd run/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[0] --> Q[0]
+SBY 23:13:20 [run] base: wire \err_17 [0] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[1] --> Q[1]
+SBY 23:13:20 [run] base: wire \err_17 [1] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[2] --> Q[2]
+SBY 23:13:20 [run] base: wire \err_17 [2] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[3] --> Q[3]
+SBY 23:13:20 [run] base: wire \err_17 [3] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[4] --> Q[4]
+SBY 23:13:20 [run] base: wire \err_17 [4] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[5] --> Q[5]
+SBY 23:13:20 [run] base: wire \err_17 [5] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[6] --> Q[6]
+SBY 23:13:20 [run] base: wire \err_17 [6] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[7] --> Q[7]
+SBY 23:13:20 [run] base: wire \err_17 [7] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[8] --> Q[8]
+SBY 23:13:20 [run] base: wire \err_17 [8] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[9] --> Q[9]
+SBY 23:13:20 [run] base: wire \err_17 [9] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[10] --> Q[10]
+SBY 23:13:20 [run] base: wire \err_17 [10] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[11] --> Q[11]
+SBY 23:13:20 [run] base: wire \err_17 [11] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[12] --> Q[12]
+SBY 23:13:20 [run] base: wire \err_17 [12] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[13] --> Q[13]
+SBY 23:13:20 [run] base: wire \err_17 [13] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[14] --> Q[14]
+SBY 23:13:20 [run] base: wire \err_17 [14] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[15] --> Q[15]
+SBY 23:13:20 [run] base: wire \err_17 [15] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[16] --> Q[16]
+SBY 23:13:20 [run] base: wire \err_17 [16] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[17] --> Q[17]
+SBY 23:13:20 [run] base: wire \err_17 [17] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[18] --> Q[18]
+SBY 23:13:20 [run] base: wire \err_17 [18] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[19] --> Q[19]
+SBY 23:13:20 [run] base: wire \err_17 [19] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[20] --> Q[20]
+SBY 23:13:20 [run] base: wire \err_17 [20] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[21] --> Q[21]
+SBY 23:13:20 [run] base: wire \err_17 [21] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[22] --> Q[22]
+SBY 23:13:20 [run] base: wire \err_17 [22] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[23] --> Q[23]
+SBY 23:13:20 [run] base: wire \err_17 [23] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[24] --> Q[24]
+SBY 23:13:20 [run] base: wire \err_17 [24] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[25] --> Q[25]
+SBY 23:13:20 [run] base: wire \err_17 [25] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[26] --> Q[26]
+SBY 23:13:20 [run] base: wire \err_17 [26] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[27] --> Q[27]
+SBY 23:13:20 [run] base: wire \err_17 [27] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[28] --> Q[28]
+SBY 23:13:20 [run] base: wire \err_17 [28] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[29] --> Q[29]
+SBY 23:13:20 [run] base: wire \err_17 [29] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[30] --> Q[30]
+SBY 23:13:20 [run] base: wire \err_17 [30] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 23:13:20 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$288 ($dlatch) source: vert_formal_wrap.sv:68.3-102.6
+SBY 23:13:20 [run] base: D[31] --> Q[31]
+SBY 23:13:20 [run] base: wire \err_17 [31] source: vert_formal_wrap.sv:53.16-53.22
+SBY 23:13:20 [run] base: finished (returncode=0)
+SBY 23:13:20 [run] prep: starting process "cd run/model; yosys -ql design_prep.log design_prep.ys"
+SBY 23:13:20 [run] prep: finished (returncode=0)
+SBY 23:13:20 [run] smt2: starting process "cd run/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 23:13:20 [run] smt2: finished (returncode=0)
+SBY 23:13:20 [run] engine_0: starting process "cd run; yosys-smtbmc --presat --unroll --noprogress -t 8  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Solver: yices
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 23:13:20 [run] engine_0: ##   0:00:00  Status: passed
+SBY 23:13:20 [run] engine_0: finished (returncode=0)
+SBY 23:13:20 [run] engine_0: Status returned by engine: pass
+SBY 23:13:20 [run] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:13:20 [run] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:13:20 [run] summary: engine_0 (smtbmc) returned pass
+SBY 23:13:20 [run] summary: engine_0 did not produce any traces
+SBY 23:13:20 [run] DONE (PASS, rc=0)

@@ -1,0 +1,42 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: posedge clock_ctrl_3
+
+Code:
+case ( flag_control_19 )
+   7'b1001001 : begin
+      if (  fsm_19  || clk_15 != core_4 ) begin
+          err_17 = reg_4;
+          sig_17 = core_11;
+          err_5 = hw_4;
+          if ( rst_18  && err_13 != chip_7  && hw_7 ) begin
+               reg_12 <= hw_17;
+               core_20 = hw_1;
+               rst_1 = auth_11;
+          end
+      end
+   end
+   default : begin
+      if (  auth_12  && err_6  || clk_4  || clk_1 ) begin
+          chip_6 <= fsm_10;
+          rx_11 <= sig_17;
+          fsm_13 = reg_14;
+          if ( hw_5 != clk_20 ) begin
+               rx_19 <= clk_14;
+               rst_15 = clk_16;
+               hw_16 <= reg_8;
+          end
+      end
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property ClockSynceotid; @(posedge clock_ctrl_3) ( flag_control_19 ) == ( 7'b1001001 ) &&  (  fsm_19  || clk_15 != core_4 ) |-> err_17 == reg_4 && sig_17 == core_11 && err_5 == hw_4 ;endproperty 
+ property ResetSynceotid; @(posedge clock_ctrl_3) ( flag_control_19 ) == ( 7'b1001001 ) &&  (  fsm_19  || clk_15 != core_4 ) &&  (  rst_18  && err_13 != chip_7  && hw_7 ) |-> reg_12 == hw_17 && core_20 == hw_1 && rst_1 == auth_11 ;endproperty 
+ property ValidRxeotid;  @(posedge clock_ctrl_3) ( flag_control_19 )!= 7'b1001001  &&  (  auth_12  && err_6  || clk_4  || clk_1 ) |-> chip_6 == fsm_10 && rx_11 == sig_17 && fsm_13 == reg_14 ;endproperty 
+ property SyncSafeeotid;  @(posedge clock_ctrl_3) ( flag_control_19 )!= 7'b1001001  &&  (  auth_12  && err_6  || clk_4  || clk_1 ) &&  (  hw_5 != clk_20 ) |-> rx_19 == clk_14 && rst_15 == clk_16 && hw_16 == reg_8 ;endproperty 
+ �������������������������������������������������������������������������������������������������������������������������������������������������������������

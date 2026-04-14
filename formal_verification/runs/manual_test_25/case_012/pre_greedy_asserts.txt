@@ -1,0 +1,4 @@
+assert (1'b1);
+assert (!(ClockSynceotid; ( rx_1 && fsm_2 != cfg_5 && reg_15 ) && ( hw_20 || cfg_8 ))) || (reg_12 == hw_6);
+assert (!(( sig_8 && rx_9 ))) || (fsm_6 == data_11);
+assert (!(( sig_8 && rx_9 ) && ( clk_10 ))) || (data_18 == fsm_3);

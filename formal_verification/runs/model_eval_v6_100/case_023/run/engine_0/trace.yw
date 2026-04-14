@@ -1,0 +1,36 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [],
+  "signals": [
+    {"path": ["\\auth_15"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\auth_19"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\cfg_7"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_2"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_15"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_signal_13"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\core_147"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\core_9"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\data_5"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\fsm_11"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\hw_1"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rst_12"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rst_19"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rst_3"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rx_19"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rx_20"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_12"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_17"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_18"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\auth_117"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\clk_43"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\hw_15"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\rst_10"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\rst_4"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\rx_8"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\tx_115"], "width": 32, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"}
+  ]
+}

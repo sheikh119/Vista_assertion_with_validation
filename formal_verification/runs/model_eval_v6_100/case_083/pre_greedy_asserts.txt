@@ -1,0 +1,4 @@
+assert ((!(( data_buffer_15 ) == ( 6'b0xx1xx ))) || (fsm_17 == data_6 && core_9 == auth_7 && clk_1 == rx_5));
+assert ((!(( data_buffer_15 ) == ( 5'b0x01x ))) || (hw_13 == err_4 && err_6 == core_13 && fsm_4 == sig_2));
+assert ((!(( data_buffer_15 ) == ( 4'bx1x1 ))) || (cfg_5 == clk_2 && core_2 == sig_5 && sig_11 == fsm_18));
+assert ((!(( data_buffer_15 )!= 6'b0xx1xx && ( data_buffer_15 )!= 5'b0x01x && ( data_buffer_15 )!= 4'bx1x1)) || (auth_10 == tx_1 && rst_18 == auth_11 && tx_19 == rst_18));

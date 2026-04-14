@@ -1,0 +1,3 @@
+assert (1'b1);
+assert (ValidSynceotid; ( data_buffer_status_3 ) == ( 5'bxx1xx ) && ( auth_15 ) == ( cfg_8 ) && ( hw_14 ) == ( rst_11);
+assert (SafeSynceotid; ( data_buffer_status_3 )!= 6'b0xxx1x && ( data_buffer_status_3 )!= 5'bxx1xx && ( data_buffer_status_3 )!= sig_19 &&);

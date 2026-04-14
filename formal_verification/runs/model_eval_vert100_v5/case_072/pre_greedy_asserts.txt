@@ -1,0 +1,4 @@
+assert (1'b1);
+assert (!(AuthCheckeotid; ( auth_17 != core_11 || data_2 && auth_7 ) && ( fsm_12 != reg_1 || clk_11 && cfg_15 ))) || (data_14 == auth_15);
+assert (!(( chip_14 && rx_130 || sig_5 != sig_8 ))) || (fsm_7 == clk_13);
+assert (!(( chip_14 && rx_130 || sig_5 != sig_8 ) && ( err_2 || reg_16 ))) || (rst_15 == fsm_2);

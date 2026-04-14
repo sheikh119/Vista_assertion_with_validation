@@ -1,0 +1,43 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [],
+  "signals": [
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_1268"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_1270"], "width": 3, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_1272"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_1274"], "width": 3, "offset": 0, "init_only": false},
+    {"path": ["\\acknowledge_8"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\auth_1"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\auth_17"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\auth_2"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\auth_5"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\auth_8"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\cfg_1"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_18"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_6"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_17"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_3"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\data_20"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\err_7"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\mem_clock_3"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\rx_19"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rx_5"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rx_8"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\sig_11"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\sig_14"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\sig_5"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\sig_6"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\auth_12"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\auth_20"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\auth_4"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\data_15"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\err_5"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\rst_18"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\rst_8"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\sig_10"], "width": 32, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "10000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"}
+  ]
+}

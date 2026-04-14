@@ -1,0 +1,50 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+if (  err_11  && core_12  || rx_17 != data_20 ) begin
+    core_118 = core_19;
+    if ( err_8  && fsm_14  && core_18 ) begin
+        core_19 = tx_4;
+    end
+    else if (  err_20  && err_20 ) begin
+        auth_9 = auth_5;
+    end
+    else begin
+        core_118 = tx_13;
+    end
+end
+else begin
+    rx_16 = sig_12;
+    if (  sig_3 != data_2  && rx_20  && rx_4 ) begin
+        clk_120 = reg_8;
+    end
+    else if (  auth_13  || clk_6  && data_15  && sig_12 ) begin
+        auth_5 = fsm_8;
+    end
+    else begin
+        fsm_4 = tx_10;
+    end
+end
+
+OUTPUT (Assertions):
+
+### Response:
+ property ErrorSynceotid; (  err_11  && core_12  || rx_17 != data_20 ) |=> core_118 == core_19; endproperty 
+ 
+  property SafeTxeotid; (  err_11  && core_12  || rx_17 != data_20 ) && (  err_8  && fsm_14  && core_18 ) |=> core_19 == tx_4; endproperty 
+ 
+  property AuthSynceotid; (  err_11  && core_12  || rx_17 != data_20 ) &&  (!(  err_8  && fsm_14  && core_18 ) && (  err_20  && err_20 ) )  |=> auth_9 == auth_5; endproperty 
+ 
+  property ValidTxeotid; (  err_11  && core_12  || rx_17 != data_20 ) && ( !(  err_8  && fsm_14  && core_18 )  &&!(  err_20  && err_20 )  ) |=> core_118 == tx_13; endproperty 
+ 
+  property ValidRxeotid;! (  err_11  && core_12  || rx_17 != data_20 )  |=> rx_16 == sig_12; endproperty 
+ 
+ property SafeSynceotid;! (  err_11  && core_12  || rx_17 != data_20 ) && (  sig_3 != data_2  && rx_20  && rx_4 ) |=> clk_120 == reg_8; endproperty 
+ 
+ property ValidTxeotid;! (  err_11  && core_12  || rx_17 != data_20 )  &&  (!(  sig_3 != data_2  && rx_20  && rx_4 ) && (  auth_13  || clk_6  && data_15  && sig_12 ) )  |=> auth_5 == fsm_8; endproperty 
+ 
+ property alidTxeotid;! (  err_11  && core_12  || rx_17 != data_20 ) && (!(  sig_3 != data_2  && rx_20  && rx_4 )  &&!(  auth_13  || clk_6 

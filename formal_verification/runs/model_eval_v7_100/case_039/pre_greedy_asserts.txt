@@ -1,0 +1,2 @@
+assert ((!(( interrupt_control_14 ) == ( 7'b0110x11 ))) || (clk_12 == rst_10));
+assert ((!(( interrupt_control_14 )!= 7'b0110x11 ) ))) || (rx_14 == core_1));

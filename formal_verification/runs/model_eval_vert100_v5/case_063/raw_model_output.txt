@@ -1,0 +1,61 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+if (  sig_8  || err_7  && chip_18 != rx_14 ) begin
+    reg_118 <= cfg_8;
+    if ( sig_2020 ) begin
+        tx_12 <= err_20;
+    end
+        if ( chip_3 != sig_8  || auth_4 != fsm_2 ) begin
+            clk_20 = data_19;
+        end
+end
+
+Synchronous: True
+
+Clock: posedge clk_osc_3
+
+Assertion:
+assert SyncErreotid;endproperty 
+ 
+ Assertion:
+if (  sig_8  || tx_13 ) begin 
+    tx_12 = clk_3;
+    if ( err_2  && clk_10 != tx_20  && auth_15 ) begin
+        rx_12 = clk_3;
+    end
+        if ( rst_10  || clk_5  && fsm_4  || rx_20 ) begin
+            rx_12 = clk_14;
+        end
+end
+
+Synchronous: True
+
+Clock: posedge clk_12
+
+Assertion:
+assert SyncCheckeotid;endproperty 
+ 
+ Assertion:
+if (  rx_20  && fsm_12  && reg_16 != sig_15 ) begin 
+    sig_18 = clk_3;
+    if ( rst_10  || clk_5  && fsm_17  || rx_20 ) begin
+        rx_12 = clk_14;
+    end
+        if ( rst_10  || clk_5  && fsm_

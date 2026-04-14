@@ -1,0 +1,5 @@
+assert ((!(: ( start_address_18 ) == ( 7'b0101000 ))) || (fsm_13 == reg_6));
+assert ((!(: ( start_address_18 ) == ( 7'b1110x0x ))) || (data_13 == rst_4));
+assert ((!(: ( start_address_18 ) == ( 7'bxxxxx11 ))) || (core_12 == cfg_7));
+assert ((!(: ( start_address_18 ) == ( 5'bx110x ))) || (cfg_20 == rst_7));
+assert ((!(( ( start_address_18 )!= 7'b0101000 ) && ( ( start_address_18 )!= 7'b1110x0x ) && ( ( start_address_18 )!= 7'bxxxxx11 ) && ( start_address_18 )!= 5'bx110x ) ))) || (core_9 == fsm_12));

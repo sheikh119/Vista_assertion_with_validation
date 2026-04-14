@@ -1,0 +1,3 @@
+assert (1'b1);
+assert (: if ( tx_2 != err_12 && hw_2 ) begin assert TxValideotid);
+assert (: if ( tx_2 != err_12 && hw_2 ) begin if ( cfg_17 ) begin if ( tx_8 ) begin assert reg_115 == reg_5);

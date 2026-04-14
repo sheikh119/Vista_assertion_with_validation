@@ -1,0 +1,3 @@
+assert (1'b1);
+assert (!(( cfg_4 != core_15 || rst_13 || rst_20 ))) || (rx_17 == rx_9);
+assert (!(( cfg_4 != core_15 || rst_13 || rst_20 ) && ( chip_11 || chip_7 && reg_8 || clk_10 ))) || (sig_4 == rx_19);

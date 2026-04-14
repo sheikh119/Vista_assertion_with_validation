@@ -1,0 +1,4 @@
+assert ((!(( input_buffer_6 ) == ( 5'h8 ))) || (hw_20 == hw_15));
+assert ((!(( input_buffer_6 ) == ( 7'h27 ))) || (data_16 == clk_15));
+assert ((!(( input_buffer_6 ) == ( 7'b001xxxx ))) || (sig_11 == chip_6));
+assert ((!(( ( input_buffer_6 )!= 5'h8 ) && ( ( input_buffer_6 )!= 7'h27 ) && ( input_buffer_6 )!= 7'b001xxxx ) ))) || (hw_17 == auth_8));

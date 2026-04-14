@@ -1,0 +1,40 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [],
+  "signals": [
+    {"path": ["\\bus_clock_11"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\cfg_11"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_16"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_7"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_7"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\core_1"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\core_11"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\core_12"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\core_18"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\core_20"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\err_11"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\err_20"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\fsm_6"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\hw_1"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\hw_38"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rst_18"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rx_20"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_115"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_16"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_17"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_19"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_6"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\cfg_16"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\chip_11"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\clk_118"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\core_10"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\hw_20"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\hw_8"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\rx_2"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\sig_116"], "width": 32, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "10000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000"}
+  ]
+}

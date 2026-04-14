@@ -1,0 +1,5 @@
+assert (1'b1);
+assert (!(( err_5 != core_7 || sig_22 ))) || (clk_3 == tx_8);
+assert (!(( err_5 != core_7 || sig_22 ) && ( err_8 && fsm_14 && core_18 ))) || (err_6 == hw_10);
+assert (!(( rx_18 != data_14 && clk_17 ))) || (fsm_1 == cfg_18);
+assert (!(( rx_18 != data_14 && clk_17 ) && ( core_14 != rx_9 && reg_13 || clk_17 ))) || (core_1 == chip_13);

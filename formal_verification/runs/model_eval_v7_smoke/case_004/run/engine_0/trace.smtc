@@ -1,0 +1,18 @@
+initial
+assume (= [$auto$async2sync.cc:107:execute$117] false)
+assume (= [$auto$async2sync.cc:116:execute$115] true)
+assume (= [$auto$async2sync.cc:116:execute$121] true)
+assume (= [$auto$async2sync.cc:116:execute$127] true)
+assume (= [cfg_116] #b00000000000000000000000000000000)
+assume (= [chip_18] #b10000000000000000000000000000000)
+assume (= [clk_4] #b00000000000000000000000000000000)
+assume (= [fsm_18] #b10000000000000000000000000000000)
+assume (= [rst_52] #b00000000000000000000000000000000)
+assume (= [rx_18] #b10000000000000000000000000000000)
+assume (= [sig_13] #b00000000000000000000000000000000)
+assume (= [sig_17] #b00000000000000000000000000000000)
+assume (= [sig_3] #b00000000000000000000000000000000)
+
+state 0
+
+state 1

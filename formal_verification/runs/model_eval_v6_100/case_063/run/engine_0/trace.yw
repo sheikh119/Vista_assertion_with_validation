@@ -1,0 +1,25 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [],
+  "signals": [
+    {"path": ["\\auth_4"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\cfg_8"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_18"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_3"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_osc_3"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\data_19"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\err_20"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\err_7"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\fsm_2"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rx_14"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\sig_2020"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\sig_8"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_20"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\reg_118"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\tx_12"], "width": 32, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "00000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000"}
+  ]
+}

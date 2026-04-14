@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (: assert CtrlSeqeotid; ( control_input_status_15 ) == ( 6'b01000x ) && ( cfg_11 ) == ( clk_17);

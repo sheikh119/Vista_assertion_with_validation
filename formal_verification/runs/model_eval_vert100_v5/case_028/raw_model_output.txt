@@ -1,0 +1,74 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+if (  rst_5  || auth_16 ) begin
+   rx_16 = rst_52;
+    if ( tx_13 != fsm_13  || core_4 ) begin
+      rst_14 = rst_8;
+   end
+   else if (  tx_119 ) begin
+      tx_14 = reg_36;
+   end
+   else begin
+      reg_2 <= fsm_5;
+   end
+end
+else begin
+   tx_27 = auth_204;
+   if (  tx_2  || chip_20  && clk_18  || auth_8 ) begin
+      reg_58 <= reg_11;
+   end
+   else if (  auth_13  || clk_6  && data_15  && sig_12 ) begin
+      hw_13 = tx_5;
+   end
+   else begin
+      hw_8 = auth_13;
+   end
+end
+
+Synchronous: True
+
+Clock: posedge mem_clock_20
+
+Assertion:
+if (  rst_5  || auth_16 ) begin 
+   rx_16 = rst_52;
+   if (  tx_13 != fsm_13  || core_4 ) begin
+      rst_14 = rst_8;
+   end
+   else if (  tx_119 ) begin
+      tx_14 = reg_36;
+   end
+   else begin
+      reg_2 <= fsm_5;
+   end
+end
+else begin 
+   tx_27 = auth_204;
+   if (  tx_2  || chip_20  && clk_18  || auth_8 ) begin
+      reg_58 = reg_11;
+   end
+   else if (  auth_13  || clk_6  && data_15  && sig_12 ) begin
+      hw_13 = tx_5;
+   end
+   else begin
+      hw_8 = auth_13;
+   end
+end
+

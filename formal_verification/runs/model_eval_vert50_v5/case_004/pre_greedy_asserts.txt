@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (: if ( chip_16 && err_10 || fsm_11 ) begin sig_13 = chip_10; clk_4 = sig_12; sig_3 <= sig_14; if ( err_20 && err_1 ) begin cfg_116 = auth_17; rst_52 = fsm_160; sig_17 = tx_14; end if ( auth_15 ) begin fsm_18 <= core_12; chip_18 <= tx_2; rx_18 = rst_6; end end OUTPUT (Assertions): Assertion: assert ClockSynceotid);

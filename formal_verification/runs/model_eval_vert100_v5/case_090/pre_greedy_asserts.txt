@@ -1,0 +1,4 @@
+assert (1'b1);
+assert (!(ErrorSynceotid; ( fsm_2 || rst_12 && sig_2 ) && ( err_3 ))) || (fsm_15 == err_5);
+assert (!(( chip_5 != core_14 && chip_18 ))) || (fsm_11 == err_1);
+assert (!(( chip_5 != core_14 && chip_18 ) && ( chip_9 != auth_3 ))) || (tx_13 == reg_17);

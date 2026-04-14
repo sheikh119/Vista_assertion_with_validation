@@ -1,0 +1,65 @@
+{
+  "stats": {
+    "total": 5,
+    "source": "data/VERT.jsonl",
+    "prompt_template": "/home/vista/Desktop/fyp_draft/formal_verification/templates/assertion_prompt_template.txt",
+    "run_subdir": "model_eval_smoke_v3",
+    "adapter": "/home/vista/Desktop/fyp_draft/outputs/finetuned-assertions/checkpoint-891",
+    "init_rst_zero": true,
+    "assume_no_reset": true,
+    "max_new_tokens": 220,
+    "do_sample": false,
+    "attempted_assert_clauses": 20,
+    "converted_assert_clauses": 5,
+    "syntax_ok": 3,
+    "sby_pass": 3,
+    "sby_fail": 0,
+    "sby_timeout": 0,
+    "sby_error": 2,
+    "gold_jaccard_mean": 0.03659846213257008,
+    "gold_samples": 5
+  },
+  "records": [
+    {
+      "idx": 1,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 1,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.043478260869565216
+    },
+    {
+      "idx": 2,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 1,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.03125
+    },
+    {
+      "idx": 3,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 1,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.043478260869565216
+    },
+    {
+      "idx": 4,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 1,
+      "syntax_ok": false,
+      "status": "error",
+      "gold_jaccard": 0.034482758620689655
+    },
+    {
+      "idx": 5,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 1,
+      "syntax_ok": false,
+      "status": "error",
+      "gold_jaccard": 0.030303030303030304
+    }
+  ],
+  "generated_at": "2026-04-14 20:53:44"
+}

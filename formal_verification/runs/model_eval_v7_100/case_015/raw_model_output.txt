@@ -1,0 +1,29 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+if (  cfg_4 != core_15  || rst_13  || rst_20 ) begin
+     tx_7 = data_18;
+     core_16 = fsm_3;
+    if ( clk_7 != auth_12  || cfg_10 ) begin
+        tx_15 = reg_16;
+        cfg_17 = rst_8;
+    end
+        if ( auth_19 != fsm_1  || core_10  || chip_19 ) begin
+            rst_52 = tx_2;
+            cfg_12 = err_18;
+        end
+end
+
+OUTPUT (Assertions):
+
+### Response:
+property SyncOkeotid; (  cfg_4 != core_15  || rst_13  || rst_20 ) |=> tx_7 == data_18 && core_16 == fsm_3 ;endproperty 
+ 
+ property SyncReseteotid; (  cfg_4 != core_15  || rst_13  || rst_20 ) &&  (  clk_7 != auth_12  || cfg_10 ) |=> tx_15 == reg_16 && cfg_17 == rst_8 ;endproperty 
+ 
+ property ResetSynceotid; (  cfg_4 != core_15  || rst_13  || rst_20 ) &&  (  clk_7 != auth_12  || cfg_10 ) &&  (  auth_19 != fsm_1  || core_10  || chip_19 ) |=> rst_52 == tx_2 && cfg_12 == err_18 ;endproperty 
+ �����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

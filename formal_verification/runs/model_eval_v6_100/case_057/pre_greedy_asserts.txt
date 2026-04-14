@@ -1,0 +1,3 @@
+assert ((!(( rx_1 && fsm_2 != cfg_5 && reg_15 ))) || (fsm_4 == cfg_19));
+assert ((!(( rx_1 && fsm_2 != cfg_5 && reg_15 ) && ( clk_7 != auth_12 || cfg_10 ))) || (cfg_15 == cfg_4));
+assert ((!(( rx_1 && fsm_2 != cfg_5 && reg_15 ) && ( clk_7 != auth_12 || cfg_10 ) && ( clk_7 != auth_12 || cfg_13 ))) || (fsm_15 == clk_14));

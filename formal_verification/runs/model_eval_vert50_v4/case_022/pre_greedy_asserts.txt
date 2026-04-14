@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (: ( auth_6 || data_20 && rst_20 || auth_18 ) && ( fsm_12 != reg_1 || clk_11 != sig_11 ) ) | ) auth_6 )!= ( data_20 ) && ( rst_20 )!= ( auth_18 ) ));

@@ -1,0 +1,50 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+if (  cfg_4 != core_15  || rst_13  || rst_20 ) begin
+    rx_17 = rx_9;
+    if ( chip_11  || chip_7  && reg_8  || clk_10 ) begin
+        sig_4 = rx_19;
+    end
+    else if (  auth_20  || core_20 != fsm_13  && reg_11 ) begin
+        chip_20 = cfg_183;
+    end
+    else begin
+        clk_118 = rx_2;
+    end
+end
+else begin
+    data_16 = chip_12;
+    if (  rx_6  || cfg_2 ) begin
+        cfg_6 = sig_14;
+    end
+    else if (  fsm_118 ) begin
+        sig_18 = cfg_6;
+    end
+    else begin
+        chip_96 = data_14;
+    end
+end
+
+OUTPUT (Assertions):
+
+### Response:
+ property ResetSynceotid; (  cfg_4 != core_15  || rst_13  || rst_20 ) |=> rx_17 == rx_9; endproperty 
+ 
+  property SafeRxeotid; (  cfg_4 != core_15  || rst_13  || rst_20 ) && (  chip_11  || chip_7  && reg_8  || clk_10 ) |=> sig_4 == rx_19; endproperty 
+ 
+  property SafeBooteotid; (  cfg_4 != core_15  || rst_13  || rst_20 ) &&  (!(  chip_11  || chip_7  && reg_8  || clk_10 ) && (  auth_20  || core_20 != fsm_13  && reg_11 ) )  |=> chip_20 == cfg_183; endproperty 
+ 
+  property alidRxeotid; (  cfg_4 != core_15  || rst_13  || rst_20 ) && ( !(  chip_11  || chip_7  && reg_8  || clk_10 )  &&!(  auth_20  || core_20 != fsm_13  && reg_11 )  ) |=> clk_118 == rx_2; endproperty 
+ 
+  property ResetSynceotid;! (  cfg_4 != core_15  || rst_13  || rst_20 )  |=> data_16 == chip_12; endproperty 
+ 
+ property ResetSynceotid;! (  cfg_4 != core_15  || rst_13  || rst_20 ) && (  rx_6  || cfg_2 ) |=> cfg_6 == sig_14; endproperty 
+ 
+ property ResetSynceotid;! (  cfg_4 != core_15  || rst_13  || rst_20 )  &&  (!(  rx_6  || cfg_2 ) && (  fsm_118 ) )  |=> sig_18 == cfg_6; endproperty 
+ 
+ property SafeRxeotid;! (  cfg_4 != core_15  || rst_13  || rst_20 ) && (!(  rx_6  || cfg_2 )  &&!(  fsm_118 )  ) |=> chip_96 == data_14; endproperty 

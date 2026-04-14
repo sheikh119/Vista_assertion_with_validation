@@ -1,0 +1,34 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: posedge clk_gen_4
+
+Code:
+case ( control_input_status_4 )
+   7'bxxx1xx1 : begin
+      if (  auth_17 != core_11  || data_2  && auth_7 ) begin
+          rx_14 = chip_16;
+          if ( fsm_12 != reg_1  || clk_11  && cfg_15 ) begin
+               data_14 <= auth_15;
+          end
+      end
+   end
+   default : begin
+      if (  chip_14  && rx_130  || sig_5 != sig_8 ) begin
+          fsm_7 <= clk_13;
+          if ( err_2  || reg_16 ) begin
+               rst_15 <= fsm_2;
+          end
+      end
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property AuthCheckeotid; @(posedge clk_gen_4) ( control_input_status_4 ) == ( 7'bxxx1xx1 ) &&  (  auth_17 != core_11  || data_2  && auth_7 ) |-> rx_14 == chip_16 ;endproperty 
+ property AuthCheckeotid; @(posedge clk_gen_4) ( control_input_status_4 ) == ( 7'bxxx1xx1 ) &&  (  auth_17 != core_11  || data_2  && auth_7 ) &&  (  fsm_12 != reg_1  || clk_11  && cfg_15 ) |-> data_14 == auth_15 ;endproperty 
+ property SyncCheckeotid;  @(posedge clk_gen_4) ( control_input_status_4 )!= 7'bxxx1xx1  &&  (  chip_14  && rx_130  || sig_5 != sig_8 ) |-> fsm_7 == clk_13 ;endproperty 
+ property ResetSynceotid;  @(posedge clk_gen_4) ( control_input_status_4 )!= 7'bxxx1xx1  &&  (  chip_14  && rx_130  || sig_5 != sig_8 ) &&  (  err_2  || reg_16 ) |-> rst_15 == fsm_2 ;endproperty 
+ �����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

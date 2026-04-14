@@ -1,0 +1,20 @@
+initial
+assume (= [$auto$async2sync.cc:107:execute$223] false)
+assume (= [$auto$async2sync.cc:116:execute$191] true)
+assume (= [$auto$async2sync.cc:116:execute$197] true)
+assume (= [$auto$async2sync.cc:116:execute$203] true)
+assume (= [$auto$async2sync.cc:116:execute$209] true)
+assume (= [$auto$async2sync.cc:116:execute$215] true)
+assume (= [$auto$async2sync.cc:116:execute$221] true)
+assume (= [$auto$async2sync.cc:116:execute$227] true)
+assume (= [cfg_16] #b10000000000000000000000000000000)
+assume (= [clk_10] #b10000000000000000000000000000000)
+assume (= [clk_62] #b00000000000000000000000000000000)
+assume (= [data_4] #b10000000000000000000000000000000)
+assume (= [err_16] #b00000000000000000000000000000000)
+assume (= [rst_3] #b10000000000000000000000000000000)
+assume (= [tx_115] #b10000000000000000000000000000000)
+
+state 0
+
+state 1

@@ -1,0 +1,1952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-04-14T22:47:25" hostname="pop-os" package="run" id="0" name="default" tests="8" errors="1" failures="0" time="0" skipped="8">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="ERROR"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+<error type="ERROR"/>
+</testcase>
+<testcase classname="default" name="Property ASSERT in vert_formal_wrap at vert_formal_wrap.sv:62.5-62.69" time="0" type="ASSERT" location="vert_formal_wrap.sv:62.5-62.69" id="_witness_.check_assert_vert_formal_wrap_sv_62_13">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in vert_formal_wrap at vert_formal_wrap.sv:63.5-63.91" time="0" type="ASSERT" location="vert_formal_wrap.sv:63.5-63.91" id="_witness_.check_assert_vert_formal_wrap_sv_63_19">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in vert_formal_wrap at vert_formal_wrap.sv:64.5-64.109" time="0" type="ASSERT" location="vert_formal_wrap.sv:64.5-64.109" id="_witness_.check_assert_vert_formal_wrap_sv_64_27">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in vert_formal_wrap at vert_formal_wrap.sv:65.5-65.106" time="0" type="ASSERT" location="vert_formal_wrap.sv:65.5-65.106" id="_witness_.check_assert_vert_formal_wrap_sv_65_37">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in vert_formal_wrap at vert_formal_wrap.sv:66.5-66.72" time="0" type="ASSERT" location="vert_formal_wrap.sv:66.5-66.72" id="_witness_.check_assert_vert_formal_wrap_sv_66_48">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in vert_formal_wrap at vert_formal_wrap.sv:67.5-67.104" time="0" type="ASSERT" location="vert_formal_wrap.sv:67.5-67.104" id="_witness_.check_assert_vert_formal_wrap_sv_67_55">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in vert_formal_wrap at vert_formal_wrap.sv:68.5-68.141" time="0" type="ASSERT" location="vert_formal_wrap.sv:68.5-68.141" id="_witness_.check_assert_vert_formal_wrap_sv_68_65">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in vert_formal_wrap at vert_formal_wrap.sv:69.5-69.143" time="0" type="ASSERT" location="vert_formal_wrap.sv:69.5-69.143" id="_witness_.check_assert_vert_formal_wrap_sv_69_79">
+<skipped />
+</testcase>
+<system-out>SBY 22:47:25 [run] Removing directory '/home/vista/Desktop/fyp_draft/formal_verification/runs/model_eval_v6_100/case_093/run'.
+SBY 22:47:25 [run] Copy '/home/vista/Desktop/fyp_draft/formal_verification/runs/model_eval_v6_100/case_093/vert_formal_wrap.sv' to '/home/vista/Desktop/fyp_draft/formal_verification/runs/model_eval_v6_100/case_093/run/src/vert_formal_wrap.sv'.
+SBY 22:47:25 [run] engine_0: smtbmc
+SBY 22:47:25 [run] base: starting process &quot;cd run/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\fsm_2 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_17 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_118 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\hw_13 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rst_1 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\data_2 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_7 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\reg_16 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_18 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_1 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_115 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\cfg_14 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_16 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\clk_20 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\tx_117 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\core_13 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\rx_17 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\chip_18 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [31] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [30] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [29] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [28] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [27] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [26] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [25] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [24] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [23] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [22] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [21] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [20] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [19] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [18] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [17] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [16] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [15] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [14] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [13] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [12] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [11] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [10] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [9] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [8] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [7] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [6] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [5] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [4] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [3] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [2] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [1] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: Wire vert_formal_wrap.\err_15 [0] is used but has no driver.
+SBY 22:47:25 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$225 ($dlatch) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: EN[0] --&gt; Q[0]
+SBY 22:47:25 [run] base: wire \rx_1 [0] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] base: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] base: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: cell $auto$proc_dlatch.cc:432:proc_dlatch$225 ($dlatch) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] base: EN[0] --&gt; Q[0]
+SBY 22:47:25 [run] base: wire \rx_1 [0] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] base: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] base: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] base: finished (returncode=0)
+SBY 22:47:25 [run] prep: starting process &quot;cd run/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_115 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_1 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_16 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_7 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rst_1 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\hw_13 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_17 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\fsm_2 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_18 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\data_2 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\cfg_14 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\clk_20 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\rx_17 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\err_15 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\reg_118 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_16 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\tx_117 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\chip_18 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [31] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [30] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [29] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [28] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [27] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [26] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [25] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [24] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [23] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [22] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [21] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [20] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [19] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [18] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [17] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [16] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [15] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [14] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [13] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [12] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [11] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [10] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [9] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [8] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [7] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [6] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [5] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [4] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [3] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [2] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [1] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: Wire vert_formal_wrap.\core_13 [0] is used but has no driver.
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[1]
+SBY 22:47:25 [run] prep: wire \rx_1 [1] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[2]
+SBY 22:47:25 [run] prep: wire \rx_1 [2] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[2] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[3]
+SBY 22:47:25 [run] prep: wire \rx_1 [3] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[3] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[4]
+SBY 22:47:25 [run] prep: wire \rx_1 [4] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[4] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[5]
+SBY 22:47:25 [run] prep: wire \rx_1 [5] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[5] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[6]
+SBY 22:47:25 [run] prep: wire \rx_1 [6] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[6] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[7]
+SBY 22:47:25 [run] prep: wire \rx_1 [7] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[7] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[8]
+SBY 22:47:25 [run] prep: wire \rx_1 [8] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[8] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[9]
+SBY 22:47:25 [run] prep: wire \rx_1 [9] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[9] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[10]
+SBY 22:47:25 [run] prep: wire \rx_1 [10] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[10] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[11]
+SBY 22:47:25 [run] prep: wire \rx_1 [11] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[11] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[12]
+SBY 22:47:25 [run] prep: wire \rx_1 [12] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[12] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[13]
+SBY 22:47:25 [run] prep: wire \rx_1 [13] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[13] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[14]
+SBY 22:47:25 [run] prep: wire \rx_1 [14] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[14] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[15]
+SBY 22:47:25 [run] prep: wire \rx_1 [15] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[15] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[16]
+SBY 22:47:25 [run] prep: wire \rx_1 [16] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[16] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[17]
+SBY 22:47:25 [run] prep: wire \rx_1 [17] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[17] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[18]
+SBY 22:47:25 [run] prep: wire \rx_1 [18] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[18] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[19]
+SBY 22:47:25 [run] prep: wire \rx_1 [19] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[19] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[20]
+SBY 22:47:25 [run] prep: wire \rx_1 [20] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[20] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[21]
+SBY 22:47:25 [run] prep: wire \rx_1 [21] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[21] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[22]
+SBY 22:47:25 [run] prep: wire \rx_1 [22] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[22] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[23]
+SBY 22:47:25 [run] prep: wire \rx_1 [23] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[23] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[24]
+SBY 22:47:25 [run] prep: wire \rx_1 [24] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[24] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[25]
+SBY 22:47:25 [run] prep: wire \rx_1 [25] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[25] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[26]
+SBY 22:47:25 [run] prep: wire \rx_1 [26] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[26] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[27]
+SBY 22:47:25 [run] prep: wire \rx_1 [27] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[27] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[28]
+SBY 22:47:25 [run] prep: wire \rx_1 [28] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[28] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[29]
+SBY 22:47:25 [run] prep: wire \rx_1 [29] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[29] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[30]
+SBY 22:47:25 [run] prep: wire \rx_1 [30] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[30] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[31]
+SBY 22:47:25 [run] prep: wire \rx_1 [31] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[31] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: Warning: found logic loop in module vert_formal_wrap:
+SBY 22:47:25 [run] prep: cell $reduce_bool$vert_formal_wrap.sv:39$5 ($reduce_bool) source: vert_formal_wrap.sv:39.22-39.22
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$239 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$245 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$251 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$257 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[1] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$261 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:262:make_hold$267 ($and) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: B[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$proc_dlatch.cc:258:make_hold$269 ($reduce_or) source: vert_formal_wrap.sv:33.3-58.6
+SBY 22:47:25 [run] prep: A[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: cell $auto$async2sync.cc:299:execute$465 ($mux)
+SBY 22:47:25 [run] prep: S[0] --&gt; Y[0]
+SBY 22:47:25 [run] prep: wire \rx_1 [0] source: vert_formal_wrap.sv:15.16-15.20
+SBY 22:47:25 [run] prep: finished (returncode=0)
+SBY 22:47:25 [run] smt2: starting process &quot;cd run/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 22:47:25 [run] smt2: ERROR: Found logic loop in module vert_formal_wrap! See cell $reduce_bool$vert_formal_wrap.sv:39$5.
+SBY 22:47:25 [run] smt2: finished (returncode=1)
+SBY 22:47:25 [run] smt2: task failed. ERROR.
+SBY 22:47:25 [run] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 22:47:25 [run] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 22:47:25 [run] summary: engine_0 (smtbmc) did not return a status
+SBY 22:47:25 [run] summary: engine_0 did not produce any traces
+SBY 22:47:25 [run] DONE (ERROR, rc=16)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

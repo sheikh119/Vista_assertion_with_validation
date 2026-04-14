@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (!(: ResetSynceotid; (!rst_ni ) && ( rst_80 || clk_3 ))) || (core_75 == reg_9 && sig_63 == rx_13);

@@ -1,0 +1,38 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+case ( input_ready_3 )
+   5'b0xxx0 : begin
+     chip_5 = cfg_9;
+   end
+   6'h9 : begin
+     err_16 = reg_3;
+   end
+   7'bx1xxxxx : begin
+     sig_7 = auth_12;
+   end
+   6'b110010 : begin
+     tx_3 = fsm_15;
+   end
+   default : begin
+     tx_6 = core_6;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property ReadySynceotid: ( input_ready_3 ) == ( 5'b0xxx0 ) |=> chip_5 == cfg_9 ;endproperty 
+ 
+property ReadyErreotid: ( input_ready_3 ) == ( 6'h9 ) |=> err_16 == reg_3 ;endproperty 
+ 
+property AuthReqeotid: ( input_ready_3 ) == ( 7'bx1xxxxx ) |=> sig_7 == auth_12 ;endproperty 
+ 
+property ReadyTxeotid: ( input_ready_3 ) == ( 6'b110010 ) |=> tx_3 == fsm_15 ;endproperty 
+ 
+property alidInputeotid; ( ( input_ready_3 )!= 5'b0xxx0 ) && ( ( input_ready_3 )!= 6'h9 ) && ( ( input_ready_3 )!= 7'bx1xxxxx ) && ( input_ready_3 )!= 6'b110010 ) ) |=> tx_6 == core_6 ; endproperty 
+ ���������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

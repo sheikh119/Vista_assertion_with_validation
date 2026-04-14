@@ -1,0 +1,37 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: negedge fast_clk_8
+
+Code:
+case ( status_register_status_10 )
+   6'bxx0x0x : begin
+     auth_15 = auth_4;
+     rx_20 = tx_9;
+   end
+   7'b00x0001 : begin
+     auth_17 = core_20;
+     hw_10 = tx_18;
+   end
+   7'b1x1xxxx : begin
+     core_4 = data_1;
+     tx_3 = rst_9;
+   end
+   default : begin
+     hw_4 = rx_5;
+     cfg_11 <= sig_17;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property AuthSynceotid; @(negedge fast_clk_8) ( status_register_status_10 ) == ( 6'bxx0x0x ) |-> auth_15 == auth_4 && rx_20 == tx_9 ; endproperty 
+ 
+ property AuthSynceotid; @(negedge fast_clk_8) ( status_register_status_10 ) == ( 7'b00x0001 ) |-> auth_17 == core_20 && hw_10 == tx_18 ; endproperty 
+ 
+ property SyncReseteotid; @(negedge fast_clk_8) ( status_register_status_10 ) == ( 7'b1x1xxxx ) |-> core_4 == data_1 && tx_3 == rst_9 ; endproperty 
+ 
+ property SyncCheckeotid; ( status_register_status_10 )!= 6'bxx0x0x && ( status_register_status_10 )!= 7'b00x0001 && @(negedge fast_clk_8) ( status_register_status_10 )!= 7'b1x1xxxx  |-> hw_4 == rx_5 && cfg_11 == sig_17; endproperty 
+ ��������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

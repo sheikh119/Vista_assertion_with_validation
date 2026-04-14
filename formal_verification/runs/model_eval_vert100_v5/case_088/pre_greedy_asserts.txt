@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (!(: ( status_output_buffer_12 )!= 2'h2 && ( cfg_6 ) == ( data_9 ) ) ))) || (( cfg_6 ) = ( data_9);

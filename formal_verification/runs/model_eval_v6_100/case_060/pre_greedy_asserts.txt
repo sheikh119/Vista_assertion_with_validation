@@ -1,0 +1,2 @@
+assert ((!(( status_flag_8 ) == ( 5'b1x1x1 ))) || (cfg_1 == rx_9 && data_2 == auth_4));
+assert ((!(( status_flag_8 )!= 5'b1x1x1)) || (sig_3 == fsm_3 && core_4 == clk_10));

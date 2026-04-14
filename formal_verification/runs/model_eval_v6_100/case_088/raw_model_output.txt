@@ -1,0 +1,23 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+case ( status_output_buffer_12 )
+   2'h2 : begin
+     fsm_7 = err_20;
+   end
+   default : begin
+     cfg_6 = data_9;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property ErrorSynceotid: ( status_output_buffer_12 ) == ( 2'h2 ) |=> fsm_7 == err_20 ;endproperty 
+ 
+property ValidDataeotid; ( status_output_buffer_12 )!= 2'h2 ) ) |=> cfg_6 == data_9 ; endproperty 
+ �����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

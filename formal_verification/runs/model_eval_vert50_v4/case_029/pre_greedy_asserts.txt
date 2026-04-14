@@ -1,0 +1,4 @@
+assert (1'b1);
+assert (SyncCheckeotid; ( output_buffer_2 ) == ( 6'b010110 ) && ( reg_19 ) == ( chip_20);
+assert (output_buffer_2 ) == ( 4'b010x ) && ( core_17 ) == ( clk_8);
+assert (output_buffer_2 ) == ( 6'b0x1011 ) && ( chip_6 ) == ( sig_16);

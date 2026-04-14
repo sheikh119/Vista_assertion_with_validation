@@ -1,0 +1,5 @@
+assert ((!(( control_flag_register_3 ) == ( 7'h6e ))) || (fsm_19 == auth_13));
+assert ((!(( control_flag_register_3 ) == ( 5'b1010x ))) || (cfg_19 == rst_3));
+assert ((!(( control_flag_register_3 ) == ( 7'b0xxx010 ))) || (rx_16 == cfg_12));
+assert ((!(( control_flag_register_3 ) == ( 7'b111111x ))) || (auth_5 == tx_18));
+assert ((!(( ( control_flag_register_3 )!= 7'h6e ) && ( ( control_flag_register_3 )!= 5'b1010x ) && ( ( control_flag_register_3 )!= 7'b0xxx010 ) && ( control_flag_register_3 )!= 7'b111111x ) ))) || (rst_2 == auth_14));

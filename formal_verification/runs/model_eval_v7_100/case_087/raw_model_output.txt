@@ -1,0 +1,51 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: posedge clock_source_19
+
+Code:
+if (  data_7  && rx_5 ) begin
+   sig_149 = hw_17;
+    if ( err_8  && tx_4  || cfg_20 ) begin
+      tx_115 = data_14;
+   end
+   else if (  auth_7 ) begin
+      rx_8 = tx_14;
+   end
+   else begin
+      fsm_116 = tx_12;
+   end
+end
+else begin
+   data_4 = cfg_183;
+   if (  rst_17  || tx_17  && chip_2 ) begin
+      rst_3 = tx_33;
+   end
+   else if (  cfg_20 != fsm_8 ) begin
+      rx_5 = rx_15;
+   end
+   else begin
+      cfg_14 = rx_6;
+   end
+end
+
+OUTPUT (Assertions):
+
+### Response:
+property ClockSynceotid; @(posedge clock_source_19) (  data_7  && rx_5 ) |-> sig_149 == hw_17 ; endproperty 
+ 
+ property ValidTxeotid; @(posedge clock_source_19) (  data_7  && rx_5 ) && (  err_8  && tx_4  || cfg_20 ) |-> tx_115 == data_14 ; endproperty 
+ 
+ property ValidTxeotid; @(posedge clock_source_19) (  data_7  && rx_5 ) &&  (!(  err_8  && tx_4  || cfg_20 ) && (  auth_7 ) )  |-> rx_8 == tx_14 ; endproperty 
+ 
+ property ValidTxeotid; @(posedge clock_source_19) (  data_7  && rx_5 ) && ( !(  err_8  && tx_4  || cfg_20 )  &&!(  auth_7 )  ) |-> fsm_116 == tx_12 ; endproperty 
+ 
+ property ValidRxeotid; @(posedge clock_source_19)! (  data_7  && rx_5 )  |-> data_4 == cfg_183 ; endproperty 
+ 
+ property ResetSynceotid; @(posedge clock_source_19)! (  data_7  && rx_5 ) && (  rst_17  || tx_17  && chip_2 ) |-> rst_3 == tx_33; endproperty 
+ 
+ property ValidRxeotid; @(posedge clock_source_19)! (  data_7  && rx_5 )  &&  (!(  rst_17  || tx_17  && chip_2 ) && (  cfg_20 != fsm_8 ) )  |-> rx_5 == rx_15 ; endproperty 
+ 
+ property yncCheckeotid; @(posedge clock_source_19)! (  data_7  && rx_5 ) && ( !(  rst_17  || tx_17  && chip_2 )  &&!(  cfg_20 != fsm_8 )  ) |-> cfg_14 == rx_6; endproperty 
+ ����������������������������������

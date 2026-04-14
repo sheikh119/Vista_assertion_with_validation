@@ -1,0 +1,3 @@
+assert ((!(( tx_2 != err_12 && hw_2 ))) || (cfg_105 == cfg_15));
+assert ((!(( tx_2 != err_12 && hw_2 ) && ( cfg_17 ))) || (hw_13 == fsm_2));
+assert ((!(( tx_2 != err_12 && hw_2 ) && ( cfg_17 ) && ( tx_8 ))) || (reg_115 == reg_5));

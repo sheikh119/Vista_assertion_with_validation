@@ -1,0 +1,45 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+case ( transfer_complete_13 )
+   7'b1x11111 : begin
+
+      if (  chip_117  || rx_4  || chip_4 ) begin
+          core_15 = hw_13;
+          auth_19 = auth_16;
+          core_11 = clk_15;
+          if ( chip_12  && auth_16  || tx_2  || rst_16 ) begin
+               clk_18 = err_13;
+               auth_10 = hw_3;
+               auth_4 = cfg_11;
+          end
+      end
+
+   end
+   default : begin
+      if (  hw_8 ) begin
+          clk_1 = chip_8;
+          sig_7 = fsm_4;
+          fsm_18 = data_13;
+          if ( err_9  || hw_2 ) begin
+               rx_20 = tx_17;
+               sig_2 = tx_1;
+               rst_8 = core_14;
+          end
+      end
+
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property AuthSynceotid; ( transfer_complete_13 ) == ( 7'b1x11111 ) &&  (  chip_117  || rx_4  || chip_4 ) |=> core_15 == hw_13 && auth_19 == auth_16 && core_11 == clk_15 ;endproperty 
+ property ValidTxeotid; ( transfer_complete_13 ) == ( 7'b1x11111 ) &&  (  chip_117  || rx_4  || chip_4 ) &&  (  chip_12  && auth_16  || tx_2  || rst_16 ) |=> clk_18 == err_13 && auth_10 == hw_3 && auth_4 == cfg_11 ;endproperty 
+  property SyncOKeotid;  ( transfer_complete_13 )!= 7'b1x11111 &&  (  hw_8 ) |=> clk_1 == chip_8 && sig_7 == fsm_4 && fsm_18 == data_13 ;endproperty 
+  property ValidTxeotid;  ( transfer_complete_13 )!= 7'b1x11111 &&  (  hw_8 ) &&  (  err_9  || hw_2 ) |=> rx_20 == tx_17 && sig_2 == tx_1 && rst_8 == core_14 ;endproperty 
+ �����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

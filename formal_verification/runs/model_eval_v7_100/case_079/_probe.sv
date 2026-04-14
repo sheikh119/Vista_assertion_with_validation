@@ -1,0 +1,53 @@
+`timescale 1ns/1ps
+module vert_formal_wrap;
+  logic clk;
+  logic rst;
+  initial begin
+    rst = 1'b0;
+    input_buffer_6 = '0;
+    h8 = '0;
+    hw_20 = '0;
+    hw_15 = '0;
+    h27 = '0;
+    data_16 = '0;
+    clk_15 = '0;
+    b001xxxx = '0;
+    sig_11 = '0;
+    chip_6 = '0;
+    hw_17 = '0;
+    auth_8 = '0;
+  end
+  logic [31:0] input_buffer_6;
+  logic [31:0] h8;
+  logic [31:0] hw_20;
+  logic [31:0] hw_15;
+  logic [31:0] h27;
+  logic [31:0] data_16;
+  logic [31:0] clk_15;
+  logic [31:0] b001xxxx;
+  logic [31:0] sig_11;
+  logic [31:0] chip_6;
+  logic [31:0] hw_17;
+  logic [31:0] auth_8;
+  always @* begin
+case ( input_buffer_6 )
+   5'h8 : begin
+     hw_20 = hw_15;
+   end
+   7'h27 : begin
+     data_16 = clk_15;
+   end
+   7'b001xxxx : begin
+     sig_11 = chip_6;
+   end
+   default : begin
+     hw_17 = auth_8;
+   end
+endcase
+    assume (!rst);
+    assert ((!(( input_buffer_6 ) == ( 5'h8 ))) || (hw_20 == hw_15));
+    assert ((!(( input_buffer_6 ) == ( 7'h27 ))) || (data_16 == clk_15));
+    assert ((!(( input_buffer_6 ) == ( 7'b001xxxx ))) || (sig_11 == chip_6));
+    assert ((!(( ( input_buffer_6 )!= 5'h8 ) && ( ( input_buffer_6 )!= 7'h27 ) && ( input_buffer_6 )!= 7'b001xxxx ) ))) || (hw_17 == auth_8));
+  end
+endmodule

@@ -1,0 +1,74 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+if (  cfg_10 != cfg_14  && fsm_5  && reg_19 ) begin
+   fsm_116 = rx_5;
+    if ( tx_163 != fsm_163  || core_4 ) begin
+      core_20 = chip_20;
+   end
+   else if (  hw_14  && rst_5  && clk_115 ) begin
+      sig_6 = fsm_15;
+   end
+   else begin
+      rx_11 <= reg_18;
+   end
+end
+else begin
+   reg_116 = reg_12;
+   if (  clk_16  && hw_20 ) begin
+      chip_18 = tx_8;
+   end
+   else if (  err_14  && err_3 ) begin
+      fsm_19 <= cfg_18;
+   end
+   else begin
+      core_1 = data_18;
+   end
+end
+
+Synchronous: True
+
+Clock: negedge clk_in_1
+
+Assertion:
+if (  cfg_10 != cfg_14  && fsm_5  && reg_19 ) begin 
+   fsm_116 = rx_5;
+   if (  tx_163 != fsm_163  || core_4 ) begin
+      core_20 = chip_20;
+   end
+   else if (  hw_14  && rst_5  && clk_115 ) begin
+      sig_6 = fsm_15;
+   end
+   else begin
+      rx_11 <= reg_18;
+   end
+end
+else begin 
+   reg_116 = reg_12;
+   if (  clk_16  && hw_20 ) begin
+      chip_18 = tx_8;
+   end
+   else if (  err_14  && err_3 ) begin
+      fsm_19 <= cfg_18;
+   end
+   else begin
+      core_1 = data_18;
+   end
+end
+

@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (: if ( sig_8 || tx_13 ) begin tx_12 = clk_3; if ( err_2 && clk_10 != tx_20 && auth_15 ) begin rx_12 = clk_3; end if ( rst_10 || clk_5 && fsm_4 || rx_20 ) begin rx_12 = clk_14; end end Synchronous: True Clock: posedge clk_12 Assertion: assert SyncCheckeotid);

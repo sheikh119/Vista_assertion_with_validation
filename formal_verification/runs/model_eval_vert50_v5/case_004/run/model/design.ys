@@ -1,0 +1,8 @@
+# running in run/src/
+read_verilog -formal -sv vert_formal_wrap.sv
+prep -top vert_formal_wrap
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

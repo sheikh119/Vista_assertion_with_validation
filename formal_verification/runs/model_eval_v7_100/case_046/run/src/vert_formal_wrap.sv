@@ -1,0 +1,109 @@
+`timescale 1ns/1ps
+module vert_formal_wrap;
+  logic clk_in_1;
+  logic rst;
+  initial begin
+    rst = 1'b0;
+    cfg_10 = '0;
+    cfg_14 = '0;
+    fsm_5 = '0;
+    reg_19 = '0;
+    fsm_116 = '0;
+    rx_5 = '0;
+    tx_163 = '0;
+    fsm_163 = '0;
+    core_4 = '0;
+    core_20 = '0;
+    chip_20 = '0;
+    hw_14 = '0;
+    rst_5 = '0;
+    clk_115 = '0;
+    sig_6 = '0;
+    fsm_15 = '0;
+    rx_11 = '0;
+    reg_18 = '0;
+    reg_116 = '0;
+    reg_12 = '0;
+    clk_16 = '0;
+    hw_20 = '0;
+    chip_18 = '0;
+    tx_8 = '0;
+    err_14 = '0;
+    err_3 = '0;
+    fsm_19 = '0;
+    cfg_18 = '0;
+    core_1 = '0;
+    data_18 = '0;
+  end
+  logic [31:0] cfg_10;
+  logic [31:0] cfg_14;
+  logic [31:0] fsm_5;
+  logic [31:0] reg_19;
+  logic [31:0] fsm_116;
+  logic [31:0] rx_5;
+  logic [31:0] tx_163;
+  logic [31:0] fsm_163;
+  logic [31:0] core_4;
+  logic [31:0] core_20;
+  logic [31:0] chip_20;
+  logic [31:0] hw_14;
+  logic [31:0] rst_5;
+  logic [31:0] clk_115;
+  logic [31:0] sig_6;
+  logic [31:0] fsm_15;
+  logic [31:0] rx_11;
+  logic [31:0] reg_18;
+  logic [31:0] reg_116;
+  logic [31:0] reg_12;
+  logic [31:0] clk_16;
+  logic [31:0] hw_20;
+  logic [31:0] chip_18;
+  logic [31:0] tx_8;
+  logic [31:0] err_14;
+  logic [31:0] err_3;
+  logic [31:0] fsm_19;
+  logic [31:0] cfg_18;
+  logic [31:0] core_1;
+  logic [31:0] data_18;
+  reg _started = 0;
+  always @(negedge clk_in_1) begin
+if (  cfg_10  != cfg_14  && fsm_5  && reg_19 ) begin
+   fsm_116 = rx_5;
+    if ( tx_163  != fsm_163  || core_4 ) begin
+      core_20 = chip_20;
+   end
+   else if (  hw_14  && rst_5  && clk_115 ) begin
+      sig_6 = fsm_15;
+   end
+   else begin
+      rx_11 <= reg_18;
+   end
+end
+else begin
+   reg_116 = reg_12;
+   if (  clk_16  && hw_20 ) begin
+      chip_18 = tx_8;
+   end
+   else if (  err_14  && err_3 ) begin
+      fsm_19 <= cfg_18;
+   end
+   else begin
+      core_1 = data_18;
+   end
+end
+    _started <= 1;
+  end
+
+  always @(negedge clk_in_1) begin
+    if (_started) begin
+    assume (!rst);
+      assert ((!(( cfg_10 != cfg_14 && fsm_5 && reg_19 ))) || (fsm_116 == rx_5));
+    assert ((!(( cfg_10 != cfg_14 && fsm_5 && reg_19 ) && ( tx_163 != fsm_163 || core_4 ))) || (core_20 == chip_20));
+    assert ((!(( cfg_10 != cfg_14 && fsm_5 && reg_19 ) && (!( tx_163 != fsm_163 || core_4 ) && ( hw_14 && rst_5 && clk_115 ) ))) || (sig_6 == fsm_15));
+    assert ((!(( cfg_10 != cfg_14 && fsm_5 && reg_19 ) && ( !( tx_163 != fsm_163 || core_4 ) &&!( hw_14 && rst_5 && clk_115 ) ))) || (rx_11 == reg_18));
+    assert ((!(! ( cfg_10 != cfg_14 && fsm_5 && reg_19 ))) || (reg_116 == reg_12));
+    assert ((!(! ( cfg_10 != cfg_14 && fsm_5 && reg_19 ) && ( clk_16 && hw_20 ))) || (chip_18 == tx_8));
+    assert ((!(! ( cfg_10 != cfg_14 && fsm_5 && reg_19 ) && (!( clk_16 && hw_20 ) && ( err_14 && err_3 ) ))) || (fsm_19 == cfg_18));
+    end
+  end
+endmodule

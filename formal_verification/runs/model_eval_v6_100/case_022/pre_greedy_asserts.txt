@@ -1,0 +1,3 @@
+assert ((!(( control_data_9 ) == ( 6'b10100x ))) || (data_7 == hw_3 && clk_15 == err_7 && err_10 == clk_10));
+assert ((!(( control_data_9 ) == ( 6'bx0xxx0 ))) || (fsm_5 == err_13 && err_14 == hw_19 && tx_10 == auth_15));
+assert ((!(( control_data_9 )!= 6'b10100x && ( control_data_9 )!= 6'bx0xxx0)) || (fsm_10 == fsm_9 && auth_15 == chip_11 && err_9 == reg_13));

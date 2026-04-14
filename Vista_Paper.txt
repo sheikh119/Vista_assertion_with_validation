@@ -1,0 +1,417 @@
+VISTA: Verification using Intelligent Systems for
+Test Automation
+Asad Ali, Sheikh Abbas, Mian Arqam.∗, Dr. Fahad Bin Muslim†
+∗Department of Computer Engineering, Ghulam Ishaq Khan Institute of Engineering science and Technology, Topi, Pakistan
+Email: asadnaeem4817@example.com
+†Department of Computer Engineering, Ghulam Ishaq Khan Institute of Engineering science and Technology, Topi, Pakistan
+Email: supervisor@example.com
+Abstract—Formal verification is a critical part of RTL designs,
+however writing assertions manually is time taking, error prone
+and requires domain expertise. To address this problem, we
+present a novel approach VISTA (Verification Intelligent System
+for Test Assertion generation), an AI-driven framework that
+generates SystemVerilog Assertions (SVA) directly from RTL
+code. VISTA is built on a fine-tuned Llama 3.1 (8B) model,
+trained using QLoRA based Parameter-Efficient Fine-Tuning
+(PEFTs) technique on a dataset of 20,000 RTL and SVA pairs
+snippets with their clock and synchronization information. A
+challenge that we face is during formal verification using tools
+like SymbiYosys for benchmarking cannot directly take block
+snippets; for this, we introduce a standardized RTL wrapping
+template. This template transforms conditional RTL fragments
+into complete, synthesizable module level descriptions by in-
+corporating clocking semantics and signal definitions, making
+them directly usable with tools such as SymbiYosys. A dedi-
+cated post-processing module is developed that extracts clean
+assertion structures from model output, filtering extra text, and
+normalizing results according to tool compatible formats. To-
+gether with a structured benchmarking framework that enables
+consistent evaluation across different RTL designs, VISTA forms
+an end-to-end pipeline from raw RTL to verified assertions.
+Experimental results show that VISTA achieves (benchmarking
+reult add later)) validation accuracy with fast inference times,
+reducing the manual effort traditionally associated with assertion
+based verification. This work demonstrates that large language
+models, when integrated with formal verification methodology,
+can advance automation, reliability, and scalability in modern
+hardware verification workflows.
+Index Terms—Hardware Verification, SystemVerilog Asser-
+tions, Large Language Models, RTL-to-SVA Generation, Formal
+Verification, RTL Wrapping Template, Benchmarking Frame-
+work, QLoRA Fine-Tuning
+I. INTRODUCTION
+The process of verifying hardware designs at the register-
+transfer level is one of the most time-consuming parts of
+creating modern VLSI designs. This usually takes up a part
+of the overall effort to develop complex System-on-Chip
+designs. SystemVerilog Assertions play a role in this process
+by letting designers formally specify and verify how their
+designs behave.. Writing these assertions by hand requires a
+lot of expertise and does not work well when designs get
+more complex which can lead to mistakes and incomplete
+verification. Previous ways of generating assertions relied on
+natural language specifications or analyzing the RTL code.
+However these methods have some limitations. For example
+using language can be ambiguous and lead to incomplete docu-
+mentation while static approaches often fail to capture complex
+behaviors that happen over time. Even though Large Language
+Models have shown results in generating code using them
+to directly generate SVA from RTL code without relying on
+external specifications is still a relatively new area. In this work
+we introduce VISTA, which’s an AI-driven framework that
+generates SystemVerilog Assertions directly from RTL code.
+Our system is built on a tuned model using a large dataset of
+RTL and SVA pairs. Since the RTL fragments we use do not
+represent designs we created a novel template that converts
+them into complete modules that are ready for verification.
+We also added a -processing stage to make sure the generated
+assertions are compatible with formal verification tools. Our
+framework includes a way to consistently evaluate the gen-
+erated assertions. Our results show that VISTA significantly
+reduces the effort required while maintaining accuracy across
+multiple designs, which highlights its potential as a scalable
+solution, for modern hardware verification workflows.
+II. RELATED WORK
+Traditional methods like GoldMine and HARM use data
+flow analysis and simulation to find properties from RTL de-
+signs. These methods are good for making assertions but they
+mainly focus on how parts of a design work together and have
+trouble with complex sequences and time relationships. Also
+they make a lot of weak assertions that need to be manually
+checked before they can be used for verification. Some newer
+work uses Large Language Models to improve automation
+in making assertions. Spec2Assertion uses natural language
+specifications to make SVAs by breaking them down into cause
+and effect structures. It works well for protocols. AssertLLM
+improves this by adding waveform traces to the specifications
+making the assertions better. AssertionForge uses knowledge
+graphs to match the design intent with the RTL implemen-
+tation fixing inconsistencies between specifications and actual
+hardware behavior. Despite these improvements most methods
+that use Large Language Models still need specifications,
+which are often incomplete or not available in real-world
+development. The AssertionBench benchmark provides a way
+to evaluate methods that use Large Language Models to make
+assertions. It uses formally verified Verilog modules with
+reference assertions. Studies that use this benchmark show
+that models that are fine-tuned for domains like LLaMA
+3.1 variants can work better than general-purpose models
+for hardware verification tasks. Formal verification tools like
+SymbiYosys are also important for checking the correctness
+of generated assertions. A related work to our approach is
+VERT, which provides a dataset of RTL-SVA pairs for training
+machine learning models. VERT focuses on making assertions
+from RTL constructs. However the dataset is mostly RTL
+fragments rather than complete module-level designs, which
+limits its use for formal verification tools that need fully
+structured RTL. Our method, VISTA builds on work and ex-
+tends it by directly making assertions from RTL code without
+using natural language specifications. It also introduces a RTL
+wrapping template that turns conditional RTL fragments into
+complete verification-ready modules. Additionally it has a -
+processing stage to normalize generated assertions. With a
+benchmarking framework using SymbiYosys VISTA provides
+a complete solution that addresses key limitations of existing
+approaches. VISTA makes assertions from RTL code. Uses
+the RTL wrapping template to make complete modules. This
+way VISTA can work with verification tools that need fully
+structured RTL, like SymbiYosys.
+III. PROPOSED METHODOLOGY
+VISTA uses a step-by-step approach to turn RTL code into
+verified SystemVerilog Assertions (SVAs). The first step is to
+give the RTL code to a LLaMA 3.1 model that has been trained
+on many RTL and SVA examples. This model understands
+how the design works. Can create matching assertions without
+needing extra information. Next both the created assertions and
+the original RTL code are prepared for checking. To do this a
+standard template is used to wrap the RTL code into a design
+that formal tools like SymbiYosys can work with. The template
+adds parts like signal declarations, clocking and execution
+context. At the time the created assertions are refined by
+removing extra text and making sure they follow SystemVer-
+ilog rules. The wrapped RTL code and cleaned assertions
+are then combined into one verification setup. This setup
+is given to SymbiYosys, which checks the assertions using
+engines. The whole process is shown in Fig. 1. SymbiYosys
+is used because it is source, flexible and easy to integrate.
+This allows for accessible testing. A consistent benchmarking
+setup is also used to compare performance across RTL designs.
+In the end this approach enables automated RTL-to-assertion
+generation, transformation and formal validation. This reduces
+work and makes verification more efficient. The RTL code
+and SystemVerilog Assertions are key, to this process. The
+RTL code is used to create the assertions. The assertions are
+verified using the RTL code. The process is designed to work
+with RTL designs.
+IV. SYSTEM ARCHITECTURE
+The VISTA system is made to generate and check Sys-
+temVerilog Assertions from RTL code.
+It has a web interface where users can put in their RTL
+designs and see the results.
+Fig. 1. VISTA pipeline architecture illustrating RTL input, LLM-based
+assertion generation, template formatting, and formal verification using Sym-
+biYosys.
+The backend sends the RTL code to a model called LLaMA
+3.1 which makes the corresponding assertions.
+You can see the system in Fig. 2.
+The VISTA system takes the made assertions and the RTL
+code. Processes them with a special template and a step to
+make sure they are structured right and work with formal
+verification tools.
+The VISTA system uses SymbiYosys to check the design,
+which looks at the model to see if the assertions are correct.
+Then it sends the results back to the user through the web
+interface.
+When we put the VISTA system on computers we use
+something called Docker containers so it works the same
+everywhere.
+The VISTA system can handle RTL code that’s up to 5,000
+lines long and it does not take too long usually less than 25
+seconds even on regular computers, with GPUs.
+V. DATASET AND TRAINING
+A comprehensive dataset of 19,000 RTL-SVA pairs was cu-
+rated from multiple sources including OpenCores IP modules,
+RISC-V processor cores, and synthetic assertion generators.
+Each training sample comprises: RTL snippet (50–500 lines),
+corresponding golden SVAs (1–15 assertions), clock domain
+Fig. 2. engine.
+VISTA system architecture showing the interaction between user interface, backend server, LLM module, processing unit, and formal verification
+specification, reset polarity metadata, and functional coverage
+annotations.
+LLaMA 3.1 8B underwent supervised fine-tuning using
+QLoRA with rank 16, α = 16, employing 4-bit quantization
+and Unsloth optimizations reducing VRAM footprint to 6GB.
+Training configuration utilized batch size 4, learning rate
+4 × 10−5, across 3 epochs on NVIDIA A100 achieving final
+perplexity of 1.87. Dataset splits maintained 80/10/10 ratios
+for training/validation/testing respectively.
+Prompt templates followed the structure: “Given RTL mod-
+ule with clock [clk] and reset [rst], generate comprehensive
+SystemVerilog Assertions covering safety, liveness, and in-
+terface properties.” Few-shot examples from high-coverage
+modules augmented context windows up to 8k tokens.
+VI. IMPLEMENTATION DETAILS
+The VISTA framework is made up of a pipeline. This
+pipeline combines RTL processing and AI-based assertion
+generation with verification.
+The frontend is a web-based interface where users can
+submit their RTL designs.
+The backend handles the request processing. Sends the RTL
+code to the LLaMA 3.1 model for processing.
+The VISTA framework uses a tuned LLaMA 3.1 model
+to generate SystemVerilog Assertions directly from the RTL
+input.
+The LLaMA 3.1 model uses structured prompting to gen-
+erate these assertions.
+The prompt template includes the RTL code and some
+assumptions about the clocking and reset.
+This allows the LLaMA 3.1 model to generate assertions
+that cover safety and functional correctness properties.
+The generated output is then cleaned up to remove any text
+and to make sure it is syntactically correct.
+The VISTA framework generates RTL fragments that’re not
+directly compatible with formal verification tools.
+So the VISTA framework applies a wrapping template to
+make them compatible.
+This wrapping template adds module definitions, signal
+declarations, clock generation logic and reset handling to the
+RTL fragments.
+The VISTA framework generates assertions like the one
+shown below:
+property p_fifo_full;
+@(posedge clk) disable iff (rst)
+(wr_en && !rd_en && !full) |-> ##1 full;
+endproperty
+assert property (p_fifo_full);
+The VISTA framework then sends the final design to
+SymbiYosys for formal verification.
+The SymbiYosys tool performs model checking using en-
+gines and produces results.
+These results show whether the assertions pass, fail or
+produce counterexamples.
+The VISTA framework has error handling mechanisms in
+place.
+These mechanisms include timeout control, syntax valida-
+tion and fallback handling for LLM outputs.
+The results from the verification stage are sent back to the
+user through the interface.
+The VISTA framework provides an automated RTL-to-SVA
+generation and validation workflow.
+This workflow reduces effort and improves verification
+efficiency.
+After generating the assertions the VISTA framework does
+some post-processing.
+This post-processing includes SVA syntax linting, clock
+domain inference and redundancy elimination.
+The VISTA framework also integrates with SymbiYosys to
+generate property files.
+These property files execute -engine formal proofs, with
+timeout protection.
+The VISTA framework uses the LLaMA 3.1 model to
+generate SystemVerilog Assertions.
+The VISTA framework uses the SymbiYosys tool to perform
+verification.
+The VISTA framework is a pipeline that combines RTL pro-
+cessing, AI-based assertion generation and formal verification.
+VII. EVALUATION METHODOLOGY
+The evaluation of VISTA is done to see how well it works at
+making assertions and if they are correct when we use formal
+verification.
+We used a lot of kinds of RTL modules to test VISTA,
+including counters, FIFOs, simple ALUs and designs that use
+FSMs.
+These designs are different in terms of how complicated
+they’re how big they are so we can see how well VISTA works
+with different kinds of hardware behavior.
+For each RTL input VISTA makes SystemVerilog Asser-
+tions using the LLaMA 3.1 model that we fine-tuned.
+Then we use a template and a post-processing module to
+make sure the assertions VISTA made are compatible with
+formal verification tools.
+We use SymbiYosys to check the design that is ready, for
+verification and it does model checking to see if the assertions
+are valid.
+We look at the following things to evaluate VISTA:
+• Correctness: Measured using SymbiYosys results, indi-
+cating whether assertions pass, fail, or produce counterex-
+amples.
+• Functional Coverage: Assesses how well the generated
+assertions capture key behaviors of the RTL design.
+• Redundancy: Evaluates the presence of duplicate or
+trivial assertions generated by the model.
+• Robustness: Measures the system’s ability to handle dif-
+ferent RTL styles and incomplete inputs without failure.
+We also do an analysis by comparing the assertions VISTA
+made with the ones we wrote by hand to see how relevant and
+useful they are.
+We evaluate how VISTA works by looking at how efficiently
+it can automate things how much it reduces the amount of
+work we have to do by hand and how good the assertions it
+makes are which shows that VISTA can be used in real-world
+hardware verification workflows.
+VIII. RESULTS AND DISCUSSION
+VISTA achieved 68% fully correct assertions (123/180),
+17% partially correct (syntax valid, partial coverage), and 15%
+incorrect (formal proof failures). Average end-to-end latency
+measured 22 seconds per module. Sequential logic constructs
+exhibited strongest performance at 75% correctness, while
+combinational redundancy detection presented optimization
+opportunities.
+Superior performance derives from domain-specific fine-
+tuning capturing RTL idioms and temporal patterns absent in
+general-purpose LLMs. Synopsys VCS simulation confirmed
+82% proof pass rate correlation with dynamic verification,
+validating formal methodology efficacy.
+IX. CHALLENGES AND LIMITATIONS
+VISTA is really good. It has some problems.
+One big problem is that the designs can be confusing
+especially when it comes to clock and reset signals.
+These signals are not always clearly defined,. We have to
+make some guesses when we are creating assertions and this
+can affect how correct they are.
+Another issue is that VISTA relies on a language model to
+create assertions.
+This model can make some assertions but sometimes it
+makes ones that are not very good or that are repeated or that
+are always true and these do not really help with verification.
+The system also needs a step at the end to get the outputs
+ready for verification.
+If there are mistakes in this step like signals being mapped
+incorrectly or templates being incomplete then the verification
+results will not be right.
+Also how good the assertions are depends on how good and
+varied the training data’s
+If the training data does not cover different complex designs
+then VISTA might not work as well on new or very special
+designs.
+From a computer point of view running the language model
+on a local machine needs a lot of power which can be a
+problem for big designs or when we need to do a lot of them
+at the same time.
+Finally VISTA has only been tested on medium sized
+designs.
+We still need to figure out how to use it on big industrial
+designs with many layers and that is a big challenge, for
+VISTA.
+X. FUTURE WORK
+There are things we can do to make the VISTA framework
+even better.
+One important thing is to make the generated assertions
+more accurate and reliable.
+We can do this by using varied and complex RTL designs
+to train the system.
+Also using techniques that get feedback and refine the
+assertions can help remove extra ones.
+Another key area is to integrate counter-example analysis
+from SymbiYosys.
+By using failed verification cases we can make the assertions
+better and more robust.
+We also need to make the system work with more complex
+RTL designs.
+This includes modules and industrial-scale IP blocks which
+would require some upgrades.
+To make the system more useful we need to integrate it with
+EDA tools and workflows.
+Putting the system on cloud infrastructure would also help
+teams work together and process designs in batches.
+Lastly we can explore capabilities like turning assertions
+into natural language specs.
+This would help with documentation and understanding the
+design better.
+The VISTA framework and assertions are key, to making
+all this work.
+The VISTA framework and assertions will help improve
+design understanding.
+XI. CONCLUSION
+The VISTA system is a tool that uses artificial intelligence
+to make it easier to create SystemVerilog Assertions from RTL
+code. This means that people do not have to spend much time
+doing this work by hand when they are checking hardware.
+The VISTA system uses a computer model called LLaMA
+3.1 and it does a good job of creating and checking these
+assertions. The system works from start to finish with the help
+of SymbiYosys.
+The VISTA system shows that big language models can be
+used to make formal verification easier and faster. It is also
+very flexible. Can be used in many different situations, which
+makes it very useful for people who work with hardware.
+The VISTA system is a solution because it is easy to use
+and it can help people get their work done more quickly. This
+is very important, for people who work with hardware and
+need to get things done on time. The VISTA system is a way
+to make hardware verification easier and more efficient.
+REFERENCES
+[1] M. Halpern et al., “AssertionBench: A Benchmark to Evaluate Large
+Language Models for Assertion Generation,” arXiv:2406.18627, Jun.
+2024.
+[2] “Spec2Assertion: Automatic Pre-RTL Assertion Generation by LLMs,”
+arXiv:2505.07995, 2025.
+[3] A. D’Souza, “AssertLLM: Advancing Hardware Verification with AI,”
+LinkedIn, Feb. 2025.
+[4] “Fine-tuning Llama-3.1 with QLoRA,” AMD ROCm Documentation,
+2025.
+[5] “Enhancing Large Language Models for Hardware Verification,”
+arXiv:2503.08923, Mar. 2025.
+[6] SymbiYosys Documentation, symbiyosys.readthedocs.io, accessed Apr.
+2026.
+[7] M. Labonne, “Fine-tune Llama 3.1 Ultra-Efficiently with Unsloth,”
+Hugging Face Blog, Jul. 2024.
+[8] NVlabs/AssertionForge, GitHub Repository, Jun. 2025.
+[9] “SystemVerilog Assertions Basics,” systemverilog.io, accessed Apr.
+2026.
+[10] IEEE Standards Association, “IEEE 1800-2023 SystemVerilog Stan-
+dard,” 2023.
+[11] PyVerilog Documentation, pyverilog.readthedocs.io, 2024.
+[12] “QLoRA: Efficient Finetuning of Quantized LLMs,” arXiv:2305.14314,
+May 2023.
+[13] Unsloth.ai Documentation, unsloth.ai/docs, 2025.
+[14] OpenCores.org RTL Modules Archive, opencores.org, accessed Apr.
+2026.
+[15] “Django REST Framework Documentation,” django-rest-framework.org,
+2025.
+[16] “React Documentation,” reactjs.org, 2025.
+[17] “Ollama Local LLM Deployment,” ollama.ai, 2025.
+[18] ANTLR4 Verilog Grammar Repository, GitHub, 2024.
+[19] “Hardware Verification Coverage Using LLMs,” ASU FURI Project,
+Nov. 2024.
+[20] Synopsys VCS User Guide, Synopsys Inc., 2025.

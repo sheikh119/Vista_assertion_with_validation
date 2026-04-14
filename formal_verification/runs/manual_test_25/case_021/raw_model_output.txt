@@ -1,0 +1,78 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+if (  clk_20  && reg_15 != reg_8 ) begin
+   err_2 = reg_20;
+    if ( sig_12  && sig_3 ) begin
+      fsm_11 <= core_17;
+   end
+   else if (  clk_14 != rx_14  || err_4  || hw_9 ) begin
+      auth_8 = err_20;
+   end
+   else begin
+      core_14 = hw_10;
+   end
+end
+else begin
+   tx_14 = fsm_100;
+   if (  core_5 != data_16 ) begin
+      rx_8 <= sig_172;
+   end
+   else if (  core_3  || data_4 ) begin
+      chip_79 <= chip_13;
+   end
+   else begin
+      core_2 <= reg_5;
+   end
+end
+
+Synchronous: True
+
+Clock: posedge ref_clk_20
+
+Assertion:
+if (  clk_20  && reg_15 != reg_8 ) begin 
+   err_2 = reg_20;
+   if (  sig_12  && sig_3 ) begin
+      fsm_11 <= core_17;
+   end
+   else if (  clk_14 != rx_14  || err_4  || hw_9 ) begin
+      auth_8 = err_20;
+   end
+   else begin
+      core_14 = hw_10;
+   end
+end
+else begin 
+   tx_14 = fsm_100;
+   if (  core_5 != data_16 ) begin
+      rx_8 <= sig_172;
+   end
+   else if (  core_3  || data_4 ) begin
+      chip_79 <= chip_13;
+   end
+   else begin
+      core_2 <= reg_5;
+   end
+end
+
+
+OUTPUT (Assertions):
+
+Assertion:  clk_20  && reg_15 != reg_8 ) |=> err

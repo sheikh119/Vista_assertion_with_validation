@@ -1,0 +1,47 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+case ( data_ready_17 )
+   7'b1101001 : begin
+     auth_14 = auth_6;
+     fsm_9 = clk_1;
+     hw_20 <= tx_18;
+   end
+   6'h21 : begin
+     clk_17 <= fsm_2;
+     rst_12 = auth_9;
+     hw_5 = err_16;
+   end
+   default : begin
+     sig_4 <= core_10;
+     auth_17 <= fsm_6;
+     hw_13 = cfg_17;
+   end
+endcase
+
+Synchronous: True
+
+Clock: posedge clock_ctrl_5
+
+Assertion:
+assert AuthSynceotid; (  data_ready_17 ) == ( 7'b1101001 ) &&  (  auth_14 ) == (  auth_6 ) &&  (  fsm_9 ) == (  clk_1 ) &&  (  hw_20 ) == (  tx_18 ) )  : "Data ready check on clock edge";  endproperty 
+ 
+ assert ValidSynceotid; (  data_ready_17 ) == ( 6'h21 ) &&  (  clk_17 ) == (  fsm_2 ) &&  (  rst_12 ) == (  auth_9 ) &&  (  hw_5 ) == (  err_16 ) )  : "Data ready check on clock edge";  endproperty 
+ 
+ assert ValidSynceotid; (  data_ready_17 )!= 7'b1101001 ) && (  data_ready_17 )!= 6'h21 ) &&  (  sig_4 ) == (  core_10 ) &&  (  auth

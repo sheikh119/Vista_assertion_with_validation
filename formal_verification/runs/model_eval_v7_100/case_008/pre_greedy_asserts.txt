@@ -1,0 +1,4 @@
+assert ((!(( status_output_buffer_2 ) == ( 5'bx1x10 ) && ( clk_14 || clk_10 ))) || (hw_2 == hw_19));
+assert ((!(( status_output_buffer_2 ) == ( 5'bx1x10 ) && ( clk_14 || clk_10 ) && ( reg_19 ))) || (data_7 == sig_20));
+assert ((!(( status_output_buffer_2 )!= 5'bx1x10 && ( rst_11 != chip_15 ))) || (cfg_10 == auth_3));
+assert ((!(( status_output_buffer_2 )!= 5'bx1x10 && ( rst_11 != chip_15 ) && ( fsm_18 != reg_11 ))) || (clk_11 == err_13));

@@ -1,0 +1,6 @@
+assert ((!(: ( address_3 ) == ( 7'h6e ))) || (data_20 == rst_15));
+assert ((!(: ( address_3 ) == ( 7'h26 ))) || (data_10 == rx_11));
+assert ((!(: ( address_3 ) == ( 7'bxxxxx00 ))) || (hw_9 == chip_20));
+assert ((!(: ( address_3 ) == ( 7'h37 ))) || (rst_9 == data_19));
+assert ((!(: ( address_3 ) == ( 6'b000001 ))) || (fsm_11 == data_11));
+assert ((!(( ( address_3 )!= 7'h6e ) && ( ( address_3 )!= 7'h26 ) && ( ( address_3 )!= 7'bxxxxx00 ) && ( ( address_3 )!= 7'h37 ) && ( address_3 )!= 6'b000001 ) ))) || (reg_5 == rx_4));

@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (: if ( cfg_9 != rx_13 && chip_7 ) begin reg_58 = auth_9; if ( hw_20 != auth_5 && sig_16 ) begin rx_20 <= hw_7; end if ( fsm_18 != cfg_12 && rst_14 ) begin core_75 <= rst_8; end end OUTPUT (Assertions): Assertion: assert AuthSynceotid);

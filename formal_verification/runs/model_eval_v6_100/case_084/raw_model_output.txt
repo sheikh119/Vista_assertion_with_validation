@@ -1,0 +1,38 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: posedge clock_source_8
+
+Code:
+case ( control_valid_2 )
+   7'h51 : begin
+      if (  clk_18  && reg_11 ) begin
+          data_3 <= auth_7;
+          cfg_15 = clk_11;
+          if ( tx_2  && fsm_12 ) begin
+               sig_15 <= cfg_11;
+               hw_6 = rx_4;
+          end
+      end
+   end
+   default : begin
+      if (  data_110 ) begin
+          clk_15 <= cfg_14;
+          data_7 <= rst_20;
+          if ( clk_8  && rst_16  && clk_12 ) begin
+               fsm_4 = clk_8;
+               reg_18 <= reg_8;
+          end
+      end
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property AuthSynceotid; @(posedge clock_source_8) ( control_valid_2 ) == ( 7'h51 ) &&  (  clk_18  && reg_11 ) |-> data_3 == auth_7 && cfg_15 == clk_11 ;endproperty 
+ property ValidTxeotid; @(posedge clock_source_8) ( control_valid_2 ) == ( 7'h51 ) &&  (  clk_18  && reg_11 ) &&  (  tx_2  && fsm_12 ) |-> sig_15 == cfg_11 && hw_6 == rx_4 ;endproperty 
+ property ClockSynceotid;  @(posedge clock_source_8) ( control_valid_2 )!= 7'h51  &&  (  data_110 ) |-> clk_15 == cfg_14 && data_7 == rst_20 ;endproperty 
+ property ClockSynceotid;  @(posedge clock_source_8) ( control_valid_2 )!= 7'h51  &&  (  data_110 ) &&  (  clk_8  && rst_16  && clk_12 ) |-> fsm_4 == clk_8 && reg_18 == reg_8 ;endproperty 
+ ��������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

@@ -1,0 +1,2 @@
+assert ((!(: ( status_output_buffer_12 ) == ( 2'h2 ))) || (fsm_7 == err_20));
+assert ((!(( status_output_buffer_12 )!= 2'h2 ) ))) || (cfg_6 == data_9));

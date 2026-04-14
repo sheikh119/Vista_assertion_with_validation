@@ -1,0 +1,41 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+case ( interrupt_control_19 )
+   7'bxxxxxxx : begin
+
+      if (  clk_117 != rx_19  || clk_8 ) begin
+          rx_11 = cfg_3;
+          chip_13 = rst_9;
+          if ( err_13  && cfg_120 != hw_1  && chip_4 ) begin
+               cfg_18 = fsm_10;
+               fsm_17 = err_13;
+          end
+      end
+
+   end
+   default : begin
+      if (  rst_13  && core_4  && sig_17 != hw_5 ) begin
+          core_15 = reg_13;
+          cfg_17 = err_19;
+          if ( auth_9  || data_20  && err_10 != core_19 ) begin
+               data_7 = core_7;
+               fsm_2 = hw_15;
+          end
+      end
+
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property ResetSynceotid; ( interrupt_control_19 ) == ( 7'bxxxxxxx ) &&  (  clk_117 != rx_19  || clk_8 ) |=> rx_11 == cfg_3 && chip_13 == rst_9 ;endproperty 
+ property SafeSynceotid; ( interrupt_control_19 ) == ( 7'bxxxxxxx ) &&  (  clk_117 != rx_19  || clk_8 ) &&  (  err_13  && cfg_120 != hw_1  && chip_4 ) |=> cfg_18 == fsm_10 && fsm_17 == err_13 ;endproperty 
+  property ResetSynceotid;  ( interrupt_control_19 )!= 7'bxxxxxxx &&  (  rst_13  && core_4  && sig_17 != hw_5 ) |=> core_15 == reg_13 && cfg_17 == err_19 ;endproperty 
+  property SafeReseteotid;  ( interrupt_control_19 )!= 7'bxxxxxxx &&  (  rst_13  && core_4  && sig_17 != hw_5 ) &&  (  auth_9  || data_20  && err_10 != core_19 ) |=> data_7 == core_7 && fsm_2 == hw_15 ;endproperty 
+ �����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

@@ -1,0 +1,50 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+case ( data_buffer_status_3 )
+   6'b0xxx1x : begin
+     err_6 = fsm_10;
+     rst_3 = cfg_6;
+   end
+   5'bxx1xx : begin
+     auth_15 <= cfg_8;
+     hw_14 <= rst_11;
+   end
+   sig_19 : begin
+     sig_5 = core_4;
+     data_20 = sig_2;
+   end
+   default : begin
+     rst_12 <= cfg_2;
+     err_15 = clk_17;
+   end
+endcase
+
+Synchronous: True
+
+Clock: posedge clk_osc_1
+
+Assertion:
+assert DataSynceotid; ( data_buffer_status_3 ) == ( 6'b0xxx1x ) &&  ( err_6 ) == ( fsm_10 ) &&  ( rst_3 ) == ( cfg_6 ) : "Data Buffer Error on Clock Edge"; endproperty 
+ 
+ assertion ValidSynceotid; ( data_buffer_status_3 ) == ( 5'bxx1xx ) &&  ( auth_15 ) == ( cfg_8 ) &&  ( hw_14 ) == ( rst_11 ) ; endproperty 
+ 
+ assertion ValidDataeotid; ( data_buffer_status_3 ) == ( sig_19 ) &&  ( sig_5 ) == ( core_4 ) &&  ( data_20 ) == ( sig_2 ) ; endproperty 
+ 
+ assertion SafeSynceotid; ( data_buffer_status_3 )!= 6'b0xxx1x && ( data_buffer_status_3 )!= 5'bxx1xx &&  ( data_buffer_status_3 )!= sig_19 &&  ; endproperty

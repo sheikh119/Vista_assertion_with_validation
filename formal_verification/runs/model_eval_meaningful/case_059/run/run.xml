@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-04-14T20:28:00" hostname="pop-os" package="run" id="0" name="default" tests="3" errors="0" failures="0" time="0" skipped="0">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<testcase classname="default" name="Property ASSERT in vert_formal_wrap at vert_formal_wrap.sv:29.5-29.52" time="0" type="ASSERT" location="vert_formal_wrap.sv:29.5-29.52" id="_witness_.check_assert_vert_formal_wrap_sv_29_7">
+</testcase>
+<testcase classname="default" name="Property ASSERT in vert_formal_wrap at vert_formal_wrap.sv:30.5-30.70" time="0" type="ASSERT" location="vert_formal_wrap.sv:30.5-30.70" id="_witness_.check_assert_vert_formal_wrap_sv_30_11">
+</testcase>
+<testcase classname="default" name="Property ASSERT in vert_formal_wrap at vert_formal_wrap.sv:31.5-31.104" time="0" type="ASSERT" location="vert_formal_wrap.sv:31.5-31.104" id="_witness_.check_assert_vert_formal_wrap_sv_31_16">
+</testcase>
+<system-out>SBY 20:28:00 [run] Removing directory '/home/vista/Desktop/fyp_draft/formal_verification/runs/model_eval_meaningful/case_059/run'.
+SBY 20:28:00 [run] Copy '/home/vista/Desktop/fyp_draft/formal_verification/runs/model_eval_meaningful/case_059/vert_formal_wrap.sv' to '/home/vista/Desktop/fyp_draft/formal_verification/runs/model_eval_meaningful/case_059/run/src/vert_formal_wrap.sv'.
+SBY 20:28:00 [run] engine_0: smtbmc
+SBY 20:28:00 [run] base: starting process &quot;cd run/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [31] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [30] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [29] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [28] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [27] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [26] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [25] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [24] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [23] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [22] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [21] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [20] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [19] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [18] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [17] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [16] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [15] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [14] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [13] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [12] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [11] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [10] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [9] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [8] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [7] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [6] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [5] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [4] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [3] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [2] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [1] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\rst_18 [0] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [31] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [30] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [29] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [28] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [27] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [26] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [25] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [24] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [23] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [22] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [21] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [20] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [19] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [18] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [17] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [16] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [15] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [14] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [13] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [12] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [11] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [10] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [9] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [8] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [7] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [6] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [5] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [4] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [3] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [2] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [1] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_208 [0] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [31] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [30] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [29] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [28] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [27] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [26] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [25] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [24] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [23] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [22] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [21] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [20] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [19] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [18] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [17] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [16] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [15] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [14] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [13] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [12] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [11] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [10] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [9] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [8] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [7] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [6] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [5] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [4] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [3] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [2] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [1] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\sig_12 [0] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [31] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [30] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [29] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [28] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [27] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [26] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [25] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [24] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [23] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [22] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [21] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [20] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [19] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [18] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [17] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [16] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [15] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [14] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [13] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [12] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [11] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [10] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [9] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [8] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [7] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [6] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [5] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [4] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [3] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [2] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [1] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\hw_15 [0] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [31] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [30] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [29] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [28] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [27] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [26] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [25] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [24] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [23] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [22] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [21] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [20] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [19] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [18] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [17] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [16] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [15] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [14] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [13] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [12] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [11] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [10] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [9] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [8] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [7] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [6] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [5] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [4] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [3] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [2] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [1] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\clk_119 [0] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [31] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [30] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [29] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [28] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [27] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [26] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [25] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [24] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [23] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [22] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [21] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [20] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [19] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [18] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [17] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [16] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [15] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [14] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [13] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [12] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [11] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [10] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [9] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [8] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [7] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [6] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [5] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [4] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [3] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [2] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [1] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\tx_3 [0] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [31] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [30] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [29] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [28] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [27] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [26] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [25] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [24] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [23] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [22] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [21] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [20] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [19] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [18] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [17] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [16] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [15] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [14] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [13] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [12] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [11] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [10] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [9] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [8] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [7] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [6] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [5] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [4] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [3] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [2] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [1] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\auth_2 [0] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [31] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [30] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [29] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [28] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [27] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [26] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [25] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [24] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [23] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [22] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [21] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [20] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [19] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [18] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [17] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [16] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [15] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [14] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [13] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [12] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [11] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [10] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [9] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [8] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [7] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [6] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [5] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [4] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [3] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [2] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [1] is used but has no driver.
+SBY 20:28:00 [run] base: Warning: Wire vert_formal_wrap.\core_19 [0] is used but has no driver.
+SBY 20:28:00 [run] base: finished (returncode=0)
+SBY 20:28:00 [run] prep: starting process &quot;cd run/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [31] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [30] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [29] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [28] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [27] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [26] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [25] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [24] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [23] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [22] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [21] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [20] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [19] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [18] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [17] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [16] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [15] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [14] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [13] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [12] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [11] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [10] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [9] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [8] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [7] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [6] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [5] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [4] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [3] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [2] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [1] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\hw_15 [0] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [31] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [30] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [29] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [28] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [27] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [26] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [25] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [24] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [23] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [22] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [21] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [20] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [19] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [18] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [17] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [16] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [15] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [14] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [13] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [12] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [11] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [10] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [9] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [8] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [7] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [6] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [5] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [4] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [3] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [2] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [1] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\sig_12 [0] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [31] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [30] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [29] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [28] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [27] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [26] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [25] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [24] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [23] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [22] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [21] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [20] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [19] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [18] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [17] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [16] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [15] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [14] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [13] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [12] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [11] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [10] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [9] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [8] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [7] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [6] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [5] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [4] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [3] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [2] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [1] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\clk_119 [0] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [31] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [30] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [29] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [28] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [27] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [26] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [25] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [24] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [23] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [22] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [21] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [20] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [19] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [18] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [17] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [16] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [15] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [14] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [13] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [12] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [11] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [10] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [9] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [8] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [7] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [6] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [5] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [4] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [3] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [2] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [1] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_208 [0] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [31] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [30] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [29] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [28] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [27] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [26] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [25] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [24] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [23] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [22] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [21] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [20] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [19] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [18] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [17] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [16] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [15] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [14] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [13] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [12] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [11] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [10] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [9] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [8] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [7] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [6] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [5] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [4] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [3] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [2] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [1] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\rst_18 [0] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [31] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [30] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [29] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [28] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [27] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [26] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [25] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [24] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [23] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [22] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [21] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [20] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [19] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [18] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [17] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [16] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [15] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [14] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [13] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [12] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [11] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [10] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [9] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [8] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [7] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [6] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [5] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [4] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [3] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [2] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [1] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\core_19 [0] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [31] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [30] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [29] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [28] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [27] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [26] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [25] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [24] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [23] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [22] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [21] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [20] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [19] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [18] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [17] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [16] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [15] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [14] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [13] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [12] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [11] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [10] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [9] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [8] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [7] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [6] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [5] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [4] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [3] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [2] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [1] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\auth_2 [0] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [31] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [30] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [29] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [28] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [27] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [26] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [25] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [24] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [23] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [22] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [21] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [20] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [19] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [18] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [17] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [16] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [15] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [14] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [13] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [12] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [11] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [10] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [9] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [8] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [7] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [6] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [5] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [4] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [3] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [2] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [1] is used but has no driver.
+SBY 20:28:00 [run] prep: Warning: Wire vert_formal_wrap.\tx_3 [0] is used but has no driver.
+SBY 20:28:00 [run] prep: finished (returncode=0)
+SBY 20:28:00 [run] smt2: starting process &quot;cd run/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 20:28:00 [run] smt2: finished (returncode=0)
+SBY 20:28:00 [run] engine_0: starting process &quot;cd run; yosys-smtbmc --presat --unroll --noprogress -t 8  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Solver: yices
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 20:28:00 [run] engine_0: ##   0:00:00  Status: passed
+SBY 20:28:00 [run] engine_0: finished (returncode=0)
+SBY 20:28:00 [run] engine_0: Status returned by engine: pass
+SBY 20:28:00 [run] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 20:28:00 [run] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 20:28:00 [run] summary: engine_0 (smtbmc) returned pass
+SBY 20:28:00 [run] summary: engine_0 did not produce any traces
+SBY 20:28:00 [run] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

@@ -1,0 +1,4 @@
+assert ((!(( flag_control_19 ) == ( 7'b1001001 ) && ( fsm_19 || clk_15 != core_4 ))) || (err_17 == reg_4 && sig_17 == core_11 && err_5 == hw_4));
+assert ((!(( flag_control_19 ) == ( 7'b1001001 ) && ( fsm_19 || clk_15 != core_4 ) && ( rst_18 && err_13 != chip_7 && hw_7 ))) || (reg_12 == hw_17 && core_20 == hw_1 && rst_1 == auth_11));
+assert ((!(( flag_control_19 )!= 7'b1001001 && ( auth_12 && err_6 || clk_4 || clk_1 ))) || (chip_6 == fsm_10 && rx_11 == sig_17 && fsm_13 == reg_14));
+assert ((!(( flag_control_19 )!= 7'b1001001 && ( auth_12 && err_6 || clk_4 || clk_1 ) && ( hw_5 != clk_20 ))) || (rx_19 == clk_14 && rst_15 == clk_16 && hw_16 == reg_8));

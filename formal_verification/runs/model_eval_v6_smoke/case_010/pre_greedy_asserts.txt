@@ -1,0 +1,8 @@
+assert (!(( cfg_4 != core_15 || rst_13 || rst_20 ))) || (rx_17 == rx_9);
+assert (!(( cfg_4 != core_15 || rst_13 || rst_20 ) && ( chip_11 || chip_7 && reg_8 || clk_10 ))) || (sig_4 == rx_19);
+assert (!(( cfg_4 != core_15 || rst_13 || rst_20 ) && (!( chip_11 || chip_7 && reg_8 || clk_10 ) && ( auth_20 || core_20 != fsm_13 && reg_11 ) ))) || (chip_20 == cfg_183);
+assert (!(( cfg_4 != core_15 || rst_13 || rst_20 ) && ( !( chip_11 || chip_7 && reg_8 || clk_10 ) &&!( auth_20 || core_20 != fsm_13 && reg_11 ) ))) || (clk_118 == rx_2);
+assert (!(! ( cfg_4 != core_15 || rst_13 || rst_20 ))) || (data_16 == chip_12);
+assert (!(! ( cfg_4 != core_15 || rst_13 || rst_20 ) && ( rx_6 || cfg_2 ))) || (cfg_6 == sig_14);
+assert (!(! ( cfg_4 != core_15 || rst_13 || rst_20 ) && (!( rx_6 || cfg_2 ) && ( fsm_118 ) ))) || (sig_18 == cfg_6);
+assert (!(! ( cfg_4 != core_15 || rst_13 || rst_20 ) && (!( rx_6 || cfg_2 ) &&!( fsm_118 ) ))) || (chip_96 == data_14);

@@ -1,0 +1,78 @@
+`timescale 1ns/1ps
+module vert_formal_wrap;
+  logic posedge clk_gen_18;
+  logic rst;
+  logic [31:0] auth_13;
+  logic [31:0] auth_2;
+  logic [31:0] auth_5;
+  logic [31:0] auth_6;
+  logic [31:0] cfg_10;
+  logic [31:0] cfg_3;
+  logic [31:0] chip_2;
+  logic [31:0] clk_15;
+  logic [31:0] clk_gen_18;
+  logic [31:0] core_2;
+  logic [31:0] data_11;
+  logic [31:0] data_14;
+  logic [31:0] data_17;
+  logic [31:0] data_19;
+  logic [31:0] data_3;
+  logic [31:0] default;
+  logic [31:0] err_3;
+  logic [31:0] fsm_14;
+  logic [31:0] fsm_16;
+  logic [31:0] fsm_8;
+  logic [31:0] fsm_9;
+  logic [31:0] h5d;
+  logic [31:0] hw_11;
+  logic [31:0] output_control_2;
+  logic [31:0] p_gen_1;
+  logic [31:0] p_gen_2;
+  logic [31:0] reg_18;
+  logic [31:0] reg_20;
+  logic [31:0] reg_3;
+  logic [31:0] rst_11;
+  logic [31:0] rst_14;
+  logic [31:0] rst_20;
+  logic [31:0] rx_12;
+  logic [31:0] rx_14;
+  logic [31:0] rx_190;
+  logic [31:0] sig_17;
+  logic [31:0] sig_3;
+  logic [31:0] sig_8;
+  logic [31:0] tx_1;
+  logic [31:0] tx_19;
+  logic [31:0] tx_5;
+  always_ff @(posedge posedge clk_gen_18) begin
+case ( output_control_2 ) 
+   7'h5d : begin
+      if (  core_2  != data_19  && tx_19 ) begin 
+          fsm_9 = rst_14;
+          clk_15 = tx_5;
+          sig_3 = auth_2;
+          if ( err_3  != rx_12 ) begin
+               fsm_14 <= tx_19;
+               auth_13 = cfg_3;
+               hw_11 = reg_3;
+          end
+      end
+   end
+   default : begin 
+      if (  data_3  != fsm_8  && rx_190 ) begin 
+          reg_20 <= auth_5;
+          data_11 <= data_14;
+          cfg_10 <= tx_1;
+          if ( rst_11  || auth_6  || sig_8  || reg_18 ) begin
+               chip_2 <= rst_20;
+               data_17 <= sig_17;
+               fsm_16 <= rx_14;
+          end
+      end
+   end
+endcase
+  end
+property p_gen_1; @(posedge clk_gen_18) ( output_control_2 ) == ( 7'h5d ) && ( core_2 != data_19 && tx_19 ) |-> fsm_9 == rst_14 && clk_15 == tx_5 && sig_3 == auth_2 ; endproperty
+assert property (p_gen_1);
+property p_gen_2; @(posedge clk_gen_18) ( output_control_2 ) == ( 7'h5d ) && ( core_2 != data_19 && tx_19 ) && ( err_3 != rx_12 ) |-> fsm_14 == tx_19 && auth_13 == cfg_3 && hw_11 == reg_3 ; endproperty
+assert property (p_gen_2);
+endmodule

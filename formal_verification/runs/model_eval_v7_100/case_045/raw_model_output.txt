@@ -1,0 +1,43 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+case ( interrupt_request_3 )
+   5'h9 : begin
+     tx_20 = reg_13;
+   end
+   7'bxx0100x : begin
+     hw_11 = err_6;
+   end
+   7'bxx0xx1x : begin
+     reg_17 = rx_20;
+   end
+   6'h37 : begin
+     clk_7 = tx_12;
+   end
+   6'b0011x1 : begin
+     rst_8 = rst_6;
+   end
+   default : begin
+     rst_19 = fsm_3;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property TxOnIrqeotid: ( interrupt_request_3 ) == ( 5'h9 ) |=> tx_20 == reg_13 ;endproperty 
+ 
+property IRQeotid: ( interrupt_request_3 ) == ( 7'bxx0100x ) |=> hw_11 == err_6 ;endproperty 
+ 
+property RxInteotid: ( interrupt_request_3 ) == ( 7'bxx0xx1x ) |=> reg_17 == rx_20 ;endproperty 
+ 
+property TxOnClkeotid: ( interrupt_request_3 ) == ( 6'h37 ) |=> clk_7 == tx_12 ;endproperty 
+ 
+property ResetSynceotid: ( interrupt_request_3 ) == ( 6'b0011x1 ) |=> rst_8 == rst_6 ;endproperty 
+ 
+property feRsteotid; ( ( interrupt_request_3 )!= 5'h9 ) && ( ( interrupt_request_3 )!= 7'bxx0100x ) && ( ( interrupt_request_3 )!= 7'bxx0xx1x ) && ( ( interrupt_request_3 )!= 6'h37 ) && ( interrupt_request_3 )!= 6'b0011x1 ) ) |=> rst_19 == fsm_3 ; endproperty 
+ �������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

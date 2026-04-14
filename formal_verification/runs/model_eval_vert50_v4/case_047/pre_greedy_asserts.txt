@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (ValidSynceotid; ( data_ready_17 ) == ( 6'h21 ) && ( clk_17 ) == ( fsm_2 ) && ( rst_12 ) == ( auth_9 ) && ( hw_5 ) == ( err_16);

@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (!(: AuthSynceotid; ( rst_18 ) && ( auth_208 ))) || (data_10 == auth_2);

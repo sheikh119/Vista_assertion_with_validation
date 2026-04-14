@@ -1,0 +1,50 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+if (  hw_5  && rx_14  && rst_12  || fsm_20 ) begin
+    hw_9 = err_60;
+    if ( hw_13  && chip_17 ) begin
+        clk_16 = tx_16;
+    end
+    else if (  tx_16  || reg_16  || rst_16  || core_11 ) begin
+        rx_1 = rst_5;
+    end
+    else begin
+        rst_3 = data_4;
+    end
+end
+else begin
+    clk_3 = auth_14;
+    if (  core_1 != tx_12  && cfg_14 ) begin
+        err_79 = hw_196;
+    end
+    else if (  core_3 != data_8  && reg_15 ) begin
+        tx_114 = err_18;
+    end
+    else begin
+        sig_28 = chip_4;
+    end
+end
+
+OUTPUT (Assertions):
+
+### Response:
+property ResetSynceotid; (  hw_5  && rx_14  && rst_12  || fsm_20 ) |=> hw_9 == err_60 ;endproperty 
+ 
+ property SyncTxeotid; (  hw_5  && rx_14  && rst_12  || fsm_20 ) && (  hw_13  && chip_17 ) |=> clk_16 == tx_16 ;endproperty 
+ 
+ property ResetSynceotid; (  hw_5  && rx_14  && rst_12  || fsm_20 ) &&  (!(  hw_13  && chip_17 ) && (  tx_16  || reg_16  || rst_16  || core_11 ) )  |=> rx_1 == rst_5 ;endproperty 
+ 
+ property ResetSynceotid; (  hw_5  && rx_14  && rst_12  || fsm_20 ) && ( !(  hw_13  && chip_17 )  &&!(  tx_16  || reg_16  || rst_16  || core_11 )  ) |=> rst_3 == data_4 ;endproperty 
+ 
+ property AuthLockeotid;! (  hw_5  && rx_14  && rst_12  || fsm_20 )  |=> clk_3 == auth_14 ;endproperty 
+ 
+ property SafeTxeotid;! (  hw_5  && rx_14  && rst_12  || fsm_20 ) && (  core_1 != tx_12  && cfg_14 ) |=> err_79 == hw_196 ;endproperty 
+ 
+ property afeTxeotid;! (  hw_5  && rx_14  && rst_12  || fsm_20 )  &&  (!(  core_1 != tx_12  && cfg_14 ) && (  core_3 != data_8  && reg_15 ) )  |=> tx_114 == err_18 ;endproperty 
+ 
+ property ncSafeeotid;! (  hw_5  && rx_14  && rst_12  || fsm_20 ) && (!(  core_1 != tx_12  && cfg_14 )  &&!(  core_3 != data_8  && reg_15 )  ) |=> sig_28 == chip_4 ;endproperty

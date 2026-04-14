@@ -1,0 +1,5 @@
+assert ((!(( start_bit_1 ) == ( 7'b0xx1x0x ))) || (chip_8 == core_19));
+assert ((!(( start_bit_1 ) == ( 7'bxx11x00 ))) || (rx_10 == data_6));
+assert ((!(( start_bit_1 ) == ( 6'b111111 ))) || (rx_9 == rst_18));
+assert ((!(( start_bit_1 ) == ( 7'b10x1x00 ))) || (fsm_6 == auth_1));
+assert ((!(( ( start_bit_1 )!= 7'b0xx1x0x ) && ( ( start_bit_1 )!= 7'bxx11x00 ) && ( ( start_bit_1 )!= 6'b111111 ) && ( start_bit_1 )!= 7'b10x1x00 ) ))) || (data_8 == data_17));

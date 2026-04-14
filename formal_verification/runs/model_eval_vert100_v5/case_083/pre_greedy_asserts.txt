@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (: assert ValidDataeotid; ( data_buffer_15 ) == ( 5'b0x01x ) && ( hw_13 ) == ( err_4 ) && ( err_6 ) == ( core_13 ) && ( fsm_4 ) == ( sig_2);

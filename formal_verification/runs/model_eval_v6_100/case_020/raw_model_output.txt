@@ -1,0 +1,51 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: negedge core_clock_20
+
+Code:
+if (  rx_3 != auth_17 ) begin
+   hw_12 <= core_11;
+    if ( sig_18  || auth_9  || cfg_4  || auth_3 ) begin
+      cfg_4 = auth_12;
+   end
+   else if (  err_16 != rst_160 ) begin
+      tx_18 <= rx_9;
+   end
+   else begin
+      data_16 = err_5;
+   end
+end
+else begin
+   cfg_6 = fsm_10;
+   if (  fsm_14  || rst_12 ) begin
+      clk_20 = sig_9;
+   end
+   else if (  rst_12  && err_13 != chip_7  && hw_7 ) begin
+      data_203 <= tx_114;
+   end
+   else begin
+      core_12 <= core_8;
+   end
+end
+
+OUTPUT (Assertions):
+
+### Response:
+property ClockSynceotid; @(negedge core_clock_20) (  rx_3 != auth_17 ) |-> hw_12 == core_11 ; endproperty 
+ 
+ property AuthSynceotid; @(negedge core_clock_20) (  rx_3 != auth_17 ) && (  sig_18  || auth_9  || cfg_4  || auth_3 ) |-> cfg_4 == auth_12 ; endproperty 
+ 
+ property SyncCheckeotid; @(negedge core_clock_20) (  rx_3 != auth_17 ) &&  (!(  sig_18  || auth_9  || cfg_4  || auth_3 ) && (  err_16 != rst_160 ) )  |-> tx_18 == rx_9 ; endproperty 
+ 
+ property alidRxeotid; @(negedge core_clock_20) (  rx_3 != auth_17 ) && ( !(  sig_18  || auth_9  || cfg_4  || auth_3 )  &&!(  err_16 != rst_160 )  ) |-> data_16 == err_5 ; endproperty 
+ 
+ property SyncCheckeotid; @(negedge core_clock_20)! (  rx_3 != auth_17 )  |-> cfg_6 == fsm_10 ; endproperty 
+ 
+ property SyncCheckeotid; @(negedge core_clock_20)! (  rx_3 != auth_17 ) && (  fsm_14  || rst_12 ) |-> clk_20 == sig_9; endproperty 
+ 
+ property yncCheckeotid; @(negedge core_clock_20)! (  rx_3 != auth_17 )  &&  (!(  fsm_14  || rst_12 ) && (  rst_12  && err_13 != chip_7  && hw_7 ) )  |-> data_203 == tx_114 ; endproperty 
+ 
+ property ncCheckeotid; @(negedge core_clock_20)! (  rx_3 != auth_17 ) && ( !(  fsm_14  || rst_12 )  &&!(  rst_12  && err_13 != chip_7  && hw_7 )  ) |-> core_12 == core_8; endproperty 
+ ���

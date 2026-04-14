@@ -1,0 +1,714 @@
+{
+  "stats": {
+    "total": 100,
+    "syntax_ok": 0,
+    "sby_pass": 0,
+    "sby_fail": 0,
+    "sby_timeout": 0,
+    "sby_error": 100,
+    "source": "/home/vista/Desktop/fyp_draft/data/VERT.jsonl"
+  },
+  "records": [
+    {
+      "idx": 1,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 2,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 3,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 4,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge fast_clk_20"
+    },
+    {
+      "idx": 5,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clk_osc_17"
+    },
+    {
+      "idx": 6,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 7,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 8,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge main_clk_5"
+    },
+    {
+      "idx": 9,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge clk_in_18"
+    },
+    {
+      "idx": 10,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 11,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 12,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge clk_in_4"
+    },
+    {
+      "idx": 13,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge core_clock_8"
+    },
+    {
+      "idx": 14,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge ref_clk_19"
+    },
+    {
+      "idx": 15,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 16,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 17,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge fast_clk_8"
+    },
+    {
+      "idx": 18,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 19,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 20,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge core_clock_20"
+    },
+    {
+      "idx": 21,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge sys_clk_2"
+    },
+    {
+      "idx": 22,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge async_clk_8"
+    },
+    {
+      "idx": 23,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clk_signal_13"
+    },
+    {
+      "idx": 24,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 25,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clock_ctrl_3"
+    },
+    {
+      "idx": 26,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 27,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 28,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge mem_clock_20"
+    },
+    {
+      "idx": 29,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 30,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 31,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 32,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 33,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge ref_clk_11"
+    },
+    {
+      "idx": 34,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 35,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 36,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge pll_clk_9"
+    },
+    {
+      "idx": 37,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 38,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 39,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 40,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge clock_ctrl_20"
+    },
+    {
+      "idx": 41,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 42,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 43,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 44,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clk_osc_4"
+    },
+    {
+      "idx": 45,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 46,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge clk_in_1"
+    },
+    {
+      "idx": 47,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clock_ctrl_5"
+    },
+    {
+      "idx": 48,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 49,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 50,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge clk_reset_10"
+    },
+    {
+      "idx": 51,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clk_out_18"
+    },
+    {
+      "idx": 52,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 53,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge clock_div_20"
+    },
+    {
+      "idx": 54,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge clk_out_14"
+    },
+    {
+      "idx": 55,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clock_div_15"
+    },
+    {
+      "idx": 56,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 57,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 58,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 59,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 60,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge core_clock_15"
+    },
+    {
+      "idx": 61,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge bus_clock_20"
+    },
+    {
+      "idx": 62,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clk_gen_18"
+    },
+    {
+      "idx": 63,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clk_osc_3"
+    },
+    {
+      "idx": 64,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clock_div_15"
+    },
+    {
+      "idx": 65,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 66,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 67,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge core_clock_12"
+    },
+    {
+      "idx": 68,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 69,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge mem_clock_3"
+    },
+    {
+      "idx": 70,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 71,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clk_osc_13"
+    },
+    {
+      "idx": 72,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clk_gen_4"
+    },
+    {
+      "idx": 73,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 74,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clk_osc_1"
+    },
+    {
+      "idx": 75,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge core_clock_4"
+    },
+    {
+      "idx": 76,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge pll_clk_7"
+    },
+    {
+      "idx": 77,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 78,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge bus_clock_11"
+    },
+    {
+      "idx": 79,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 80,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 81,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 82,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge clk_enable_15"
+    },
+    {
+      "idx": 83,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clk_gen_8"
+    },
+    {
+      "idx": 84,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clock_source_8"
+    },
+    {
+      "idx": 85,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 86,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clk_reset_7"
+    },
+    {
+      "idx": 87,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clock_source_19"
+    },
+    {
+      "idx": 88,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 89,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 90,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge fast_clk_2"
+    },
+    {
+      "idx": 91,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 92,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 93,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 94,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge sys_clk_9"
+    },
+    {
+      "idx": 95,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 96,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "negedge clk_enable_18"
+    },
+    {
+      "idx": 97,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 98,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    },
+    {
+      "idx": 99,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "True",
+      "clock": "posedge clock_ctrl_18"
+    },
+    {
+      "idx": 100,
+      "syntax_ok": false,
+      "status": "error",
+      "sync": "False",
+      "clock": null
+    }
+  ],
+  "generated_at": "2026-04-14 19:59:19"
+}

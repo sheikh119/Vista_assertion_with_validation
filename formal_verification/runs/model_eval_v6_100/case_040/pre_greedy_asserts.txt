@@ -1,0 +1,6 @@
+assert ((!(( hw_12 || chip_119 != chip_10 || auth_20 ))) || (err_9 == core_17));
+assert ((!(( hw_12 || chip_119 != chip_10 || auth_20 ) && ( reg_9 != tx_2 && sig_19 ))) || (err_79 == tx_46));
+assert ((!(( hw_12 || chip_119 != chip_10 || auth_20 ) && (!( reg_9 != tx_2 && sig_19 ) && ( auth_3 != rst_7 && fsm_16 ) ))) || (fsm_5 == sig_20));
+assert ((!(( hw_12 || chip_119 != chip_10 || auth_20 ) && ( !( reg_9 != tx_2 && sig_19 ) &&!( auth_3 != rst_7 && fsm_16 ) ))) || (chip_12 == fsm_5));
+assert ((!(! ( hw_12 || chip_119 != chip_10 || auth_20 ))) || (err_9 == err_16));
+assert ((!(! ( hw_12 || chip_119 != chip_10 || auth_20 ) && ( rst_1 != clk_11 || fsm_17 || hw_15 ))) || (data_8 == err_1));

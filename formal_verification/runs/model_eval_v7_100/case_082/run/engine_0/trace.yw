@@ -1,0 +1,15 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [],
+  "signals": [
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_163"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_165"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\clk_enable_15"], "width": 1, "offset": 0, "init_only": false}
+  ],
+  "steps": [
+    {"bits": "110"},
+    {"bits": "100"},
+    {"bits": "100"}
+  ]
+}

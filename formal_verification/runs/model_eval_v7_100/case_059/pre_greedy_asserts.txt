@@ -1,0 +1,3 @@
+assert ((!(( rst_18 ))) || (clk_122 == tx_3));
+assert ((!(( rst_18 ) && ( auth_208 ))) || (data_10 == auth_2));
+assert ((!(( rst_18 ) && ( auth_208 ) && ( clk_119 && sig_12 != hw_15 ))) || (rx_114 == core_19));

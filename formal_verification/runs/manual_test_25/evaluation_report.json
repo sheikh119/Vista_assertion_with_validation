@@ -1,0 +1,277 @@
+{
+  "stats": {
+    "total": 25,
+    "source": "data/manual_test_25.jsonl",
+    "prompt_template": "/home/vista/Desktop/fyp_draft/formal_verification/templates/assertion_prompt_template.txt",
+    "run_subdir": "manual_test_25",
+    "adapter": "/home/vista/Desktop/fyp_draft/outputs/finetuned-assertions/checkpoint-891",
+    "init_rst_zero": true,
+    "assume_no_reset": true,
+    "max_new_tokens": 220,
+    "do_sample": false,
+    "greedy_yosys_filter": true,
+    "yosys_greedy_dropped_asserts": 17,
+    "attempted_assert_clauses": 218,
+    "converted_assert_clauses": 42,
+    "syntax_ok": 25,
+    "sby_pass": 25,
+    "sby_fail": 0,
+    "sby_timeout": 0,
+    "sby_error": 0,
+    "gold_jaccard_mean": 0.18796378349733914,
+    "gold_samples": 25
+  },
+  "records": [
+    {
+      "idx": 1,
+      "attempted_assert_clauses": 8,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.03333333333333333
+    },
+    {
+      "idx": 2,
+      "attempted_assert_clauses": 5,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.029411764705882353
+    },
+    {
+      "idx": 3,
+      "attempted_assert_clauses": 6,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.024390243902439025
+    },
+    {
+      "idx": 4,
+      "attempted_assert_clauses": 16,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.03333333333333333
+    },
+    {
+      "idx": 5,
+      "attempted_assert_clauses": 9,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.038461538461538464
+    },
+    {
+      "idx": 6,
+      "attempted_assert_clauses": 10,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.025
+    },
+    {
+      "idx": 7,
+      "attempted_assert_clauses": 12,
+      "pre_greedy_asserts": 5,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 4,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.8076923076923077
+    },
+    {
+      "idx": 8,
+      "attempted_assert_clauses": 5,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.02857142857142857
+    },
+    {
+      "idx": 9,
+      "attempted_assert_clauses": 10,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.05263157894736842
+    },
+    {
+      "idx": 10,
+      "attempted_assert_clauses": 11,
+      "pre_greedy_asserts": 4,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 3,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.6744186046511628
+    },
+    {
+      "idx": 11,
+      "attempted_assert_clauses": 5,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.05
+    },
+    {
+      "idx": 12,
+      "attempted_assert_clauses": 9,
+      "pre_greedy_asserts": 4,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 3,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.6666666666666666
+    },
+    {
+      "idx": 13,
+      "attempted_assert_clauses": 9,
+      "pre_greedy_asserts": 4,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 3,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.6153846153846154
+    },
+    {
+      "idx": 14,
+      "attempted_assert_clauses": 11,
+      "pre_greedy_asserts": 2,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 1,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.4642857142857143
+    },
+    {
+      "idx": 15,
+      "attempted_assert_clauses": 5,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.03125
+    },
+    {
+      "idx": 16,
+      "attempted_assert_clauses": 8,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.02702702702702703
+    },
+    {
+      "idx": 17,
+      "attempted_assert_clauses": 9,
+      "pre_greedy_asserts": 3,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 2,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.43333333333333335
+    },
+    {
+      "idx": 18,
+      "attempted_assert_clauses": 10,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.03225806451612903
+    },
+    {
+      "idx": 19,
+      "attempted_assert_clauses": 8,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.047619047619047616
+    },
+    {
+      "idx": 20,
+      "attempted_assert_clauses": 5,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.034482758620689655
+    },
+    {
+      "idx": 21,
+      "attempted_assert_clauses": 6,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.03125
+    },
+    {
+      "idx": 22,
+      "attempted_assert_clauses": 12,
+      "pre_greedy_asserts": 2,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 1,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.36363636363636365
+    },
+    {
+      "idx": 23,
+      "attempted_assert_clauses": 11,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.058823529411764705
+    },
+    {
+      "idx": 24,
+      "attempted_assert_clauses": 13,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.0625
+    },
+    {
+      "idx": 25,
+      "attempted_assert_clauses": 5,
+      "pre_greedy_asserts": 1,
+      "converted_assert_clauses": 1,
+      "greedy_dropped_asserts": 0,
+      "syntax_ok": true,
+      "status": "pass",
+      "gold_jaccard": 0.03333333333333333
+    }
+  ],
+  "generated_at": "2026-04-14 22:06:11"
+}

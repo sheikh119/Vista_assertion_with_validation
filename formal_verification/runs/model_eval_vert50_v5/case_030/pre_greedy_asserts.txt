@@ -1,0 +1,3 @@
+assert (1'b1);
+assert (!(( input_ready_3 ) == ( 5'b0xxx0 ))) || (chip_5 == cfg_9);
+assert (!(( input_ready_3 ) == ( 6'h9 ))) || (err_16 == reg_3);

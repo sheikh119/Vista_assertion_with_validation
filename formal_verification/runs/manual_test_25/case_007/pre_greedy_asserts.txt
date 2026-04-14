@@ -1,0 +1,5 @@
+assert (1'b1);
+assert (!(( fsm_20 || auth_7 && chip_12 != fsm_17 ))) || (sig_2 == chip_11);
+assert (!(( fsm_20 || auth_7 && chip_12 != fsm_17 ) && ( fsm_14 || rx_1 != core_9 ))) || (rx_12 == fsm_6);
+assert (!(( data_1 || reg_11 ))) || (err_11 == chip_19);
+assert (!(( data_1 || reg_11 ) && ( tx_17 && hw_2 != core_18 ))) || (auth_13 == clk_6);

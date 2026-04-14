@@ -1,0 +1,51 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: negedge sys_clk_9
+
+Code:
+if (  fsm_2  || rst_12  && sig_2 ) begin
+   clk_1 = data_116;
+    if ( err_158 != data_7 ) begin
+      hw_15 = data_20;
+   end
+   else if (  cfg_2 != reg_15  || hw_18  || fsm_16 ) begin
+      fsm_1 <= rx_12;
+   end
+   else begin
+      data_11 <= sig_12;
+   end
+end
+else begin
+   tx_16 = sig_1;
+   if (  rx_6  || cfg_2 ) begin
+      tx_112 <= cfg_18;
+   end
+   else if (  reg_15 ) begin
+      core_11 <= core_18;
+   end
+   else begin
+      tx_17 <= hw_12;
+   end
+end
+
+OUTPUT (Assertions):
+
+### Response:
+property ResetSynceotid; @(negedge sys_clk_9) (  fsm_2  || rst_12  && sig_2 ) |-> clk_1 == data_116 ; endproperty 
+ 
+ property SyncErreotid; @(negedge sys_clk_9) (  fsm_2  || rst_12  && sig_2 ) && (  err_158 != data_7 ) |-> hw_15 == data_20 ; endproperty 
+ 
+ property SyncCheckeotid; @(negedge sys_clk_9) (  fsm_2  || rst_12  && sig_2 ) &&  (!(  err_158 != data_7 ) && (  cfg_2 != reg_15  || hw_18  || fsm_16 ) )  |-> fsm_1 == rx_12 ; endproperty 
+ 
+ property yncCheckeotid; @(negedge sys_clk_9) (  fsm_2  || rst_12  && sig_2 ) && ( !(  err_158 != data_7 )  &&!(  cfg_2 != reg_15  || hw_18  || fsm_16 )  ) |-> data_11 == sig_12 ; endproperty 
+ 
+ property ResetSynceotid; @(negedge sys_clk_9)! (  fsm_2  || rst_12  && sig_2 )  |-> tx_16 == sig_1 ; endproperty 
+ 
+ property SyncTxeotid; @(negedge sys_clk_9)! (  fsm_2  || rst_12  && sig_2 ) && (  rx_6  || cfg_2 ) |-> tx_112 == cfg_18; endproperty 
+ 
+ property SyncSafeeotid; @(negedge sys_clk_9)! (  fsm_2  || rst_12  && sig_2 )  &&  (!(  rx_6  || cfg_2 ) && (  reg_15 ) )  |-> core_11 == core_18 ; endproperty 
+ 
+ property SyncSafeeotid; @(negedge sys_clk_9)! (  fsm_2  || rst_12  && sig_2 ) && ( !(  rx_6  || cfg_2 )  &&!(  reg_15 )  ) |-> tx_17 == hw_12; endproperty 
+ ����

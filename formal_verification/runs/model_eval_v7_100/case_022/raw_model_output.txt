@@ -1,0 +1,34 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: posedge async_clk_8
+
+Code:
+case ( control_data_9 )
+   6'b10100x : begin
+     data_7 = hw_3;
+     clk_15 <= err_7;
+     err_10 <= clk_10;
+   end
+   6'bx0xxx0 : begin
+     fsm_5 <= err_13;
+     err_14 = hw_19;
+     tx_10 = auth_15;
+   end
+   default : begin
+     fsm_10 = fsm_9;
+     auth_15 = chip_11;
+     err_9 = reg_13;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property SyncCheckeotid; @(posedge async_clk_8) ( control_data_9 ) == ( 6'b10100x ) |-> data_7 == hw_3 && clk_15 == err_7 && err_10 == clk_10 ; endproperty 
+ 
+ property AuthCheckeotid; @(posedge async_clk_8) ( control_data_9 ) == ( 6'bx0xxx0 ) |-> fsm_5 == err_13 && err_14 == hw_19 && tx_10 == auth_15 ; endproperty 
+ 
+ property SyncCheckeotid; ( control_data_9 )!= 6'b10100x && @(posedge async_clk_8) ( control_data_9 )!= 6'bx0xxx0  |-> fsm_10 == fsm_9 && auth_15 == chip_11 && err_9 == reg_13; endproperty 
+ �������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

@@ -1,0 +1,25 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: negedge clk_reset_10
+
+Code:
+case ( control_register_status_status_13 )
+   6'bx11xxx : begin
+     fsm_7 = rx_1;
+     tx_10 = chip_7;
+   end
+   default : begin
+     sig_19 <= hw_18;
+     reg_11 = sig_11;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property ResetSynceotid; @(negedge clk_reset_10) ( control_register_status_status_13 ) == ( 6'bx11xxx ) |-> fsm_7 == rx_1 && tx_10 == chip_7 ; endproperty 
+ 
+ property ResetSynceotid; @(negedge clk_reset_10) ( control_register_status_status_13 )!= 6'bx11xxx  |-> sig_19 == hw_18 && reg_11 == sig_11; endproperty 
+ ����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

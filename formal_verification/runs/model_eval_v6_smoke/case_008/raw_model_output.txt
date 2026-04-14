@@ -1,0 +1,34 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: negedge main_clk_5
+
+Code:
+case ( status_output_buffer_2 )
+   5'bx1x10 : begin
+      if (  clk_14  || clk_10 ) begin
+          hw_2 = hw_19;
+          if ( reg_19 ) begin
+               data_7 = sig_20;
+          end
+      end
+   end
+   default : begin
+      if (  rst_11 != chip_15 ) begin
+          cfg_10 = auth_3;
+          if ( fsm_18 != reg_11 ) begin
+               clk_11 = err_13;
+          end
+      end
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property ClockSynceotid; @(negedge main_clk_5) ( status_output_buffer_2 ) == ( 5'bx1x10 ) &&  (  clk_14  || clk_10 ) |-> hw_2 == hw_19 ;endproperty 
+ property ValidDataeotid; @(negedge main_clk_5) ( status_output_buffer_2 ) == ( 5'bx1x10 ) &&  (  clk_14  || clk_10 ) &&  (  reg_19 ) |-> data_7 == sig_20 ;endproperty 
+ property ResetSynceotid;  @(negedge main_clk_5) ( status_output_buffer_2 )!= 5'bx1x10  &&  (  rst_11 != chip_15 ) |-> cfg_10 == auth_3 ;endproperty 
+ property SyncErreotid;  @(negedge main_clk_5) ( status_output_buffer_2 )!= 5'bx1x10  &&  (  rst_11 != chip_15 ) &&  (  fsm_18 != reg_11 ) |-> clk_11 == err_13 ;endproperty 
+ ������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

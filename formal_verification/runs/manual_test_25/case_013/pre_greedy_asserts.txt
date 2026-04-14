@@ -1,0 +1,4 @@
+assert (1'b1);
+assert (!(( acknowledge_14 ) == ( 7'bx101xxx ))) || (rst_6);
+assert (!(( acknowledge_14 )!= 7'bxxxxxx1 ))) || (data_13);
+assert (!(( acknowledge_14 )!= 7'bx101xxx ) && ( acknowledge_14 )!= 7'bxxxxxx1 ))) || (clk_7);

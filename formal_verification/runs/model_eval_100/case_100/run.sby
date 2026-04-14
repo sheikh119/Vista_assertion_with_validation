@@ -1,0 +1,13 @@
+[options]
+mode bmc
+depth 8
+
+[engines]
+smtbmc
+
+[script]
+read_verilog -sv vert_formal_wrap.sv
+prep -top vert_formal_wrap
+
+[files]
+vert_formal_wrap.sv

@@ -1,0 +1,32 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: posedge clk_out_18
+
+Code:
+if (  err_10  && core_20 ) begin
+    sig_2 = reg_20;
+    core_6 <= cfg_15;
+    tx_7 = chip_11;
+    if ( data_3  && err_2  && hw_8 ) begin
+        rx_11 = sig_11;
+        rst_6 <= data_10;
+        core_18 = chip_19;
+    end
+        if ( chip_3 != sig_8  || auth_4 != fsm_1 ) begin
+            data_1 <= sig_1;
+            tx_2 = cfg_20;
+            rst_8 <= chip_7;
+        end
+end
+
+OUTPUT (Assertions):
+
+### Response:
+property ClockSynceotid; @(posedge clk_out_18) (  err_10  && core_20 ) |-> sig_2 == reg_20 && core_6 == cfg_15 && tx_7 == chip_11 ;endproperty 
+ 
+ property ValidRxeotid; @(posedge clk_out_18) (  err_10  && core_20 ) &&  (  data_3  && err_2  && hw_8 ) |-> rx_11 == sig_11 && rst_6 == data_10 && core_18 == chip_19 ;endproperty 
+ 
+ property ValidTxeotid; @(posedge clk_out_18) (  err_10  && core_20 ) &&  (  data_3  && err_2  && hw_8 ) &&  (  chip_3 != sig_8  || auth_4 != fsm_1 ) |-> data_1 == sig_1 && tx_2 == cfg_20 && rst_8 == chip_7 ;endproperty 
+ �����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

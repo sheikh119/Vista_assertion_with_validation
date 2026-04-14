@@ -1,0 +1,33 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+case ( output_buffer_2 )
+   6'b010110 : begin
+     reg_19 = chip_20;
+   end
+   4'b010x : begin
+     core_17 = clk_8;
+   end
+   6'b0x1011 : begin
+     chip_6 = sig_16;
+   end
+   default : begin
+     fsm_4 = rst_3;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property BufferMatcheotid: ( output_buffer_2 ) == ( 6'b010110 ) |=> reg_19 == chip_20 ;endproperty 
+ 
+property SyncIneotid: ( output_buffer_2 ) == ( 4'b010x ) |=> core_17 == clk_8 ;endproperty 
+ 
+property BufferValideotid: ( output_buffer_2 ) == ( 6'b0x1011 ) |=> chip_6 == sig_16 ;endproperty 
+ 
+property SafeReseteotid; ( ( output_buffer_2 )!= 6'b010110 ) && ( ( output_buffer_2 )!= 4'b010x ) && ( output_buffer_2 )!= 6'b0x1011 ) ) |=> fsm_4 == rst_3 ; endproperty 
+ �����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

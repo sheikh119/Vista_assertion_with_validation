@@ -1,0 +1,5 @@
+assert ((!(( start_address_12 ) == ( 5'b10x11 ))) || (core_4 == clk_2));
+assert ((!(( start_address_12 ) == ( 6'b0xxx00 ))) || (err_17 == chip_8));
+assert ((!(( start_address_12 ) == ( 2'b1x ))) || (clk_17 == hw_12));
+assert ((!(( start_address_12 ) == ( clk_10 ))) || (data_15 == cfg_12));
+assert ((!(( ( start_address_12 )!= 5'b10x11 ) && ( ( start_address_12 )!= 6'b0xxx00 ) && ( ( start_address_12 )!= 2'b1x ) && ( start_address_12 )!= clk_10 ) ))) || (tx_12 == rst_1));

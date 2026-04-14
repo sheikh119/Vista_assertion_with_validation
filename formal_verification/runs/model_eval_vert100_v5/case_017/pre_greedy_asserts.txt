@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (: if ( auth_6 && data_1 != hw_8 ) begin auth_12 = auth_18; cfg_19 = cfg_19; if ( err_2 != data_17 ) begin clk_12 = clk_1; err_1 = err_1; end end);

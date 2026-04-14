@@ -1,0 +1,48 @@
+`timescale 1ns/1ps
+module vert_formal_wrap;
+  logic negedge ref_clk_19;
+  logic rst;
+  logic [31:0] AuthMismatcheotid;
+  logic [31:0] ResetSynceotid;
+  logic [31:0] ValidTxeotid;
+  logic [31:0] auth_16;
+  logic [31:0] auth_17;
+  logic [31:0] cfg_183;
+  logic [31:0] chip_2;
+  logic [31:0] clk_13;
+  logic [31:0] core_3;
+  logic [31:0] core_5;
+  logic [31:0] core_6;
+  logic [31:0] data_5;
+  logic [31:0] err_10;
+  logic [31:0] fsm_13;
+  logic [31:0] hw_;
+  logic [31:0] hw_7;
+  logic [31:0] ref_clk_19;
+  logic [31:0] reg_4;
+  logic [31:0] rst_12;
+  logic [31:0] rst_19;
+  logic [31:0] rst_99;
+  logic [31:0] rx_7;
+  logic [31:0] sig_1;
+  logic [31:0] tx_17;
+
+  always_ff @(posedge negedge ref_clk_19) begin
+if (  auth_16  != auth_17  || data_5  && rst_19 ) begin 
+    cfg_183 = core_6;
+    core_5 <= rx_7;
+    if ( rst_99 ) begin
+        sig_1 <= err_10;
+        chip_2 = rst_12;
+    end
+        if ( reg_4  && hw_7  != core_3 ) begin
+            fsm_13 = clk_13;
+            tx_17 <= data_5;
+        end
+end
+  end
+
+property AuthMismatcheotid; @(negedge ref_clk_19) (  auth_16 != auth_17  || data_5  && rst_19 ) |-> cfg_183 == core_6 && core_5 == rx_7 ;endproperty
+ property ResetSynceotid; @(negedge ref_clk_19) (  auth_16 != auth_17  || data_5  && rst_19 ) &&  (  rst_99 ) |-> sig_1 == err_10 && chip_2 == rst_12 ;endproperty
+ property ValidTxeotid; @(negedge ref_clk_19) (  auth_16 != auth_17  || data_5  && rst_19 ) &&  (  rst_99 ) &&  (  reg_4  && hw_
+endmodule

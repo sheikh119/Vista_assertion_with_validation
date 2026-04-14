@@ -1,0 +1,106 @@
+`timescale 1ns/1ps
+module vert_formal_wrap;
+  logic pll_clk_9;
+  logic rst;
+  initial begin
+    rst = 1'b0;
+    rx_198 = '0;
+    tx_115 = '0;
+    rx_6 = '0;
+    rst_99 = '0;
+    chip_18 = '0;
+    sig_16 = '0;
+    rx_5 = '0;
+    auth_3 = '0;
+    cfg_1 = '0;
+    auth_17 = '0;
+    core_112 = '0;
+    reg_13 = '0;
+    rst_6 = '0;
+    reg_12 = '0;
+    err_11 = '0;
+    tx_11 = '0;
+    data_8 = '0;
+    rst_14 = '0;
+    cfg_16 = '0;
+    chip_10 = '0;
+    hw_9 = '0;
+    core_10 = '0;
+    cfg_6 = '0;
+    fsm_6 = '0;
+    cfg_17 = '0;
+    cfg_5 = '0;
+    auth_6 = '0;
+    cfg_7 = '0;
+  end
+  logic [31:0] rx_198;
+  logic [31:0] tx_115;
+  logic [31:0] rx_6;
+  logic [31:0] rst_99;
+  logic [31:0] chip_18;
+  logic [31:0] sig_16;
+  logic [31:0] rx_5;
+  logic [31:0] auth_3;
+  logic [31:0] cfg_1;
+  logic [31:0] auth_17;
+  logic [31:0] core_112;
+  logic [31:0] reg_13;
+  logic [31:0] rst_6;
+  logic [31:0] reg_12;
+  logic [31:0] err_11;
+  logic [31:0] tx_11;
+  logic [31:0] data_8;
+  logic [31:0] rst_14;
+  logic [31:0] cfg_16;
+  logic [31:0] chip_10;
+  logic [31:0] hw_9;
+  logic [31:0] core_10;
+  logic [31:0] cfg_6;
+  logic [31:0] fsm_6;
+  logic [31:0] cfg_17;
+  logic [31:0] cfg_5;
+  logic [31:0] auth_6;
+  logic [31:0] cfg_7;
+  reg _started = 0;
+  always @(negedge pll_clk_9) begin
+if (  rx_198 ) begin
+   tx_115 = rx_6;
+    if ( rst_99 ) begin
+      chip_18 <= sig_16;
+   end
+   else if (  rx_5  && auth_3  || cfg_1 ) begin
+      auth_17 = core_112;
+   end
+   else begin
+      reg_13 <= rx_6;
+   end
+end
+else begin
+   rst_6 = reg_12;
+   if (  err_11  && tx_11  || data_8  != rst_14 ) begin
+      cfg_16 <= chip_10;
+   end
+   else if (  hw_9  != core_10  || cfg_6  != fsm_6 ) begin
+      cfg_17 = cfg_5;
+   end
+   else begin
+      auth_6 <= cfg_7;
+   end
+end
+    _started <= 1;
+  end
+
+  always @(negedge pll_clk_9) begin
+    if (_started) begin
+    assume (!rst);
+      assert ((!(( rx_198 ))) || (tx_115 == rx_6));
+    assert ((!(( rx_198 ) && ( rst_99 ))) || (chip_18 == sig_16));
+    assert ((!(( rx_198 ) && (!( rst_99 ) && ( rx_5 && auth_3 || cfg_1 ) ))) || (auth_17 == core_112));
+    assert ((!(( rx_198 ) && ( !( rst_99 ) &&!( rx_5 && auth_3 || cfg_1 ) ))) || (reg_13 == rx_6));
+    assert ((!(! ( rx_198 ))) || (rst_6 == reg_12));
+    assert ((!(! ( rx_198 ) && ( err_11 && tx_11 || data_8 != rst_14 ))) || (cfg_16 == chip_10));
+    assert ((!(! ( rx_198 ) && (!( err_11 && tx_11 || data_8 != rst_14 ) && ( hw_9 != core_10 || cfg_6 != fsm_6 ) ))) || (cfg_17 == cfg_5));
+    assert ((!(! ( rx_198 ) && ( !( err_11 && tx_11 || data_8 != rst_14 ) &&!( hw_9 != core_10 || cfg_6 != fsm_6 ) ))) || (auth_6 == cfg_7));
+    end
+  end
+endmodule

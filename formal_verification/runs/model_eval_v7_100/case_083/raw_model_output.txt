@@ -1,0 +1,41 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: True
+Clock: posedge clk_gen_8
+
+Code:
+case ( data_buffer_15 )
+   6'b0xx1xx : begin
+     fsm_17 <= data_6;
+     core_9 <= auth_7;
+     clk_1 = rx_5;
+   end
+   5'b0x01x : begin
+     hw_13 <= err_4;
+     err_6 <= core_13;
+     fsm_4 = sig_2;
+   end
+   4'bx1x1 : begin
+     cfg_5 <= clk_2;
+     core_2 <= sig_5;
+     sig_11 <= fsm_18;
+   end
+   default : begin
+     auth_10 <= tx_1;
+     rst_18 = auth_11;
+     tx_19 <= rst_18;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property ValidRxeotid; @(posedge clk_gen_8) ( data_buffer_15 ) == ( 6'b0xx1xx ) |-> fsm_17 == data_6 && core_9 == auth_7 && clk_1 == rx_5 ; endproperty 
+ 
+ property ValidDataeotid; @(posedge clk_gen_8) ( data_buffer_15 ) == ( 5'b0x01x ) |-> hw_13 == err_4 && err_6 == core_13 && fsm_4 == sig_2 ; endproperty 
+ 
+ property SyncLoadeotid; @(posedge clk_gen_8) ( data_buffer_15 ) == ( 4'bx1x1 ) |-> cfg_5 == clk_2 && core_2 == sig_5 && sig_11 == fsm_18 ; endproperty 
+ 
+ property ataSynceotid; ( data_buffer_15 )!= 6'b0xx1xx && ( data_buffer_15 )!= 5'b0x01x && @(posedge clk_gen_8) ( data_buffer_15 )!= 4'bx1x1  |-> auth_10 == tx_1 && rst_18 == auth_11 && tx_19 == rst_18; endproperty 
+ ��������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

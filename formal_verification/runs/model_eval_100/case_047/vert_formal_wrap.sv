@@ -1,0 +1,56 @@
+`timescale 1ns/1ps
+module vert_formal_wrap;
+  logic posedge clock_ctrl_5;
+  logic rst;
+  logic [31:0] ValidRsteotid;
+  logic [31:0] ValidTxeotid;
+  logic [31:0] VerifySynceotid;
+  logic [31:0] auth_14;
+  logic [31:0] auth_17;
+  logic [31:0] auth_6;
+  logic [31:0] auth_9;
+  logic [31:0] b1101001;
+  logic [31:0] cfg_17;
+  logic [31:0] clk_1;
+  logic [31:0] clk_17;
+  logic [31:0] clock_ctrl_5;
+  logic [31:0] core_10;
+  logic [31:0] data_ready_17;
+  logic [31:0] default;
+  logic [31:0] err_16;
+  logic [31:0] fsm_;
+  logic [31:0] fsm_2;
+  logic [31:0] fsm_6;
+  logic [31:0] fsm_9;
+  logic [31:0] h21;
+  logic [31:0] hw_13;
+  logic [31:0] hw_20;
+  logic [31:0] hw_5;
+  logic [31:0] rst_12;
+  logic [31:0] sig_4;
+  logic [31:0] tx_18;
+
+  always_ff @(posedge posedge clock_ctrl_5) begin
+case ( data_ready_17 ) 
+   7'b1101001 : begin
+     auth_14 = auth_6
+     fsm_9 = clk_1
+     hw_20 <= tx_18;
+   end
+   6'h21 : begin
+     clk_17 <= fsm_2
+     rst_12 = auth_9
+     hw_5 = err_16;
+   end
+   default : begin 
+     sig_4 <= core_10
+     auth_17 <= fsm_6
+     hw_13 = cfg_17;
+   end
+endcase
+  end
+
+  property ValidTxeotid; @(posedge clock_ctrl_5) ( data_ready_17 ) == ( 7'b1101001 ) |-> auth_14 == auth_6 && fsm_9 == clk_1 && hw_20 == tx_18 ; endproperty
+  property ValidRsteotid; @(posedge clock_ctrl_5) ( data_ready_17 ) == ( 6'h21 ) |-> clk_17 == fsm_2 && rst_12 == auth_9 && hw_5 == err_16 ; endproperty
+  property VerifySynceotid; ( data_ready_17 )!= 7'b1101001 && @(posedge clock_ctrl_5) ( data_ready_17 )!= 6'h21  |-> sig_4 == core_10 && auth_17 == fsm_
+endmodule

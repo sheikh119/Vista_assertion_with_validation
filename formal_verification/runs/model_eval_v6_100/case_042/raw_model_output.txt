@@ -1,0 +1,28 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+case ( control_input_status_15 )
+   7'h7e : begin
+     sig_5 = fsm_19;
+   end
+   6'b01000x : begin
+     cfg_11 = clk_17;
+   end
+   default : begin
+     cfg_7 = rst_16;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property CtrlValideotid: ( control_input_status_15 ) == ( 7'h7e ) |=> sig_5 == fsm_19 ;endproperty 
+ 
+property ClockSynceotid: ( control_input_status_15 ) == ( 6'b01000x ) |=> cfg_11 == clk_17 ;endproperty 
+ 
+property SafeReseteotid; ( ( control_input_status_15 )!= 7'h7e ) && ( control_input_status_15 )!= 6'b01000x ) ) |=> cfg_7 == rst_16 ; endproperty 
+ ����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

@@ -1,0 +1,4 @@
+assert ((!(( enable_16 ) == ( 5'bxx00x ))) || (chip_3 == rst_9 && fsm_17 == rst_15));
+assert ((!(( enable_16 ) == ( 7'h4a ))) || (tx_4 == core_5 && rx_19 == auth_2));
+assert ((!(( enable_16 ) == ( 5'b11xx1 ))) || (fsm_18 == err_8 && hw_7 == chip_5));
+assert ((!(( enable_16 )!= 5'bxx00x && ( enable_16 )!= 7'h4a && ( enable_16 )!= 5'b11xx1)) || (reg_7 == chip_14 && hw_8 == sig_9));

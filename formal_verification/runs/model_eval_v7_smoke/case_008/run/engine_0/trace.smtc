@@ -1,0 +1,14 @@
+initial
+assume (= [$auto$async2sync.cc:107:execute$111] false)
+assume (= [$auto$async2sync.cc:116:execute$103] true)
+assume (= [$auto$async2sync.cc:116:execute$109] true)
+assume (= [$auto$async2sync.cc:116:execute$115] true)
+assume (= [$auto$async2sync.cc:116:execute$121] true)
+assume (= [cfg_10] #b00000000000000000000000000000000)
+assume (= [clk_11] #b10000000000000000000000000000000)
+assume (= [data_7] #b10000000000000000000000000000000)
+assume (= [hw_2] #b10000000000000000000000000000000)
+
+state 0
+
+state 1

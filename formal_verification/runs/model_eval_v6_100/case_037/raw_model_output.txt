@@ -1,0 +1,38 @@
+### Instruction:
+You are a hardware verification assistant. Given the RTL code and the synchronous/clock info, produce the formal assertion(s) that verify the behaviour.
+
+Synchronous: False
+Clock: None
+
+Code:
+case ( control_flag_register_3 )
+   7'h6e : begin
+     fsm_19 = auth_13;
+   end
+   5'b1010x : begin
+     cfg_19 = rst_3;
+   end
+   7'b0xxx010 : begin
+     rx_16 = cfg_12;
+   end
+   7'b111111x : begin
+     auth_5 = tx_18;
+   end
+   default : begin
+     rst_2 = auth_14;
+   end
+endcase
+
+OUTPUT (Assertions):
+
+### Response:
+property AuthCheckeotid: ( control_flag_register_3 ) == ( 7'h6e ) |=> fsm_19 == auth_13 ;endproperty 
+ 
+property ResetSynceotid: ( control_flag_register_3 ) == ( 5'b1010x ) |=> cfg_19 == rst_3 ;endproperty 
+ 
+property rxSynceotid: ( control_flag_register_3 ) == ( 7'b0xxx010 ) |=> rx_16 == cfg_12 ;endproperty 
+ 
+property AuthLockeotid: ( control_flag_register_3 ) == ( 7'b111111x ) |=> auth_5 == tx_18 ;endproperty 
+ 
+property afeReseteotid; ( ( control_flag_register_3 )!= 7'h6e ) && ( ( control_flag_register_3 )!= 5'b1010x ) && ( ( control_flag_register_3 )!= 7'b0xxx010 ) && ( control_flag_register_3 )!= 7'b111111x ) ) |=> rst_2 == auth_14 ; endproperty 
+ �����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������

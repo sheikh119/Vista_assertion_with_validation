@@ -1,0 +1,4 @@
+assert ((!(: ( output_buffer_2 ) == ( 6'b010110 ))) || (reg_19 == chip_20));
+assert ((!(: ( output_buffer_2 ) == ( 4'b010x ))) || (core_17 == clk_8));
+assert ((!(: ( output_buffer_2 ) == ( 6'b0x1011 ))) || (chip_6 == sig_16));
+assert ((!(( ( output_buffer_2 )!= 6'b010110 ) && ( ( output_buffer_2 )!= 4'b010x ) && ( output_buffer_2 )!= 6'b0x1011 ) ))) || (fsm_4 == rst_3));

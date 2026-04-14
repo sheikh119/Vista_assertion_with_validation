@@ -1,0 +1,61 @@
+You are a hardware verification expert generating assertions for Yosys + SymbiYosys formal checking.
+
+OUTPUT RULES (follow strictly — tooling cannot parse full SVA property syntax here):
+1. After the line "Assertion:" output ONLY immediate procedural assertions, one per line.
+2. Each line MUST be exactly: assert (<boolean expression>);
+3. Use only signal names that appear in the RTL snippet below. Do not invent new names.
+4. Allowed operators: ==,!=, <, >, <=, >=, &&, ||,!, &, |, ^, ~, +, -, *, /, %, <<, >> (only if they appear in the RTL style).
+5. Parenthesize generously so precedence is unambiguous.
+6. Do NOT use: property, endproperty, assert property, sequence, cover property, ##N delays, |->, |=>, @(posedge...), disable iff, $past, $rose, $fell.
+7. If the RTL is combinational (Synchronous False), express combinational invariants (outputs and internal logic consistent with inputs each time step).
+8. If the RTL is clocked (Synchronous True), express per-cycle boolean relations that should hold after the described updates (still as plain assert (expr); — no clock in the assertion text).
+9. Prefer 1–5 concise assertions that capture the main safety/consistency of the fragment. If unsure, output a single tautology: assert (1'b1);
+10. Do not add explanations, markdown, or code fences — only the assert lines.
+11. Never split one assert across multiple lines — one full assert (... ); per line only.
+12. Prefer == and!= over === ; do not use four-state comparisons.
+
+INPUT
+
+Code:
+case ( output_control_2 )
+   7'h5d : begin
+      if (  core_2 != data_19  && tx_19 ) begin
+          fsm_9 = rst_14;
+          clk_15 = tx_5;
+          sig_3 = auth_2;
+          if ( err_3 != rx_12 ) begin
+               fsm_14 <= tx_19;
+               auth_13 = cfg_3;
+               hw_11 = reg_3;
+          end
+      end
+   end
+   default : begin
+      if (  data_3 != fsm_8  && rx_190 ) begin
+          reg_20 <= auth_5;
+          data_11 <= data_14;
+          cfg_10 <= tx_1;
+          if ( rst_11  || auth_6  || sig_8  || reg_18 ) begin
+               chip_2 <= rst_20;
+               data_17 <= sig_17;
+               fsm_16 <= rx_14;
+          end
+      end
+   end
+endcase
+
+Synchronous: True
+
+Clock: posedge clk_gen_18
+
+Assertion:
+assert AuthSynceotid; if (  core_2 != data_19  && tx_19 ) (  fsm_9 ) = rst_14 && clk_15 && sig_3 ;endproperty 
+ 
+ Assertion:
+ assert ValidTxeotid; if (  core_2 != data_19  && tx_19 ) (  fsm_14 ) == tx_19 && auth_13 == cfg_3 && hw_11 == reg_3 ;endproperty 
+ 
+ Assertion:
+ property AuthSynceotid; @(posedge clk_gen_18) (  data_3 != fsm_8  && rx_190 ) |-> reg_20 == auth_5 && data_11 == data_14 && cfg_10 == tx_1 ;endproperty 
+ 
+ Assertion:
+ property ResetSynceotid; @(posedge clk_gen_18) (  data_3 != fsm_8  && rx_190 ) &&  (  rst_11  || auth_6  || sig_8  || reg_18 )

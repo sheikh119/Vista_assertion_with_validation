@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (: assert AuthSynceotid; ( interrupt_control_10 ) == ( 7'h58 ) && ( data_14 ) == ( err_13 ) && ( rst_5 ) == ( rx_7 ) && ( chip_8 ) == ( auth_7 ) ).);

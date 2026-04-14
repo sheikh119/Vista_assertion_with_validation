@@ -1,0 +1,2 @@
+assert ((!(( control_register_status_status_13 ) == ( 6'bx11xxx ))) || (fsm_7 == rx_1 && tx_10 == chip_7));
+assert ((!(( control_register_status_status_13 )!= 6'bx11xxx)) || (sig_19 == hw_18 && reg_11 == sig_11));

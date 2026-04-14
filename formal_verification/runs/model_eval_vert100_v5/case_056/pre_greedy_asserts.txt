@@ -1,0 +1,3 @@
+assert (1'b1);
+assert (: assert StartErreotid: ( start_signal_17 ) == ( 7'b111xxx1 ) && ( core_8 ) == ( err_18);
+assert (: assert DataSynceotid: ( start_signal_17 ) == ( 6'bx1xxxx ) && ( data_6 ) == ( core_8);

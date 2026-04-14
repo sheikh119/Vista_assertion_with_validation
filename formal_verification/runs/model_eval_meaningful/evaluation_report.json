@@ -1,0 +1,716 @@
+{
+  "stats": {
+    "total": 100,
+    "source": "/home/vista/Desktop/fyp_draft/data/VERT.jsonl",
+    "attempted_assert_clauses": 254,
+    "converted_assert_clauses": 254,
+    "syntax_ok": 30,
+    "sby_pass": 28,
+    "sby_fail": 1,
+    "sby_timeout": 0,
+    "sby_error": 71
+  },
+  "records": [
+    {
+      "idx": 1,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 2,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 3,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 4,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 5,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 6,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 7,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 8,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 9,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 10,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 11,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 12,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 13,
+      "attempted_assert_clauses": 1,
+      "converted_assert_clauses": 1,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 14,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 15,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 16,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 4,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 17,
+      "attempted_assert_clauses": 0,
+      "converted_assert_clauses": 0,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 18,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 4,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 19,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 4,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 20,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 21,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 22,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 23,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 24,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "fail"
+    },
+    {
+      "idx": 25,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 26,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 27,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 28,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 29,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 4,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 30,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 4,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 31,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 32,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 33,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 34,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 35,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 36,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 37,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 4,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 38,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 39,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 40,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 41,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 42,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 43,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 44,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 45,
+      "attempted_assert_clauses": 5,
+      "converted_assert_clauses": 5,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 46,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 47,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 48,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 49,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 50,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 51,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 52,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 53,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 54,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 55,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 56,
+      "attempted_assert_clauses": 5,
+      "converted_assert_clauses": 5,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 57,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 58,
+      "attempted_assert_clauses": 5,
+      "converted_assert_clauses": 5,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 59,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 60,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 61,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 62,
+      "attempted_assert_clauses": 0,
+      "converted_assert_clauses": 0,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 63,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 64,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 65,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 66,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 67,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 68,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 69,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 70,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 71,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 72,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 73,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 74,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 75,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 76,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 77,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 78,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 79,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 4,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 80,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 81,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 82,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 83,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 84,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 85,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 86,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 87,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 88,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 89,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 90,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 91,
+      "attempted_assert_clauses": 4,
+      "converted_assert_clauses": 4,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 92,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 93,
+      "attempted_assert_clauses": 3,
+      "converted_assert_clauses": 3,
+      "syntax_ok": true,
+      "status": "error"
+    },
+    {
+      "idx": 94,
+      "attempted_assert_clauses": 0,
+      "converted_assert_clauses": 0,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 95,
+      "attempted_assert_clauses": 0,
+      "converted_assert_clauses": 0,
+      "syntax_ok": true,
+      "status": "pass"
+    },
+    {
+      "idx": 96,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 97,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 98,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 99,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    },
+    {
+      "idx": 100,
+      "attempted_assert_clauses": 2,
+      "converted_assert_clauses": 2,
+      "syntax_ok": false,
+      "status": "error"
+    }
+  ],
+  "generated_at": "2026-04-14 20:29:57"
+}

@@ -1,0 +1,3 @@
+assert ((!(( chip_16 && err_10 || fsm_11 ))) || (clk_15 == err_18 && chip_17 == cfg_20 && clk_6 == tx_5));
+assert ((!(( chip_16 && err_10 || fsm_11 ) && ( rx_1 || clk_10 && data_19 ))) || (clk_62 == err_7 && data_9 == cfg_7 && rst_12 == sig_6));
+assert ((!(( chip_16 && err_10 || fsm_11 ) && ( rx_1 || clk_10 && data_19 ) && ( chip_12 && auth_15 || tx_2 || rst_15 ))) || (data_8 == reg_8 && rx_4 == rst_19 && core_5 == auth_19));

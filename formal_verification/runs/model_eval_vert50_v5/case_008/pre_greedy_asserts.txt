@@ -1,0 +1,4 @@
+assert (1'b1);
+assert (!(ValidDataeotid; ( clk_14 || clk_10 ) && ( reg_19 ))) || (data_7 == sig_20);
+assert (!(( rst_11 != chip_15 ))) || (cfg_10 == auth_3);
+assert (!(( rst_11 != chip_15 ) && ( fsm_18 != reg_11 ))) || (clk_11 == err_13);

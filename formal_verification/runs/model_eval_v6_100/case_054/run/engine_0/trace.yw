@@ -1,0 +1,29 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [],
+  "signals": [
+    {"path": ["\\auth_13"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\cfg_11"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\cfg_13"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_4"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\clk_out_14"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\core_13"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\fsm_11"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\fsm_2"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\hw_4"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\hw_8"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\rx_11"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\sig_20"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\tx_11"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\chip_10"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\clk_27"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\fsm_15"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\fsm_8"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\reg_4"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\tx_115"], "width": 32, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000"}
+  ]
+}

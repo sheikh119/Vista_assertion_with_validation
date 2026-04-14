@@ -1,0 +1,2 @@
+assert (1'b1);
+assert (: if ( sig_15 || rst_12 || reg_19 != cfg_6 ) && ( rx_19 || data_7 != reg_17 || rst_19 ) begin sig_8 = err_9);
