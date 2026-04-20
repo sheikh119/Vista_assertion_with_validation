@@ -1,0 +1,6 @@
+# VISTA backend API dependencies.
+# The heavy ML deps (unsloth, torch, peft, transformers) must already be
+# installed in your main `vista_env` virtualenv — the backend reuses them.
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.6.0

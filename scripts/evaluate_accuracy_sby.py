@@ -411,25 +411,50 @@ def token_jaccard(a: str, b: str) -> float:
 
 
 def infer_signals(code: str, assert_lines: list[str], clk_name: str) -> list[str]:
-    """Declare identifiers from both RTL and assertion expressions."""
-    combined = code + "\n" + "\n".join(assert_lines)
-    toks = re.findall(r"[A-Za-z_][A-Za-z0-9_]*", combined)
-    sigs = []
+    """Declare identifiers from both RTL and assertion expressions.
+
+    Stop-word filtering applies ONLY to tokens that come exclusively from the
+    model's assertion output (where hallucinated English words can leak in).
+    Tokens that appear in the user-provided RTL code are always kept, regardless
+    of whether they collide with an English stop word (e.g. "full", "count",
+    "output", "line"), because they are real signal names.
+    """
+    # Reject identifiers that are the base portion of a sized literal such as
+    # "1'b1" -> "b1", "8'hFF" -> "hFF", "3'd7" -> "d7". The negative lookbehind
+    # skips any match that is immediately preceded by a single quote.
+    _TOK = r"(?<!')[A-Za-z_][A-Za-z0-9_]*"
+    code_tokens = re.findall(_TOK, code)
+    code_token_set = set(code_tokens)
+    assert_tokens = re.findall(_TOK, "\n".join(assert_lines))
+
+    sigs: list[str] = []
     seen: set[str] = set()
-    for t in toks:
+
+    def _consider(t: str, *, from_code: bool) -> None:
         tl = t.lower()
-        if tl in _VERILOG_KW or tl in _ENGLISH_STOP:
-            continue
+        if tl in _VERILOG_KW:
+            return
         if t in (clk_name, "rst"):
-            continue
+            return
         if not re.match(r"[A-Za-z_]", t):
-            continue
-        # Skip pure numeric-suffix-less single chars that might be format artifacts
+            return
+        # Drop single-letter identifiers only when they clearly come from
+        # formatted literals (e.g. `b1` extracted from `1'b1`), never from code.
         if len(t) == 1 and t.lower() in "abcdefghijklmnopqrstuvwxyz":
-            continue
-        if t not in seen:
-            seen.add(t)
-            sigs.append(t)
+            return
+        # English stop-word guard only applies to model-only tokens.
+        if not from_code and tl in _ENGLISH_STOP:
+            return
+        if t in seen:
+            return
+        seen.add(t)
+        sigs.append(t)
+
+    for t in code_tokens:
+        _consider(t, from_code=True)
+    for t in assert_tokens:
+        _consider(t, from_code=t in code_token_set)
+
     return sigs[:120]
 
 

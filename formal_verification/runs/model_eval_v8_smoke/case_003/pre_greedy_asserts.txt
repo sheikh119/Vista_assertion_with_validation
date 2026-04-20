@@ -1,0 +1,3 @@
+assert ((!(( core_2 && fsm_3 ))) || (data_11 == data_12 && auth_120 == rst_14));
+assert ((!(( core_2 && fsm_3 ) && ( core_1 != tx_12 && cfg_14 ))) || (data_20 == tx_14 && core_8 == fsm_11));
+assert ((!(( core_2 && fsm_3 ) && ( core_1 != tx_12 && cfg_14 ) && ( sig_14 || rst_17 || data_18 && tx_12 ))) || (rst_2 == rst_12 && clk_62 == hw_19));

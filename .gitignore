@@ -23,3 +23,8 @@ benchmark/assertion_data_for_LLM/
 # Formal tools (large binary suite; see formal_verification/install_oss_cad_suite.sh)
 formal_verification/oss-cad-suite/
 formal_verification/downloads/
+
+# Report → Word export (see scripts/export_report_to_docx.py)
+scripts/report_docx_tools/node_modules/
+scripts/report_docx_tools/pandoc_bin/
+exports/report_docx_build/
