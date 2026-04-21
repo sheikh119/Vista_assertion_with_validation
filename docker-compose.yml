@@ -1,0 +1,35 @@
+# Production-style stack: Next proxies /api/* to the FastAPI service on port 8000.
+# Local dev (no Docker): run backend on localhost:8000 and `npm run dev` in web/frontend
+# — rewrites default to http://localhost:8000 (see next.config.mjs).
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: web/backend/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+    # Mount finetuned weights from the host (see scripts/evaluate_accuracy_sby.py).
+    volumes:
+      - ./outputs:/workspace/outputs:ro
+    # Optional: skip loading the LLM inside the container (UI / health only).
+    # VISTA_SKIP_MODEL_LOAD: "1"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: web/frontend/Dockerfile
+      args:
+        # Used at `next build` so /api/* rewrites target the compose service.
+        VISTA_API_INTERNAL_URL: http://backend:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      NODE_ENV: production
+      # Same URL at runtime (Next standalone; rewrites are baked at build).
+      VISTA_API_INTERNAL_URL: http://backend:8000
