@@ -1,9 +1,0 @@
-{
-  "name": "vista-report-docx-tools",
-  "private": true,
-  "version": "1.0.0",
-  "description": "Mermaid CLI for VISTA report → Word export",
-  "dependencies": {
-    "@mermaid-js/mermaid-cli": "10.9.1"
-  }
-}

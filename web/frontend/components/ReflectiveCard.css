@@ -1,0 +1,281 @@
+.reflective-card-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 5 / 7;
+  max-width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #0f1020;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  isolation: isolate;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Inter, sans-serif;
+}
+
+.reflective-card-container--plain {
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+}
+
+.reflective-svg-filters {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* Static/animated background that replaces the webcam feed */
+.reflective-background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: saturate(var(--saturation, 1)) contrast(120%) brightness(110%)
+    blur(var(--blur-strength, 12px)) url(#__rc_filter__);
+
+  z-index: 0;
+  opacity: 0.95;
+  transition: filter 0.3s ease;
+}
+
+/* Subtle drift animation so the displacement produces motion */
+.reflective-background {
+  animation: rc-drift 18s ease-in-out infinite alternate;
+}
+
+@keyframes rc-drift {
+  0%   { background-position: 45% 45%; transform: scale(1.05); }
+  100% { background-position: 55% 55%; transform: scale(1.12); }
+}
+
+.reflective-background--plain {
+  filter: none !important;
+  animation: none !important;
+  opacity: 1;
+  background-size: auto;
+}
+
+.reflective-content--plain {
+  background: var(--overlay-color, rgba(15, 16, 32, 0.72));
+  backdrop-filter: blur(8px);
+}
+
+.reflective-noise {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: var(--roughness, 0.4);
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+.reflective-sheen {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.1) 40%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.1) 60%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  opacity: var(--metalness, 1);
+}
+
+.reflective-border {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.reflective-content {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px;
+  color: var(--text-color, white);
+  background: var(--overlay-color, rgba(15, 16, 32, 0.25));
+  backdrop-filter: blur(0.5px);
+}
+
+.rc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  padding-bottom: 12px;
+}
+
+.rc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+.rc-status {
+  opacity: 0.85;
+}
+
+.rc-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding-block: 8px;
+}
+
+/* Circular profile photo with tone-specific glow ring */
+.rc-avatar {
+  position: relative;
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.55),
+    0 0 0 4px rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.rc-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+/* Tone-specific outer halo around the avatar */
+.rc-avatar::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0.75;
+}
+.rc-avatar--brand::after  { background: radial-gradient(circle, rgba(59,130,246,0.85), transparent 70%); }
+.rc-avatar--violet::after { background: radial-gradient(circle, rgba(139,92,246,0.85), transparent 70%); }
+.rc-avatar--teal::after   { background: radial-gradient(circle, rgba(20,184,166,0.85), transparent 70%); }
+
+.rc-name {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin: 0 0 4px 0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  line-height: 1.15;
+}
+
+.rc-role {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  opacity: 0.82;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.rc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.rc-tag {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-transform: uppercase;
+}
+
+.rc-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  padding-top: 14px;
+  gap: 10px;
+}
+
+.rc-id-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.rc-label {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.rc-value {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.rc-inst-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.85;
+}
+
+.rc-inst-icon {
+  opacity: 0.6;
+}

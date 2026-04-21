@@ -1,0 +1,8 @@
+{
+  "name": "vista-report-tools",
+  "version": "1.0.0",
+  "description": "Mermaid CLI for VISTA report diagram rendering",
+  "dependencies": {
+    "@mermaid-js/mermaid-cli": "10.9.1"
+  }
+}

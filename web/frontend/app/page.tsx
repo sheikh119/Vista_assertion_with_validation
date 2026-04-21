@@ -1,11 +1,13 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Sparkles, ShieldCheck, Gauge, Target } from "lucide-react";
-import StatCard from "@/components/StatCard";
+import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 import PipelineDiagram from "@/components/PipelineDiagram";
+import SiteBackground from "@/components/SiteBackground";
 
 export default function HomePage() {
   return (
     <div className="flex flex-col gap-24 pb-16 pt-16 sm:pt-20">
+      <SiteBackground />
+
       {/* ---------------------------------- HERO ---------------------------------- */}
       <section className="animate-fade-up">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
@@ -49,42 +51,6 @@ export default function HomePage() {
               0.991 token Jaccard
             </span>
           </div>
-        </div>
-      </section>
-
-      {/* ------------------------------ METRICS GRID ------------------------------ */}
-      <section className="animate-fade-up">
-        <div className="mb-6 flex items-end justify-between">
-          <div>
-            <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
-              Benchmarked on 100 VERT samples
-            </h2>
-            <p className="mt-1 text-sm text-gray-400">
-              Evaluated end-to-end with SymbiYosys BMC at depth 8.
-            </p>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <StatCard
-            label="SBY Pass"     value="99%"
-            caption="99 / 100 formal verifications"
-            icon={ShieldCheck} tone="brand"
-          />
-          <StatCard
-            label="Gold Jaccard" value="0.991"
-            caption="Token-level similarity"
-            icon={Target}      tone="violet"
-          />
-          <StatCard
-            label="Exact Match"  value="89%"
-            caption="Verbatim identical to gold"
-            icon={CheckCircle2} tone="teal"
-          />
-          <StatCard
-            label="Avg Latency"  value="< 25s"
-            caption="Per case on RTX 4090"
-            icon={Gauge}        tone="cyan"
-          />
         </div>
       </section>
 

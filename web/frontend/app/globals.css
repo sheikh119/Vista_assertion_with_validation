@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Animatable angle for conic-gradient card borders (Chromium/Safari/Firefox) */
+@property --card-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 @layer base {
   :root {
     color-scheme: dark;
@@ -32,11 +39,76 @@
 
 @layer components {
   .card {
-    @apply relative rounded-xl border border-white/5 bg-bg-card shadow-card;
+    @apply relative rounded-xl border border-white/10 bg-bg-card shadow-card;
+    box-shadow:
+      0 1px 0 rgb(255 255 255 / 0.04) inset,
+      0 8px 24px -12px rgb(0 0 0 / 0.6),
+      0 0 0 1px rgba(99, 102, 241, 0.15),
+      0 0 18px -4px rgba(99, 102, 241, 0.35),
+      0 0 40px -12px rgba(139, 92, 246, 0.4);
+  }
+
+  /* Animated gradient ring that traces the card border (rotates via @property) */
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: conic-gradient(
+      from var(--card-angle),
+      rgba(59, 130, 246, 0)    0%,
+      rgba(59, 130, 246, 0.8) 15%,
+      rgba(139, 92, 246, 0.9) 35%,
+      rgba(20, 184, 166, 0.7) 55%,
+      rgba(139, 92, 246, 0.9) 75%,
+      rgba(59, 130, 246, 0)  100%
+    );
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.65;
+    pointer-events: none;
+    animation: card-border-spin 6s linear infinite;
+    z-index: 0;
+  }
+
+  .card > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  @keyframes card-border-spin {
+    to { --card-angle: 360deg; }
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:border-white/10 hover:shadow-glow;
+    @apply transition-all duration-300 hover:border-white/20;
+    transition-property: transform, box-shadow, border-color;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 1px 0 rgb(255 255 255 / 0.06) inset,
+      0 12px 32px -12px rgb(0 0 0 / 0.7),
+      0 0 0 1px rgba(139, 92, 246, 0.4),
+      0 0 28px -2px rgba(139, 92, 246, 0.55),
+      0 0 64px -8px rgba(59, 130, 246, 0.6);
+  }
+
+  .card-hover::before {
+    opacity: 0.75;
+  }
+
+  .card-hover:hover::before {
+    opacity: 1;
+    animation-duration: 3s;
   }
 
   .chip {
@@ -75,6 +147,26 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+
+  /* Pipeline dataflow animation — horizontal (desktop) */
+  .pipe-flow {
+    animation: pipe-flow-h 3.5s ease-in-out infinite;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.7));
+  }
+  @keyframes pipe-flow-h {
+    0%   { transform: translateX(-100%); }
+    100% { transform: translateX(350%); }
+  }
+
+  /* Pipeline dataflow animation — vertical (mobile) */
+  .pipe-flow-v {
+    animation: pipe-flow-v 3.5s ease-in-out infinite;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.7));
+  }
+  @keyframes pipe-flow-v {
+    0%   { transform: translateY(-100%); }
+    100% { transform: translateY(350%); }
   }
 
   .grid-bg {

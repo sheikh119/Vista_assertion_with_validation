@@ -1,10 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Loader2, Sparkles, RotateCcw, ChevronDown } from "lucide-react";
+import {
+  Loader2, Sparkles, RotateCcw, ChevronDown,
+  ShieldCheck, Target, CheckCircle2, Gauge,
+} from "lucide-react";
 import CodeEditor from "@/components/CodeEditor";
 import ResultsPanel from "@/components/ResultsPanel";
 import Toggle from "@/components/Toggle";
+import StatCard from "@/components/StatCard";
 import { generateAssertions, getHealth, type GenerateResponse, type HealthResponse } from "@/lib/api";
 import { examples } from "@/lib/examples";
 import { cn } from "@/lib/utils";
@@ -162,6 +166,42 @@ export default function PlaygroundPage() {
           {!error &&  result && <ResultsPanel result={result} />}
         </div>
       </div>
+
+      {/* --------------------------- BENCHMARK STATS --------------------------- */}
+      <section className="mt-10 animate-fade-up">
+        <div className="mb-6 flex items-end justify-between">
+          <div>
+            <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+              Benchmarked on 100 VERT samples
+            </h2>
+            <p className="mt-1 text-sm text-gray-400">
+              Evaluated end-to-end with SymbiYosys BMC at depth 8.
+            </p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <StatCard
+            label="SBY Pass"     value="99%"
+            caption="99 / 100 formal verifications"
+            icon={ShieldCheck} tone="brand"
+          />
+          <StatCard
+            label="Gold Jaccard" value="0.991"
+            caption="Token-level similarity"
+            icon={Target}      tone="violet"
+          />
+          <StatCard
+            label="Exact Match"  value="89%"
+            caption="Verbatim identical to gold"
+            icon={CheckCircle2} tone="teal"
+          />
+          <StatCard
+            label="Avg Latency"  value="< 25s"
+            caption="Per case on RTX 4090"
+            icon={Gauge}        tone="cyan"
+          />
+        </div>
+      </section>
     </div>
   );
 }
